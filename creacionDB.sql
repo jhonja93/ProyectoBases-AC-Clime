@@ -20,6 +20,7 @@ create Table repuesto(
 id_repuesto int not null,
 marca varchar(15) null,
 descripcion varchar(256) null,
+nombre varchar(25) not null,
 precio_venta money not null,
 stock_inicial int not null,
 stock_actual int not null, -- Cada vez que se venda un articulo se actualiza (resta) este valor

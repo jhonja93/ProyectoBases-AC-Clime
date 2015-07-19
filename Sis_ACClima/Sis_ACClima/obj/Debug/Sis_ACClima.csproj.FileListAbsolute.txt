@@ -1,1 +1,2 @@
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Debug\Sis_ACClima.exe.config
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Debug\Sis_ACClima.exe.config
