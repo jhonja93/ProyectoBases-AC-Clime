@@ -2,11 +2,27 @@
 create proc spmostrar_cliente
 as
 select top 100 * from cliente
-order by id_cliente desc
+order by apellido_cli asc
 go
 
--- Procedimiento buscar Nombre Cliente
-create proc spbuscar_cliente
+-- Buscar Apellidos
+create proc spbuscar_cliente_apellidos
+@textobuscar varchar(50)
+as 
+select * from cliente
+where apellido_cli like @textobuscar + '%'
+go
+
+-- Buscar Numero documento
+create proc spbuscar_cliente_num_documento
+@textobuscar varchar(50)
+as 
+select * from cliente
+where numero_documento like @textobuscar + '%'
+go
+
+-- Buscar Nombre Cliente
+create proc spbuscar_cliente_nombre
 @textobuscar varchar(50)
 as 
 select *from cliente
@@ -22,7 +38,7 @@ create proc spinsertar_cliente
 @numero_documento varchar(15),
 @tipo varchar(10),
 @correo varchar(50),
-@telefono bigint,
+@telefono varchar(15),
 @direccion varchar(50)
 as
 insert into cliente (nombre_cli,apellido_cli,tipo_documento,numero_documento,tipo_cli,correo_cli,telefono_cli,direccion_cli)

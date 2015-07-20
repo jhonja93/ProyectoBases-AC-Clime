@@ -3,7 +3,7 @@ use acClimaDB
 
 --Table Cliente
 create Table cliente(
-id_cliente int not null,
+id_cliente int not null identity(1,1),
 nombre_cli varchar(20) not null,
 apellido_cli varchar(20) not null,
 tipo_documento varchar(10) not null,
@@ -17,7 +17,7 @@ constraint PK_Cliente primary key(id_cliente)
 
 --Tabla Repuesto
 create Table repuesto(
-id_repuesto int not null,
+id_repuesto int not null identity(1,1),
 marca varchar(15) null,
 descripcion varchar(256) null,
 nombre varchar(25) not null,
@@ -29,7 +29,7 @@ constraint PK_Repuesto primary key(id_repuesto)
 
 -- Tabla Proveedor
 create Table proveedor(
-id_proveedor int not null,
+id_proveedor int not null identity(1,1),
 nombre_prov varchar(15) not null,
 responsable varchar(15) not null,
 telefono_prov varchar(12) null,

@@ -203,7 +203,7 @@ namespace CapaDatos
         }
 
         //metodo eliminar proveedor
-        public string Eliminar(DRepuesto Repuesto) {
+        public string Eliminar(DProveedor Proveedor) {
             string rpta = "";
 
             SqlConnection SqlCon = new SqlConnection();
