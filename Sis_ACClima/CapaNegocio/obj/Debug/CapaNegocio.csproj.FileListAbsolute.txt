@@ -1,0 +1,7 @@
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\obj\Debug\CapaNegocio.pdb

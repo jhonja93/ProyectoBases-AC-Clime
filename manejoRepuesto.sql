@@ -16,7 +16,7 @@ go
 --procedimiento insertar repuesto
 create proc spinsertar_repuesto
 @idrepuesto int output,
-@nombre varchar(25),
+@nombre varchar(20),
 @marca varchar(20),
 @descripcion varchar(256),
 @precio_venta money,

@@ -8,7 +8,6 @@ using System.Data;
 using System.Data.SqlClient;
 
 
-
 namespace CapaDatos
 {
     class DRepuesto
@@ -188,14 +187,14 @@ namespace CapaDatos
                 SqlParameter Parnombre = new SqlParameter();
                 Parnombre.ParameterName = "@nombre";
                 Parnombre.SqlDbType = SqlDbType.VarChar;
-                Parnombre.Size = 25;
+                Parnombre.Size = 20;
                 Parnombre.Value = Repuesto.Nombre;
                 SqlCmd.Parameters.Add(Parnombre);
 
                 SqlParameter Parmarca = new SqlParameter();
                 Parmarca.ParameterName = "@marca";
                 Parmarca.SqlDbType = SqlDbType.VarChar;
-                Parmarca.Size = 25;
+                Parmarca.Size = 20;
                 Parmarca.Value = Repuesto.Marca;
                 SqlCmd.Parameters.Add(Parmarca);
 
@@ -261,9 +260,6 @@ namespace CapaDatos
                 ParIdRepuesto.SqlDbType = SqlDbType.Int;
                 ParIdRepuesto.Value = Repuesto.Idrepuesto;
                 SqlCmd.Parameters.Add(ParIdRepuesto);
-
-                
-
 
                 //ejecutamos nuestor comando
                 rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "NO se Eliminó el Registro";
