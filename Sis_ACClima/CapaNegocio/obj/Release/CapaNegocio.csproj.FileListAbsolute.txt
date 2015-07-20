@@ -1,0 +1,7 @@
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\bin\Release\CapaNegocio.dll
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\bin\Release\CapaNegocio.pdb
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\bin\Release\CapaDatos.dll
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\bin\Release\CapaDatos.pdb
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\obj\Release\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\obj\Release\CapaNegocio.dll
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaNegocio\obj\Release\CapaNegocio.pdb

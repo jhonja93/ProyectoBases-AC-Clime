@@ -1,0 +1,15 @@
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Release\Sis_ACClima.exe.config
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Release\Sis_ACClima.exe
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Release\Sis_ACClima.pdb
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Release\CapaPresentacion.dll
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Release\CapaNegocio.dll
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Release\CapaDatos.dll
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Release\CapaPresentacion.pdb
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Release\CapaNegocio.pdb
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Release\CapaDatos.pdb
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Release\Sis_ACClima.csprojResolveAssemblyReference.cache
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Release\Sis_ACClima.Form1.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Release\Sis_ACClima.Properties.Resources.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Release\Sis_ACClima.csproj.GenerateResource.Cache
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Release\Sis_ACClima.exe
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Release\Sis_ACClima.pdb

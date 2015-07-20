@@ -46,7 +46,7 @@ namespace CapaPresentacion
         private void OcultarColumnas()
         {
             this.dataListado.Columns[0].Visible = false;
-            this.dataListado.Columns[1].Visible = false;
+            //this.dataListado.Columns[1].Visible = false;
         }
 
         //Metodo Mostrar
@@ -63,14 +63,17 @@ namespace CapaPresentacion
             this.dataListado.DataSource = NCliente.BuscarNombre(this.txtBuscar.Text);
             this.OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
+            this.Mostrar();
         }
 
         //Metodo BuscarApellidos
         private void BuscarApellido()
         {
+
             this.dataListado.DataSource = NCliente.BuscarApellido(this.txtBuscar.Text);
             this.OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
+            this.Mostrar();
         }
 
         //Metodo BuscarNumeroDocumento
@@ -79,6 +82,7 @@ namespace CapaPresentacion
             this.dataListado.DataSource = NCliente.BuscarNumeroDocumento(this.txtBuscar.Text);
             this.OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
+            this.Mostrar();
         }
 
         private void label2_Click(object sender, EventArgs e)
