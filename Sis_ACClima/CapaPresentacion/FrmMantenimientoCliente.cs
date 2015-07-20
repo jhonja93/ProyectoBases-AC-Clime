@@ -23,7 +23,7 @@ namespace CapaPresentacion
         public FrmMantenimientoCliente()
         {
             InitializeComponent();
-
+            this.IsNuevo = true;
             this.ttMensaje2.SetToolTip(this.txtNombre, "Ingrese el nombre del cliente");
             this.ttMensaje2.SetToolTip(this.txtApellido, "Ingrese el apellido del cliente");
             this.ttMensaje2.SetToolTip(this.txtCorreo, "Ingrese el correo del cliente");
@@ -33,8 +33,10 @@ namespace CapaPresentacion
 
         public FrmMantenimientoCliente(Hashtable datos)
         {
+            this.IsEditar = true;
             InitializeComponent();
-            this.Habilitar(false);
+            //this.Habilitar(true);
+            //this.btnEditar.Enabled = false;
             this.Botones();
 
             this.ttMensaje2.SetToolTip(this.txtNombre, "Ingrese el nombre del cliente");
@@ -100,7 +102,6 @@ namespace CapaPresentacion
                 this.Habilitar(true);
                 this.btnNuevo.Enabled = false;
                 this.btnGuardar.Enabled = true;
-                this.btnEditar.Enabled = false;
                 this.btnCancelar.Enabled = true;
             }
             else 
@@ -108,7 +109,6 @@ namespace CapaPresentacion
                 this.Habilitar(false);
                 this.btnNuevo.Enabled = true;
                 this.btnGuardar.Enabled = false;
-                this.btnEditar.Enabled = true;
                 this.btnCancelar.Enabled = false;
             }
         }
@@ -180,7 +180,7 @@ namespace CapaPresentacion
         {
             this.Top = 0;
             this.Left = 0;
-            this.Habilitar(false);
+            this.Habilitar(true);
             this.Botones();
             this.Mostrar();
         }
@@ -249,16 +249,16 @@ namespace CapaPresentacion
 
         }
         
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            if (!this.txtCodigo.Text.Equals(""))
-            {
-                this.IsEditar = true;
-                this.Botones();
-                this.Habilitar(true);
-            }
-            else { this.MensajeError("Debe se seleccionar primero el registro a Modificar"); }
-        }
+        //private void btnEditar_Click(object sender, EventArgs e)
+        //{
+        //    if (!this.txtCodigo.Text.Equals(""))
+        //    {
+        //        this.IsEditar = true;
+        //        this.Botones();
+        //        this.Habilitar(true);
+        //    }
+        //    else { this.MensajeError("Debe se seleccionar primero el registro a Modificar"); }
+        //}
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
