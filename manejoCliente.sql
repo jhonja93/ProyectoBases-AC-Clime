@@ -54,7 +54,7 @@ create proc speditar_cliente
 @numero_documento varchar(15),
 @tipo varchar(10),
 @correo varchar(50),
-@telefono bigint,
+@telefono varchar(15),
 @direccion varchar(50)
 as 
 update cliente set nombre_cli=@nombre,

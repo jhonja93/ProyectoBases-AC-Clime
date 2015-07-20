@@ -21,7 +21,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             this.ttMensaje.SetToolTip(this.txtBuscar, "Ingrese el nombre del cliente a Buscar");
-            FrmMatenimiento = new FrmMantenimientoCliente();
+            //FrmMatenimiento = new FrmMantenimientoCliente();
         }
 
         //Mostrar mensaje de cofirmacion
@@ -92,7 +92,7 @@ namespace CapaPresentacion
 
         private void button1_Click(object sender, EventArgs e) //Boton Mantenimiento
         {
-            FrmMatenimiento.ShowDialog();
+            new FrmMantenimientoCliente().ShowDialog();
         }
 
         private void FrmCliente_Load(object sender, EventArgs e)
@@ -171,11 +171,11 @@ namespace CapaPresentacion
             datos.Add("tipoDocumento", Convert.ToString(this.dataListado.CurrentRow.Cells["tipo_documento"].Value));
             datos.Add("numeroDocumento", Convert.ToString(this.dataListado.CurrentRow.Cells["numero_documento"].Value));
             datos.Add("tipoCliente", Convert.ToString(this.dataListado.CurrentRow.Cells["tipo_cli"].Value));
-            datos.Add("Correo", Convert.ToString(this.dataListado.CurrentRow.Cells["correo_cli"].Value));
+            datos.Add("correo", Convert.ToString(this.dataListado.CurrentRow.Cells["correo_cli"].Value));
             datos.Add("telefono", Convert.ToString(this.dataListado.CurrentRow.Cells["telefono_cli"].Value));
             datos.Add("direccion", Convert.ToString(this.dataListado.CurrentRow.Cells["direccion_cli"].Value));
 
-            FrmMatenimiento.ShowDialog();
+            new FrmMantenimientoCliente(datos).ShowDialog();
         }
     }
 }

@@ -117,7 +117,7 @@
             this.btnMantenimiento.Name = "btnMantenimiento";
             this.btnMantenimiento.Size = new System.Drawing.Size(152, 69);
             this.btnMantenimiento.TabIndex = 7;
-            this.btnMantenimiento.Text = "&Mantenimiento";
+            this.btnMantenimiento.Text = "&Agregar Cliente";
             this.btnMantenimiento.UseVisualStyleBackColor = false;
             this.btnMantenimiento.Click += new System.EventHandler(this.button1_Click);
             // 
