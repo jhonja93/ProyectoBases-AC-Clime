@@ -118,21 +118,10 @@ namespace CapaPresentacion
             this.Habilitar(false);
             this.Botones();
 
-        }
-
-        
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void cbxTipoDoc_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cbxTipoDoc.Text == "Cedula") 
+            if (cbxTipoDoc.Text == "Cedula")
             {
                 lblTipoCliente.Text = "Natural";
-                lblNombre.Text = "Empresa:";
+                lblNombre.Text = "Nombre:";
                 lblApellido.Enabled = true;
                 txtApellido.Enabled = true;
             }
@@ -147,7 +136,41 @@ namespace CapaPresentacion
             else if (cbxTipoDoc.Text == "Pasaporte")
             {
                 lblTipoCliente.Text = "Extranjero";
+                lblNombre.Text = "Nombre:";
+                lblApellido.Enabled = true;
+                txtApellido.Enabled = true;
+            } 
+
+        }
+
+        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbxTipoDoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbxTipoDoc.Text == "Cedula") 
+            {
+                lblTipoCliente.Text = "Natural";
+                lblNombre.Text = "Nombre:";
+                lblApellido.Enabled = true;
+                txtApellido.Enabled = true;
+            }
+            else if (cbxTipoDoc.Text == "RUC")
+            {
+                lblTipoCliente.Text = "Juridico";
                 lblNombre.Text = "Empresa:";
+                lblApellido.Enabled = false;
+                txtApellido.Enabled = false;
+
+            }
+            else if (cbxTipoDoc.Text == "Pasaporte")
+            {
+                lblTipoCliente.Text = "Extranjero";
+                lblNombre.Text = "Nombre:";
                 lblApellido.Enabled = true;
                 txtApellido.Enabled = true;
             } 

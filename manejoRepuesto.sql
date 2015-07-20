@@ -50,6 +50,6 @@ go
 create proc speliminar_repuesto
 @idrepuesto int
 as
-delete from categoria
+delete from repuesto
 where id_repuesto=@idrepuesto
 go
