@@ -6,11 +6,19 @@ order by id_repuesto desc
 go
 
 --procedimiento buscar nombre repuesto
-create proc spbuscar_repuesto
+create proc spbuscar_repuesto_nombre
 @textobuscar varchar(50)
 as
 select * from repuesto
 where nombre like @textobuscar + '%'
+go
+
+--procedimiento buscar marca repuesto
+create proc spbuscar_repuesto_marca
+@textobuscar varchar(50)
+as
+select * from repuesto
+where marca like @textobuscar + '%'
 go
 
 --procedimiento insertar repuesto
