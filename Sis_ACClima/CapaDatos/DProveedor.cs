@@ -139,7 +139,7 @@ namespace CapaDatos
             return rpta;
         }
 
-        //metodo editar repuesto
+        //metodo editar proveedor
         public string editar(DProveedor Proveedor) {
             string rpta = "";
 

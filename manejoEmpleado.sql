@@ -15,7 +15,7 @@ go
 
 --procedimiento insertar empleado
 create proc spinsertar_empleado
-@cedula_empl int output,
+@cedula_empl int,
 @nombre_empl varchar(20),
 @apellido_empl varchar(20),
 @telefono_empl varchar(15),
