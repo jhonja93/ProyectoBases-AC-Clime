@@ -9,9 +9,9 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DEmpleado
+    public class DEmpleado
     {
-        private int _CedulaEmpl;
+        private string _CedulaEmpl;
         private string _Nombre;
         private string _Telefono;
         private string _Direccion;
@@ -26,7 +26,7 @@ namespace CapaDatos
             set { _Apellido = value; }
         }
 
-        public int CedulaEmpl
+        public string CedulaEmpl
         {
             get { return _CedulaEmpl; }
             set { _CedulaEmpl = value; }
@@ -55,7 +55,7 @@ namespace CapaDatos
 
         public DEmpleado() { }
 
-        public DEmpleado(int cedulaEmpl, string nombre, string apellido, string telefono, string direccion, string textobuscar) {
+        public DEmpleado(string cedulaEmpl, string nombre, string apellido, string telefono, string direccion, string textobuscar) {
             this.CedulaEmpl = cedulaEmpl;
             this.Nombre = nombre;
             this.Direccion = direccion;
@@ -86,7 +86,8 @@ namespace CapaDatos
 
                 SqlParameter ParCedulaEmpl = new SqlParameter();
                 ParCedulaEmpl.ParameterName = "@cedula_empl";
-                ParCedulaEmpl.SqlDbType = SqlDbType.Int;
+                ParCedulaEmpl.SqlDbType = SqlDbType.VarChar;
+                ParCedulaEmpl.Size = 10;
                 ParCedulaEmpl.Value = Empleado.CedulaEmpl;
                 SqlCmd.Parameters.Add(ParCedulaEmpl);
 
@@ -248,7 +249,7 @@ namespace CapaDatos
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
-            catch (Exception ex) { DtResultado = null; }
+            catch { DtResultado = null; }
 
             return DtResultado;
         }
@@ -264,7 +265,7 @@ namespace CapaDatos
                 SqlCon.ConnectionString = Conexion.Cn;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "spbuscar_empleado";
+                SqlCmd.CommandText = "spbuscar_empleado_nombre";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParTextoBuscar = new SqlParameter();
@@ -277,17 +278,66 @@ namespace CapaDatos
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
-            catch (Exception ex) { DtResultado = null; }
+            catch { DtResultado = null; }
             return DtResultado;
 
         }
 
+        //metodo buscar por apellido empleado
+        public DataTable BuscarApellido(DEmpleado Empleado)
+        {
+            DataTable DtResultado = new DataTable("empleado");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "spbuscar_empleado_apellido";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
 
+                SqlParameter ParTextoBuscar = new SqlParameter();
+                ParTextoBuscar.ParameterName = "@TextoBuscar";
+                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.Size = 50;
+                ParTextoBuscar.Value = Empleado.TextoBuscar;
+                SqlCmd.Parameters.Add(ParTextoBuscar);
 
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+            catch { DtResultado = null; }
+            return DtResultado;
 
+        }
 
+        //metodo buscar por cedula empleado
+        public DataTable BuscarCedula(DEmpleado Empleado)
+        {
+            DataTable DtResultado = new DataTable("empleado");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "spbuscar_empleado_cedula";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
 
+                SqlParameter ParTextoBuscar = new SqlParameter();
+                ParTextoBuscar.ParameterName = "@TextoBuscar";
+                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.Size = 50;
+                ParTextoBuscar.Value = Empleado.TextoBuscar;
+                SqlCmd.Parameters.Add(ParTextoBuscar);
 
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+            catch { DtResultado = null; }
+            return DtResultado;
+
+        }
 
 
     }

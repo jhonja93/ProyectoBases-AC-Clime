@@ -13,11 +13,19 @@ select * from proveedor
 where nombre_prov like @textobuscar + '%'
 go
 
+--procedimiento buscar responsable
+create proc spbuscar_proveedor_responsable
+@textobuscar varchar(15)
+as
+select * from proveedor
+where responsable like @textobuscar + '%'
+go
+
 --procedimineto insertar proveedor
 create proc spinsertar_proveedor
 @idproveedor int output,
 @nombreprov varchar(15),
-@responsable varchar(15),
+@responsable varchar(25),
 @telefonoprov varchar(12),
 @direccionprov varchar(50)
 as
@@ -29,7 +37,7 @@ go
 create proc speditar_proveedor
 @idproveedor int,
 @nombreprov varchar(15),
-@responsable varchar(15),
+@responsable varchar(25),
 @telefonoprov varchar(12),
 @direccionprov varchar(50)
 as

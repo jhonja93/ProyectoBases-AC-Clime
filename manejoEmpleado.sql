@@ -6,11 +6,27 @@ order by cedula_empl desc
 go
 
 --procedimiento buscar nombre empleado
-create proc spbuscar_empleado
+create proc spbuscar_empleado_nombre
 @textobuscar varchar(50)
 as
 select * from empleado
 where nombre_empl like @textobuscar + '%'
+go
+
+--procedimiento buscar apellido empleado
+create proc spbuscar_empleado_apellido
+@textobuscar varchar(50)
+as
+select * from empleado
+where apellido_empl like @textobuscar + '%'
+go
+
+--procedimiento buscar cedula empleado
+create proc spbuscar_empleado_cedula
+@textobuscar varchar(50)
+as
+select * from empleado
+where cedula_empl like @textobuscar + '%'
 go
 
 --procedimiento insertar empleado

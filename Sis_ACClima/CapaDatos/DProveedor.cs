@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DProveedor
+    public class DProveedor
     {
         private int _IdProveedor;
         private string _NombreProveedor;
@@ -140,7 +140,7 @@ namespace CapaDatos
         }
 
         //metodo editar proveedor
-        public string editar(DProveedor Proveedor) {
+        public string Editar(DProveedor Proveedor) {
             string rpta = "";
 
             SqlConnection SqlCon = new SqlConnection();
@@ -257,7 +257,7 @@ namespace CapaDatos
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
-            catch (Exception ex) { DtResultado = null; }
+            catch { DtResultado = null; }
 
             return DtResultado;
         }
@@ -285,7 +285,35 @@ namespace CapaDatos
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
-            catch (Exception ex) { DtResultado = null; }
+            catch { DtResultado = null; }
+            return DtResultado;
+
+        }
+
+        //metodo buscar por responsable
+        public DataTable BuscarResponsable(DProveedor Proveedor)
+        {
+            DataTable DtResultado = new DataTable("proveedor");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "spbuscar_proveedor_responsable";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParTextoBuscar = new SqlParameter();
+                ParTextoBuscar.ParameterName = "@TextoBuscar";
+                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.Size = 50;
+                ParTextoBuscar.Value = Proveedor.TextoBuscar;
+                SqlCmd.Parameters.Add(ParTextoBuscar);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+            catch { DtResultado = null; }
             return DtResultado;
 
         }

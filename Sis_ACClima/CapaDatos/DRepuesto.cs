@@ -10,7 +10,7 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DRepuesto
+    public class DRepuesto
     {
         private int _Idrepuesto;
         private string _Nombre;
@@ -291,13 +291,14 @@ namespace CapaDatos
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
-            catch (Exception ex) { DtResultado = null; }
+            catch { DtResultado = null; }
             return DtResultado;
 
         }
 
         //metodo buscar nombre repuesto
-        public DataTable BuscarNombre(DRepuesto Repuesto) {
+        public DataTable BuscarNombre(DRepuesto Repuesto) 
+        {
             DataTable DtResultado = new DataTable("repuesto");
             SqlConnection SqlCon = new SqlConnection();
             try
@@ -305,7 +306,7 @@ namespace CapaDatos
                 SqlCon.ConnectionString = Conexion.Cn;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "spbuscar_repuesto";
+                SqlCmd.CommandText = "spbuscar_repuesto_nombre";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParTextoBuscar = new SqlParameter();
@@ -318,9 +319,35 @@ namespace CapaDatos
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
-            catch (Exception ex) { DtResultado = null; }
+            catch { DtResultado = null; }
             return DtResultado;
+        }
 
+        //metodo buscar marca repuesto
+        public DataTable BuscarMarca(DRepuesto Repuesto)
+        {
+            DataTable DtResultado = new DataTable("repuesto");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "spbuscar_repuesto_marca";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParTextoBuscar = new SqlParameter();
+                ParTextoBuscar.ParameterName = "@TextoBuscar";
+                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.Size = 50;
+                ParTextoBuscar.Value = Repuesto.TextoBuscar;
+                SqlCmd.Parameters.Add(ParTextoBuscar);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+            }
+            catch { DtResultado = null; }
+            return DtResultado;
         }
     }
 }

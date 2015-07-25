@@ -28,3 +28,6 @@ C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACC
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Debug\Sis_ACClima.Form1.resources
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Debug\Sis_ACClima.Properties.Resources.resources
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Debug\Sis_ACClima.csproj.GenerateResource.Cache
+C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\bin\Debug\Sis_ACClima.exe.config
+C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Debug\Sis_ACClima.exe
+C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\Sis_ACClima\Sis_ACClima\obj\Debug\Sis_ACClima.pdb
