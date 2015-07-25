@@ -9,7 +9,7 @@ using CapaDatos;
 
 namespace CapaNegocio
 {
-    public class NEmpleado
+    public class NProveedor
     {
         //Método Insertar que llama al método Insertar de la clase DProveedor
         //de la CapaDatos
