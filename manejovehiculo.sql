@@ -21,6 +21,13 @@ select * from vehiculo
 where num_chasis like @textobuscar +'%'
 go
 
+--procedimiento buscar por cedula
+create proc spbuscar_vehiculo_cedula
+@textobuscar int
+as
+select * from vehiculo
+where idCliente1 like @textobuscar + '%'
+
 --procedimiento buscar marca y modelo vehiculo
 create proc spbuscar_vehiculo_marca_modelo
 @textobuscar1 varchar(50),

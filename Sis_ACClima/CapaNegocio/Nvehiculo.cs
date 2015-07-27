@@ -65,5 +65,12 @@ namespace CapaNegocio
             Obj.TextoBuscar = textobuscar;
             return Obj.BuscarChasis(Obj);
         }
+
+        public static DataTable BuscarCedula(string textobuscar)
+        {
+            DVehiculo Obj = new DVehiculo();
+            Obj.TextoBuscar = textobuscar;
+            return Obj.BuscarCedula(Obj);
+        }
     }
 }
