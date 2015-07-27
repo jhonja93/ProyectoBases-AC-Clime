@@ -64,6 +64,7 @@ namespace CapaDatos
         }
 
         //metodo insertar factura
+
         //metodo editar factura
         //metodo eliminar factura
         //metodo buscar factura
