@@ -45,6 +45,7 @@
     <Compile Include="DEmpleado.cs" />
     <Compile Include="DProveedor.cs" />
     <Compile Include="DRepuesto.cs" />
+    <Compile Include="DVehiculo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
