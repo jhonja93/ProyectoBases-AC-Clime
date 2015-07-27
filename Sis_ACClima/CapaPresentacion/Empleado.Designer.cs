@@ -1,4 +1,4 @@
-﻿namespace Proyecto_AC_CLIMA
+﻿namespace CapaPresentacion
 {
     partial class Empleado
     {
@@ -32,18 +32,21 @@
             this.btn_emp_eliminar = new System.Windows.Forms.Button();
             this.btn_emp_consultar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.txt_cli_buscar = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btn_emp_nuevo = new System.Windows.Forms.Button();
+            this.dataListado = new System.Windows.Forms.DataGridView();
+            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_emp_modificar
             // 
-            this.btn_emp_modificar.Location = new System.Drawing.Point(380, 85);
+            this.btn_emp_modificar.Location = new System.Drawing.Point(588, 84);
+            this.btn_emp_modificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_emp_modificar.Name = "btn_emp_modificar";
-            this.btn_emp_modificar.Size = new System.Drawing.Size(122, 31);
+            this.btn_emp_modificar.Size = new System.Drawing.Size(102, 85);
             this.btn_emp_modificar.TabIndex = 14;
             this.btn_emp_modificar.Text = "Modificar";
             this.btn_emp_modificar.UseVisualStyleBackColor = true;
@@ -51,18 +54,20 @@
             // 
             // btn_emp_eliminar
             // 
-            this.btn_emp_eliminar.Location = new System.Drawing.Point(380, 159);
+            this.btn_emp_eliminar.Location = new System.Drawing.Point(588, 274);
+            this.btn_emp_eliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_emp_eliminar.Name = "btn_emp_eliminar";
-            this.btn_emp_eliminar.Size = new System.Drawing.Size(122, 31);
+            this.btn_emp_eliminar.Size = new System.Drawing.Size(102, 85);
             this.btn_emp_eliminar.TabIndex = 13;
             this.btn_emp_eliminar.Text = "Eliminar";
             this.btn_emp_eliminar.UseVisualStyleBackColor = true;
             // 
             // btn_emp_consultar
             // 
-            this.btn_emp_consultar.Location = new System.Drawing.Point(380, 122);
+            this.btn_emp_consultar.Location = new System.Drawing.Point(588, 181);
+            this.btn_emp_consultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_emp_consultar.Name = "btn_emp_consultar";
-            this.btn_emp_consultar.Size = new System.Drawing.Size(122, 31);
+            this.btn_emp_consultar.Size = new System.Drawing.Size(102, 85);
             this.btn_emp_consultar.TabIndex = 12;
             this.btn_emp_consultar.Text = "Consultar";
             this.btn_emp_consultar.UseVisualStyleBackColor = true;
@@ -70,63 +75,88 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listView1);
-            this.groupBox1.Location = new System.Drawing.Point(41, 107);
+            this.groupBox1.Controls.Add(this.dataListado);
+            this.groupBox1.Location = new System.Drawing.Point(13, 114);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(316, 231);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(567, 305);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de empleados";
             // 
-            // listView1
-            // 
-            this.listView1.Location = new System.Drawing.Point(15, 25);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(277, 195);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // txt_cli_buscar
             // 
-            this.txt_cli_buscar.Location = new System.Drawing.Point(84, 68);
+            this.txt_cli_buscar.Location = new System.Drawing.Point(158, 75);
+            this.txt_cli_buscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_cli_buscar.Name = "txt_cli_buscar";
-            this.txt_cli_buscar.Size = new System.Drawing.Size(223, 20);
+            this.txt_cli_buscar.Size = new System.Drawing.Size(415, 22);
             this.txt_cli_buscar.TabIndex = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Buscar";
             // 
             // btn_emp_nuevo
             // 
-            this.btn_emp_nuevo.Location = new System.Drawing.Point(41, 12);
+            this.btn_emp_nuevo.Location = new System.Drawing.Point(20, 13);
+            this.btn_emp_nuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_emp_nuevo.Name = "btn_emp_nuevo";
-            this.btn_emp_nuevo.Size = new System.Drawing.Size(99, 36);
+            this.btn_emp_nuevo.Size = new System.Drawing.Size(132, 44);
             this.btn_emp_nuevo.TabIndex = 8;
             this.btn_emp_nuevo.Text = "+ Añadir nuevo";
             this.btn_emp_nuevo.UseVisualStyleBackColor = true;
             this.btn_emp_nuevo.Click += new System.EventHandler(this.btn_emp_nuevo_Click);
             // 
+            // dataListado
+            // 
+            this.dataListado.AllowUserToAddRows = false;
+            this.dataListado.AllowUserToDeleteRows = false;
+            this.dataListado.AllowUserToOrderColumns = true;
+            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Eliminar});
+            this.dataListado.Location = new System.Drawing.Point(7, 22);
+            this.dataListado.MultiSelect = false;
+            this.dataListado.Name = "dataListado";
+            this.dataListado.ReadOnly = true;
+            this.dataListado.RowTemplate.Height = 24;
+            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListado.Size = new System.Drawing.Size(553, 276);
+            this.dataListado.TabIndex = 10;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Apellido",
+            "Cedula"});
+            this.comboBox1.Location = new System.Drawing.Point(20, 75);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 15;
+            this.comboBox1.Text = "Apellido";
+            // 
             // Empleado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 351);
+            this.ClientSize = new System.Drawing.Size(703, 432);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btn_emp_modificar);
             this.Controls.Add(this.btn_emp_eliminar);
             this.Controls.Add(this.btn_emp_consultar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txt_cli_buscar);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_emp_nuevo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Empleado";
             this.Text = "Empleado";
+            this.Load += new System.EventHandler(this.Empleado_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,9 +168,10 @@
         private System.Windows.Forms.Button btn_emp_eliminar;
         private System.Windows.Forms.Button btn_emp_consultar;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.TextBox txt_cli_buscar;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_emp_nuevo;
+        private System.Windows.Forms.DataGridView dataListado;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

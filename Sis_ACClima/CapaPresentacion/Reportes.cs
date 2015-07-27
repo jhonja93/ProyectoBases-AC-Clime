@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto_AC_CLIMA
+namespace CapaPresentacion
 {
     public partial class Reportes : Form
     {
         public Reportes()
         {
             InitializeComponent();
+        }
+
+        private void Reportes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

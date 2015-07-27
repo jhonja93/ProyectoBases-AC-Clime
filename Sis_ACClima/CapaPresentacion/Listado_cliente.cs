@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto_AC_CLIMA
+namespace CapaPresentacion
 {
     public partial class Listado_cliente : Form
     {
         public Listado_cliente()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
+        }
+
+        private void Listado_cliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

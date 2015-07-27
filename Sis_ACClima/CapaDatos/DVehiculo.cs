@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace CapaDatos
 {
     public class DVehiculo
@@ -17,8 +18,6 @@ namespace CapaDatos
         private string _Modelo;
         private int _IdCliente;
         private string _TextoBuscar;
-
-
 
         public string PlacaVeh
         {
@@ -115,8 +114,7 @@ namespace CapaDatos
 
                 //ejecutar comando
                 rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "NO se Ingreso el Registro";
-
-                
+               
             }
             catch (Exception ex)
             {

@@ -15,11 +15,10 @@ namespace CapaPresentacion
 {
     public partial class FrmCliente : Form
     {
-        FrmMantenimientoCliente FrmMatenimiento;
-
         public FrmCliente()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
             this.ttMensaje.SetToolTip(this.txtBuscar, "Ingrese el nombre del cliente a Buscar");
             //FrmMatenimiento = new FrmMantenimientoCliente();
         }
@@ -63,17 +62,14 @@ namespace CapaPresentacion
             this.dataListado.DataSource = NCliente.BuscarNombre(this.txtBuscar.Text);
             this.OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
-            this.Mostrar();
         }
 
         //Metodo BuscarApellidos
         private void BuscarApellido()
         {
-
             this.dataListado.DataSource = NCliente.BuscarApellido(this.txtBuscar.Text);
             this.OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
-            this.Mostrar();
         }
 
         //Metodo BuscarNumeroDocumento
@@ -82,12 +78,6 @@ namespace CapaPresentacion
             this.dataListado.DataSource = NCliente.BuscarNumeroDocumento(this.txtBuscar.Text);
             this.OcultarColumnas();
             lblTotal.Text = "Total de Registros: " + Convert.ToString(dataListado.Rows.Count);
-            this.Mostrar();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button1_Click(object sender, EventArgs e) //Boton Mantenimiento
@@ -97,9 +87,6 @@ namespace CapaPresentacion
 
         private void FrmCliente_Load(object sender, EventArgs e)
         {
-            this.Top = 0;
-            this.Left = 0;
-
             this.Mostrar();
             this.OcultarColumnas();
         }
@@ -113,7 +100,7 @@ namespace CapaPresentacion
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
-            this.BuscarNombre();
+            btnBuscar_Click(sender, e);
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -177,5 +164,6 @@ namespace CapaPresentacion
 
             new FrmMantenimientoCliente(datos).ShowDialog();
         }
+
     }
 }

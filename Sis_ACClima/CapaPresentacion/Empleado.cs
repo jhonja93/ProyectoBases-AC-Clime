@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto_AC_CLIMA
+namespace CapaPresentacion
 {
     public partial class Empleado : Form
     {
         public Empleado()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
         }
 
         private void btn_emp_nuevo_Click(object sender, EventArgs e)
@@ -33,6 +34,11 @@ namespace Proyecto_AC_CLIMA
         {
             Consultar_empleado consultar_empleado = new Consultar_empleado();
             consultar_empleado.ShowDialog();
+        }
+
+        private void Empleado_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

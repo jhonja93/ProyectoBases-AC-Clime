@@ -72,7 +72,7 @@ namespace CapaNegocio
         {
             DCliente Obj = new DCliente();
             Obj.TextoBuscar = textoBuscar;
-            return Obj.BuscarNumeroDocumento(Obj);
+            return Obj.BuscarNombre(Obj);
         }
 
         /*Metodo BuscarApellidos que llama al metodo Insertar de la clase

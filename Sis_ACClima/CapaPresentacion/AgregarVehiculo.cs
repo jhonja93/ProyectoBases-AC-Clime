@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto_AC_CLIMA
+namespace CapaPresentacion
 {
-    public partial class Añadir_vehiculo : Form
+    public partial class AgregarVehiculo : Form
     {
-        public Añadir_vehiculo()
+        public AgregarVehiculo()
         {
             InitializeComponent();
         }
@@ -151,6 +151,11 @@ namespace Proyecto_AC_CLIMA
             }
 
             //----------------------------------//-
+        }
+
+        private void Añadir_vehiculo_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

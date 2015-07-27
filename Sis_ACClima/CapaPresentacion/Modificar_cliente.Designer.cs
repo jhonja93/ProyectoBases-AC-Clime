@@ -1,4 +1,4 @@
-﻿namespace Proyecto_AC_CLIMA
+﻿namespace Sis_ACClima
 {
     partial class Modificar_cliente
     {

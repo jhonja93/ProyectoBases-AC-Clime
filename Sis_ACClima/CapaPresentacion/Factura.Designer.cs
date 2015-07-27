@@ -1,4 +1,4 @@
-﻿namespace Proyecto_AC_CLIMA
+﻿namespace CapaPresentacion
 {
     partial class Factura
     {
@@ -69,7 +69,10 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+=======
+>>>>>>> f08104829075419c4fe2ad75989ac797c460c9a7
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -196,6 +199,17 @@
             this.textBox5.Size = new System.Drawing.Size(165, 22);
             this.textBox5.TabIndex = 8;
             // 
+<<<<<<< HEAD
+=======
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(627, 53);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(165, 22);
+            this.textBox6.TabIndex = 9;
+            // 
+>>>>>>> f08104829075419c4fe2ad75989ac797c460c9a7
             // btn_ad_cliente
             // 
             this.btn_ad_cliente.Location = new System.Drawing.Point(488, 124);
@@ -460,6 +474,7 @@
             this.label17.Text = "Total a pagar";
             // 
             // label16
+<<<<<<< HEAD
             // 
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(24, 89);
@@ -496,13 +511,46 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(266, 22);
             this.dateTimePicker1.TabIndex = 23;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+=======
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(24, 89);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(76, 17);
+            this.label16.TabIndex = 20;
+            this.label16.Text = "Descuento";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(25, 54);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(29, 17);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "IVA";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(25, 20);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 17);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "subtotal";
+>>>>>>> f08104829075419c4fe2ad75989ac797c460c9a7
             // 
             // Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(951, 636);
+<<<<<<< HEAD
             this.Controls.Add(this.dateTimePicker1);
+=======
+>>>>>>> f08104829075419c4fe2ad75989ac797c460c9a7
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox11);
