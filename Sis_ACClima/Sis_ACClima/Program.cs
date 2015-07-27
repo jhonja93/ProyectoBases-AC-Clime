@@ -4,21 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using CapaPresentacion;
-
-namespace Sis_ACClima
+namespace Proyecto_AC_CLIMA
 {
     static class Program
     {
         /// <summary>
-        /// The main entry point for the application.
+        /// Punto de entrada principal para la aplicación.
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCliente());
+            Application.Run(new Principal());
         }
     }
 }
