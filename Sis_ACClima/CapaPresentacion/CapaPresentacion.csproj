@@ -41,11 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Añadir_vehiculo.cs">
+    <Compile Include="AgregarVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Añadir_vehiculo.Designer.cs">
-      <DependentUpon>Añadir_vehiculo.cs</DependentUpon>
+    <Compile Include="AgregarVehiculo.Designer.cs">
+      <DependentUpon>AgregarVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Busqueda_vehiculo.cs">
       <SubType>Form</SubType>
@@ -54,18 +54,6 @@
       <DependentUpon>Busqueda_vehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
-    <Compile Include="Cliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cliente.Designer.cs">
-      <DependentUpon>Cliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Consultar_cliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Consultar_cliente.Designer.cs">
-      <DependentUpon>Consultar_cliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Consultar_empleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,12 +96,6 @@
     <Compile Include="Listado_cliente.Designer.cs">
       <DependentUpon>Listado_cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modificar_cliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modificar_cliente.Designer.cs">
-      <DependentUpon>Modificar_cliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Modificar_empleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,23 +108,11 @@
     <Compile Include="Modificar_repuesto.Designer.cs">
       <DependentUpon>Modificar_repuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Principal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Principal.Designer.cs">
-      <DependentUpon>Principal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Registrar_cliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Registrar_cliente.Designer.cs">
-      <DependentUpon>Registrar_cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Registrar_empleado.cs">
       <SubType>Form</SubType>
@@ -182,17 +152,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Añadir_vehiculo.resx">
-      <DependentUpon>Añadir_vehiculo.cs</DependentUpon>
+    <EmbeddedResource Include="AgregarVehiculo.resx">
+      <DependentUpon>AgregarVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Busqueda_vehiculo.resx">
       <DependentUpon>Busqueda_vehiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Cliente.resx">
-      <DependentUpon>Cliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Consultar_cliente.resx">
-      <DependentUpon>Consultar_cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultar_empleado.resx">
       <DependentUpon>Consultar_empleado.cs</DependentUpon>
@@ -215,24 +179,15 @@
     <EmbeddedResource Include="Listado_cliente.resx">
       <DependentUpon>Listado_cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modificar_cliente.resx">
-      <DependentUpon>Modificar_cliente.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Modificar_empleado.resx">
       <DependentUpon>Modificar_empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modificar_repuesto.resx">
       <DependentUpon>Modificar_repuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Principal.resx">
-      <DependentUpon>Principal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Registrar_cliente.resx">
-      <DependentUpon>Registrar_cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registrar_empleado.resx">
       <DependentUpon>Registrar_empleado.cs</DependentUpon>
@@ -249,6 +204,12 @@
     <EmbeddedResource Include="Vehiculos_cliente.resx">
       <DependentUpon>Vehiculos_cliente.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

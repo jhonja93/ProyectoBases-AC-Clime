@@ -8,7 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto_AC_CLIMA
+using CapaNegocio;
+
+namespace CapaPresentacion
 {
     public partial class Vehiculos_cliente : Form
     {
@@ -19,8 +21,18 @@ namespace Proyecto_AC_CLIMA
 
         private void btn_añadir_vehiculo_Click(object sender, EventArgs e)
         {
-            Añadir_vehiculo ad_vehiculo = new Añadir_vehiculo();
+            AgregarVehiculo ad_vehiculo = new AgregarVehiculo();
             ad_vehiculo.ShowDialog();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Vehiculos_cliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

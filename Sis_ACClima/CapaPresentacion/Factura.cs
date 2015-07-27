@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto_AC_CLIMA
+namespace CapaPresentacion
 {
     public partial class Factura : Form
     {
         public Factura()
         {
             InitializeComponent();
+            this.MaximizeBox = false;
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -31,6 +32,11 @@ namespace Proyecto_AC_CLIMA
         {
             Listado_cliente listado = new Listado_cliente();
             listado.ShowDialog();
+        }
+
+        private void Factura_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

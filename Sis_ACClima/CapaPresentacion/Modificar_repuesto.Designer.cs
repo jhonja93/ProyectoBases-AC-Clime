@@ -1,4 +1,4 @@
-﻿namespace Proyecto_AC_CLIMA
+﻿namespace CapaPresentacion
 {
     partial class Modificar_repuesto
     {

@@ -1,4 +1,4 @@
-﻿namespace Proyecto_AC_CLIMA
+﻿namespace CapaPresentacion
 {
     partial class Listado_cliente
     {
@@ -29,57 +29,96 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataListado = new System.Windows.Forms.DataGridView();
+            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.listView1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 43);
+            this.groupBox1.Controls.Add(this.dataListado);
+            this.groupBox1.Location = new System.Drawing.Point(13, 97);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(300, 224);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(719, 321);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Listado de clientes";
             // 
+            // dataListado
+            // 
+            this.dataListado.AllowUserToAddRows = false;
+            this.dataListado.AllowUserToDeleteRows = false;
+            this.dataListado.AllowUserToOrderColumns = true;
+            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Eliminar});
+            this.dataListado.Location = new System.Drawing.Point(7, 22);
+            this.dataListado.MultiSelect = false;
+            this.dataListado.Name = "dataListado";
+            this.dataListado.ReadOnly = true;
+            this.dataListado.RowTemplate.Height = 24;
+            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListado.Size = new System.Drawing.Size(705, 292);
+            this.dataListado.TabIndex = 11;
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 19);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 28);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.Size = new System.Drawing.Size(63, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Buscar";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(63, 16);
+            this.textBox1.Location = new System.Drawing.Point(178, 67);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 20);
+            this.textBox1.Size = new System.Drawing.Size(547, 22);
             this.textBox1.TabIndex = 2;
             // 
-            // listView1
+            // comboBox1
             // 
-            this.listView1.Location = new System.Drawing.Point(9, 22);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(278, 191);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Apellido",
+            "Cedula"});
+            this.comboBox1.Location = new System.Drawing.Point(20, 67);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.Text = "Apellido";
             // 
             // Listado_cliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(329, 288);
+            this.ClientSize = new System.Drawing.Size(745, 431);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Listado_cliente";
             this.Text = "Listado_cliente";
+            this.Load += new System.EventHandler(this.Listado_cliente_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,8 +127,10 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dataListado;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

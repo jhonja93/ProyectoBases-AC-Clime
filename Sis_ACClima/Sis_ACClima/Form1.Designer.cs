@@ -1,4 +1,4 @@
-﻿namespace Sis_ACClima
+﻿namespace CapaPresentacion
 {
     partial class Form1
     {

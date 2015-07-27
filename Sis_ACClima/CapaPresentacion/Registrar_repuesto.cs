@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto_AC_CLIMA
+namespace CapaPresentacion
 {
     public partial class Registrar_repuesto : Form
     {
@@ -102,6 +102,11 @@ namespace Proyecto_AC_CLIMA
         }
 
         private void txt_rep_reg_descripcion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Registrar_repuesto_Load(object sender, EventArgs e)
         {
 
         }

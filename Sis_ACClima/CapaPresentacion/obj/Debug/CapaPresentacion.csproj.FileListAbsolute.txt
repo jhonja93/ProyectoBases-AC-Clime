@@ -43,3 +43,17 @@ C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACC
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\Proyecto_AC_CLIMA.Reportes.resources
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\Proyecto_AC_CLIMA.Repuesto.resources
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\Proyecto_AC_CLIMA.Vehiculos_cliente.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Busqueda_vehiculo.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Consultar_empleado.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Consultar_repuesto.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Empleado.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Factura.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Listado_cliente.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Modificar_empleado.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Modificar_repuesto.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Registrar_empleado.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Registrar_repuesto.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Reportes.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Repuesto.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Vehiculos_cliente.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.AgregarVehiculo.resources

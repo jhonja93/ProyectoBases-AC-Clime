@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Proyecto_AC_CLIMA
+namespace CapaPresentacion
 {
     static class Program
     {
