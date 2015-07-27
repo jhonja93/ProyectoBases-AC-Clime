@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Data;
+
 using CapaDatos;
+using System.Data;
 
 namespace CapaNegocio
 {
-    class NVehiculo
+    public class NVehiculo
     {
         //Método Insertar que llama al método Insertar de la clase DVehiculo
         //de la CapaDatos
