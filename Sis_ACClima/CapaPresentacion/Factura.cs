@@ -32,5 +32,20 @@ namespace Proyecto_AC_CLIMA
             Listado_cliente listado = new Listado_cliente();
             listado.ShowDialog();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Factura_Load(object sender, EventArgs e)
+        {
+            dateTimePicker1.MaxDate = DateTime.Today;
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
