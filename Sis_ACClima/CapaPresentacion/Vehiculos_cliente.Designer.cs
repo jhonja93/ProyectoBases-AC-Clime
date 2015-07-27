@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_ced = new System.Windows.Forms.TextBox();
+            this.txt_prop = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -36,8 +38,6 @@
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btn_añadir_vehiculo = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
@@ -45,47 +45,59 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txt_ced);
+            this.groupBox1.Controls.Add(this.txt_prop);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(19, 12);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(14, 10);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(489, 103);
+            this.groupBox1.Size = new System.Drawing.Size(367, 84);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del cliente";
             // 
+            // txt_ced
+            // 
+            this.txt_ced.Location = new System.Drawing.Point(131, 50);
+            this.txt_ced.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_ced.Name = "txt_ced";
+            this.txt_ced.ReadOnly = true;
+            this.txt_ced.Size = new System.Drawing.Size(231, 20);
+            this.txt_ced.TabIndex = 3;
+            // 
+            // txt_prop
+            // 
+            this.txt_prop.Location = new System.Drawing.Point(131, 20);
+            this.txt_prop.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_prop.Name = "txt_prop";
+            this.txt_prop.ReadOnly = true;
+            this.txt_prop.Size = new System.Drawing.Size(231, 20);
+            this.txt_prop.TabIndex = 2;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 66);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(10, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 17);
+            this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Número de Documento:";
+            this.label2.Text = "Cedula: ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 28);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(10, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 17);
+            this.label1.Size = new System.Drawing.Size(70, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Registrado a:";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataListado);
-            this.groupBox2.Location = new System.Drawing.Point(20, 134);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(15, 109);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(646, 261);
+            this.groupBox2.Size = new System.Drawing.Size(484, 212);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Listado de Vehiculos";
@@ -99,13 +111,14 @@
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            this.dataListado.Location = new System.Drawing.Point(15, 22);
+            this.dataListado.Location = new System.Drawing.Point(11, 18);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
             this.dataListado.RowTemplate.Height = 24;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(624, 232);
+            this.dataListado.Size = new System.Drawing.Size(468, 188);
             this.dataListado.TabIndex = 10;
             // 
             // Eliminar
@@ -116,10 +129,9 @@
             // 
             // btn_añadir_vehiculo
             // 
-            this.btn_añadir_vehiculo.Location = new System.Drawing.Point(517, 25);
-            this.btn_añadir_vehiculo.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_añadir_vehiculo.Location = new System.Drawing.Point(388, 20);
             this.btn_añadir_vehiculo.Name = "btn_añadir_vehiculo";
-            this.btn_añadir_vehiculo.Size = new System.Drawing.Size(149, 42);
+            this.btn_añadir_vehiculo.Size = new System.Drawing.Size(112, 34);
             this.btn_añadir_vehiculo.TabIndex = 2;
             this.btn_añadir_vehiculo.Text = "Añadir vehiculo";
             this.btn_añadir_vehiculo.UseVisualStyleBackColor = true;
@@ -127,44 +139,25 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(517, 79);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(388, 64);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(149, 42);
+            this.button2.Size = new System.Drawing.Size(112, 34);
             this.button2.TabIndex = 3;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(175, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(307, 22);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(175, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(307, 22);
-            this.textBox2.TabIndex = 3;
-            // 
             // Vehiculos_cliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(683, 409);
+            this.ClientSize = new System.Drawing.Size(512, 332);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btn_añadir_vehiculo);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Vehiculos_cliente";
             this.Text = "Vehiculos";
-            this.Load += new System.EventHandler(this.Vehiculos_cliente_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -183,7 +176,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataListado;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_ced;
+        private System.Windows.Forms.TextBox txt_prop;
     }
 }

@@ -17,6 +17,7 @@ namespace CapaPresentacion
         public Vehiculos_cliente()
         {
             InitializeComponent();
+
         }
 
         private void btn_añadir_vehiculo_Click(object sender, EventArgs e)
@@ -30,9 +31,26 @@ namespace CapaPresentacion
 
         }
 
-        private void Vehiculos_cliente_Load(object sender, EventArgs e)
+        private void busqueda_Vehiculo()
         {
-
+            this.dataListado.DataSource = NVehiculo.BuscarCedula(this.txt_ced.Text);
+            this.OcultarColumnas();
         }
+        private void OcultarColumnas()
+        {
+            this.dataListado.Columns[0].Visible = false;
+            //this.dataListado.Columns[1].Visible = false;
+        }
+
+        private void dataListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dataListado.Columns["Eliminar"].Index)
+            {
+                DataGridViewCheckBoxCell ChkEliminar = (DataGridViewCheckBoxCell)dataListado.Rows[e.RowIndex].Cells["Eliminar"];
+                ChkEliminar.Value = !Convert.ToBoolean(ChkEliminar.Value);
+            }
+        }
+       
+       
     }
 }
