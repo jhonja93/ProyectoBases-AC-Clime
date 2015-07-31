@@ -29,45 +29,49 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            this.btn_repuestos = new System.Windows.Forms.Button();
-            this.btn_vehiculo = new System.Windows.Forms.Button();
-            this.btn_empleado = new System.Windows.Forms.Button();
             this.btn_reportes = new System.Windows.Forms.Button();
+            this.btn_empleado = new System.Windows.Forms.Button();
+            this.btn_vehiculo = new System.Windows.Forms.Button();
+            this.btn_repuestos = new System.Windows.Forms.Button();
             this.btn_factura = new System.Windows.Forms.Button();
             this.btn_cliente = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // btn_repuestos
-            // 
-            resources.ApplyResources(this.btn_repuestos, "btn_repuestos");
-            this.btn_repuestos.BackColor = System.Drawing.Color.White;
-            this.btn_repuestos.Name = "btn_repuestos";
-            this.btn_repuestos.UseVisualStyleBackColor = false;
-            this.btn_repuestos.Click += new System.EventHandler(this.btn_repuestos_Click);
-            // 
-            // btn_vehiculo
-            // 
-            resources.ApplyResources(this.btn_vehiculo, "btn_vehiculo");
-            this.btn_vehiculo.BackColor = System.Drawing.Color.White;
-            this.btn_vehiculo.Name = "btn_vehiculo";
-            this.btn_vehiculo.UseVisualStyleBackColor = false;
-            this.btn_vehiculo.Click += new System.EventHandler(this.btn_vehiculo_Click);
-            // 
-            // btn_empleado
-            // 
-            resources.ApplyResources(this.btn_empleado, "btn_empleado");
-            this.btn_empleado.BackColor = System.Drawing.Color.White;
-            this.btn_empleado.Name = "btn_empleado";
-            this.btn_empleado.UseVisualStyleBackColor = false;
-            this.btn_empleado.Click += new System.EventHandler(this.btn_empleado_Click);
             // 
             // btn_reportes
             // 
             resources.ApplyResources(this.btn_reportes, "btn_reportes");
             this.btn_reportes.BackColor = System.Drawing.Color.White;
+            this.btn_reportes.Image = global::CapaPresentacion.Properties.Resources.reporte;
             this.btn_reportes.Name = "btn_reportes";
             this.btn_reportes.UseVisualStyleBackColor = false;
             this.btn_reportes.Click += new System.EventHandler(this.btn_reportes_Click);
+            // 
+            // btn_empleado
+            // 
+            resources.ApplyResources(this.btn_empleado, "btn_empleado");
+            this.btn_empleado.BackColor = System.Drawing.Color.White;
+            this.btn_empleado.Image = global::CapaPresentacion.Properties.Resources.trabajador;
+            this.btn_empleado.Name = "btn_empleado";
+            this.btn_empleado.UseVisualStyleBackColor = false;
+            this.btn_empleado.Click += new System.EventHandler(this.btn_empleado_Click);
+            // 
+            // btn_vehiculo
+            // 
+            resources.ApplyResources(this.btn_vehiculo, "btn_vehiculo");
+            this.btn_vehiculo.BackColor = System.Drawing.Color.White;
+            this.btn_vehiculo.Image = global::CapaPresentacion.Properties.Resources.vehiculo;
+            this.btn_vehiculo.Name = "btn_vehiculo";
+            this.btn_vehiculo.UseVisualStyleBackColor = false;
+            this.btn_vehiculo.Click += new System.EventHandler(this.btn_vehiculo_Click);
+            // 
+            // btn_repuestos
+            // 
+            resources.ApplyResources(this.btn_repuestos, "btn_repuestos");
+            this.btn_repuestos.BackColor = System.Drawing.Color.White;
+            this.btn_repuestos.Image = global::CapaPresentacion.Properties.Resources.repuestos;
+            this.btn_repuestos.Name = "btn_repuestos";
+            this.btn_repuestos.UseVisualStyleBackColor = false;
+            this.btn_repuestos.Click += new System.EventHandler(this.btn_repuestos_Click);
             // 
             // btn_factura
             // 
@@ -83,7 +87,7 @@
             resources.ApplyResources(this.btn_cliente, "btn_cliente");
             this.btn_cliente.BackColor = System.Drawing.Color.White;
             this.btn_cliente.BackgroundImage = global::CapaPresentacion.Properties.Resources.fondoBlanco;
-            this.btn_cliente.Image = global::CapaPresentacion.Properties.Resources.clients2;
+            this.btn_cliente.Image = global::CapaPresentacion.Properties.Resources.clientes1;
             this.btn_cliente.Name = "btn_cliente";
             this.btn_cliente.UseVisualStyleBackColor = false;
             this.btn_cliente.Click += new System.EventHandler(this.btn_cliente_Click);
@@ -101,6 +105,7 @@
             this.Controls.Add(this.btn_cliente);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Principal";
+            this.Load += new System.EventHandler(this.Principal_Load);
             this.ResumeLayout(false);
 
         }

@@ -67,5 +67,10 @@ namespace CapaPresentacion
             reporte.ShowDialog();
             this.Show();
         }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

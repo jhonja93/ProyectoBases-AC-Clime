@@ -82,19 +82,20 @@
             this.groupBox1.Controls.Add(this.lblCodigo);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(531, 466);
+            this.groupBox1.Size = new System.Drawing.Size(555, 491);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Clientes";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnAgregarVehiculo
             // 
             this.btnAgregarVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarVehiculo.Location = new System.Drawing.Point(414, 401);
             this.btnAgregarVehiculo.Name = "btnAgregarVehiculo";
-            this.btnAgregarVehiculo.Size = new System.Drawing.Size(98, 45);
+            this.btnAgregarVehiculo.Size = new System.Drawing.Size(98, 65);
             this.btnAgregarVehiculo.TabIndex = 22;
-            this.btnAgregarVehiculo.Text = "&Agregar";
+            this.btnAgregarVehiculo.Text = "&Agregar Vehiculo";
             this.btnAgregarVehiculo.UseVisualStyleBackColor = true;
             this.btnAgregarVehiculo.Click += new System.EventHandler(this.btnAgregarVehiculo_Click);
             // 
@@ -228,6 +229,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(349, 22);
             this.txtNombre.TabIndex = 7;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
             // 
@@ -309,7 +311,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(555, 490);
+            this.ClientSize = new System.Drawing.Size(579, 515);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FrmMantenimientoCliente";

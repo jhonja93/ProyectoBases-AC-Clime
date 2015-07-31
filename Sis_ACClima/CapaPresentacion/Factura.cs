@@ -34,23 +34,8 @@ namespace CapaPresentacion
             listado.ShowDialog();
         }
 
-<<<<<<< HEAD
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void Factura_Load(object sender, EventArgs e)
         {
-            dateTimePicker1.MaxDate = DateTime.Today;
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-=======
-        private void Factura_Load(object sender, EventArgs e)
-        {
->>>>>>> f08104829075419c4fe2ad75989ac797c460c9a7
 
         }
     }

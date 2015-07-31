@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using CapaNegocio;
+using System.Collections;
 
 namespace CapaPresentacion
 {
@@ -22,7 +23,10 @@ namespace CapaPresentacion
 
         private void btn_añadir_vehiculo_Click(object sender, EventArgs e)
         {
-            AgregarVehiculo ad_vehiculo = new AgregarVehiculo();
+            Hashtable datos = new Hashtable();
+            //datos.Add("id", txt_ced.Text);
+       
+            AgregarVehiculo ad_vehiculo = new AgregarVehiculo(datos);
             ad_vehiculo.ShowDialog();
         }
 
@@ -33,7 +37,7 @@ namespace CapaPresentacion
 
         private void busqueda_Vehiculo()
         {
-            this.dataListado.DataSource = NVehiculo.BuscarCedula(this.txt_ced.Text);
+            //this.dataListado.DataSource = NVehiculo.BuscarCedula(this.txt_ced.Text);
             this.OcultarColumnas();
         }
         private void OcultarColumnas()

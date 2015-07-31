@@ -382,7 +382,12 @@ namespace CapaPresentacion
 
         private void btnAgregarVehiculo_Click(object sender, EventArgs e)
         {
-            new Vehiculos_cliente().ShowDialog();
+            Hashtable datos = new Hashtable();
+            datos.Add("id", txtNumDoc.Text);
+            datos.Add("nombre",txtNombre.Text);
+            datos.Add("apellido",txtApellido.Text);
+
+            new AgregarVehiculo(datos).ShowDialog();
         }
 
         private void txtTelefono_KeyPress(object sender, KeyPressEventArgs e)
@@ -391,6 +396,16 @@ namespace CapaPresentacion
             {
                 e.Handled = true;
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
