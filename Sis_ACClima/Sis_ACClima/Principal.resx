@@ -118,142 +118,58 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btn_repuestos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="btn_empleado.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 194</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_vehiculo.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btn_factura.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btn_cliente.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_vehiculo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btn_repuestos.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="btn_factura.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="btn_repuestos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;btn_cliente.Name" xml:space="preserve">
-    <value>btn_cliente</value>
-  </data>
-  <data name="btn_cliente.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_vehiculo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 239</value>
-  </data>
-  <data name="btn_cliente.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;btn_factura.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_cliente.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btn_factura.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="&gt;&gt;btn_reportes.Name" xml:space="preserve">
-    <value>btn_reportes</value>
-  </data>
-  <data name="btn_empleado.Text" xml:space="preserve">
-    <value>Empleado</value>
-  </data>
-  <data name="btn_reportes.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="&gt;&gt;btn_empleado.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btn_factura.Text" xml:space="preserve">
-    <value>Factura</value>
-  </data>
-  <data name="btn_reportes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 194</value>
-  </data>
-  <data name="btn_vehiculo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="btn_empleado.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;btn_reportes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 176</value>
+    <value>12, 110</value>
   </data>
-  <data name="btn_factura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 25</value>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 194</value>
   </data>
-  <data name="&gt;&gt;btn_vehiculo.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;btn_repuestos.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Orden de Trabajo</value>
   </data>
-  <data name="&gt;&gt;btn_repuestos.Name" xml:space="preserve">
-    <value>btn_repuestos</value>
-  </data>
-  <data name="btn_reportes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="btn_vehiculo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;btn_vehiculo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_empleado.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="btn_empleado.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="btn_vehiculo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btn_empleado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_empleado.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="btn_cliente.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>None</value>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
   </data>
   <data name="&gt;&gt;button1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btn_cliente.Text" xml:space="preserve">
-    <value>Clientes</value>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_reportes.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_reportes.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btn_reportes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btn_reportes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 237</value>
+  </data>
+  <data name="btn_reportes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_reportes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 194</value>
+  </data>
+  <data name="btn_reportes.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="btn_reportes.Text" xml:space="preserve">
     <value>Reportes</value>
@@ -261,142 +177,259 @@
   <data name="btn_reportes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;btn_reportes.Name" xml:space="preserve">
+    <value>btn_reportes</value>
   </data>
-  <data name="btn_factura.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;btn_reportes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btn_reportes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 239</value>
+  <data name="&gt;&gt;btn_reportes.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="btn_repuestos.AutoSize" type="System.Boolean, mscorlib">
+  <data name="&gt;&gt;btn_reportes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_empleado.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_empleado.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;btn_cliente.Parent" xml:space="preserve">
+  <data name="btn_empleado.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btn_empleado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 237</value>
+  </data>
+  <data name="btn_empleado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_empleado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 194</value>
+  </data>
+  <data name="btn_empleado.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btn_empleado.Text" xml:space="preserve">
+    <value>Empleado</value>
+  </data>
+  <data name="btn_empleado.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;btn_empleado.Name" xml:space="preserve">
+    <value>btn_empleado</value>
+  </data>
+  <data name="&gt;&gt;btn_empleado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_empleado.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_empleado.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_vehiculo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="btn_vehiculo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btn_vehiculo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btn_vehiculo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 237</value>
+  </data>
+  <data name="btn_vehiculo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_vehiculo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 194</value>
+  </data>
+  <data name="btn_vehiculo.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_vehiculo.Text" xml:space="preserve">
+    <value>Vehículo</value>
+  </data>
+  <data name="btn_vehiculo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
   <data name="&gt;&gt;btn_vehiculo.Name" xml:space="preserve">
     <value>btn_vehiculo</value>
   </data>
+  <data name="&gt;&gt;btn_vehiculo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_vehiculo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_vehiculo.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="btn_repuestos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="btn_cliente.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 25</value>
+  <data name="btn_repuestos.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="btn_vehiculo.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_repuestos.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btn_repuestos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>700, 23</value>
+  </data>
+  <data name="btn_repuestos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_repuestos.Size" type="System.Drawing.Size, System.Drawing">
     <value>210, 194</value>
   </data>
   <data name="btn_repuestos.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="btn_cliente.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 194</value>
+  <data name="btn_repuestos.Text" xml:space="preserve">
+    <value>Repuestos</value>
   </data>
-  <data name="&gt;&gt;btn_factura.Name" xml:space="preserve">
-    <value>btn_factura</value>
-  </data>
-  <data name="btn_cliente.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="btn_reportes.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btn_repuestos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 194</value>
-  </data>
-  <data name="btn_cliente.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="btn_repuestos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;btn_factura.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btn_reportes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btn_reportes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="btn_reportes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
-  </data>
-  <data name="btn_factura.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 194</value>
-  </data>
-  <data name="&gt;&gt;btn_factura.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;btn_repuestos.Name" xml:space="preserve">
+    <value>btn_repuestos</value>
   </data>
   <data name="&gt;&gt;btn_repuestos.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btn_factura.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Control AC/Clima</value>
-  </data>
   <data name="&gt;&gt;btn_repuestos.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="btn_repuestos.Text" xml:space="preserve">
-    <value>Repuestos</value>
+  <data name="&gt;&gt;btn_repuestos.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;btn_vehiculo.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="btn_factura.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
   </data>
-  <data name="&gt;&gt;btn_empleado.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btn_empleado.Name" xml:space="preserve">
-    <value>btn_empleado</value>
-  </data>
-  <data name="btn_empleado.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  <data name="btn_factura.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="btn_factura.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;btn_reportes.ZOrder" xml:space="preserve">
+  <data name="btn_factura.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 23</value>
+  </data>
+  <data name="btn_factura.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_factura.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 194</value>
+  </data>
+  <data name="btn_factura.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btn_vehiculo.Text" xml:space="preserve">
-    <value>Vehículo</value>
+  <data name="btn_factura.Text" xml:space="preserve">
+    <value>Factura</value>
   </data>
-  <data name="btn_repuestos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>508, 25</value>
+  <data name="btn_factura.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>814, 460</value>
+  <data name="&gt;&gt;btn_factura.Name" xml:space="preserve">
+    <value>btn_factura</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Principal</value>
+  <data name="&gt;&gt;btn_factura.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;btn_factura.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="btn_empleado.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="&gt;&gt;btn_factura.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btn_cliente.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
+  </data>
+  <data name="btn_cliente.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btn_cliente.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btn_cliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 23</value>
+  </data>
+  <data name="btn_cliente.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btn_cliente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 194</value>
   </data>
   <data name="btn_cliente.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="btn_empleado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>276, 239</value>
+  <data name="btn_cliente.Text" xml:space="preserve">
+    <value>Clientes</value>
   </data>
-  <data name="btn_vehiculo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="btn_cliente.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;btn_cliente.Name" xml:space="preserve">
+    <value>btn_cliente</value>
+  </data>
+  <data name="&gt;&gt;btn_cliente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_cliente.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_cliente.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="lblconexion.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblconexion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 441</value>
+  </data>
+  <data name="lblconexion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 13</value>
+  </data>
+  <data name="lblconexion.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblconexion.Text" xml:space="preserve">
+    <value>.</value>
+  </data>
+  <data name="&gt;&gt;lblconexion.Name" xml:space="preserve">
+    <value>lblconexion</value>
+  </data>
+  <data name="&gt;&gt;lblconexion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblconexion.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblconexion.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es-EC</value>
-  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1198, 457</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Control AC/Clima</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

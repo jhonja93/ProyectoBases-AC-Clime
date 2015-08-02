@@ -109,7 +109,7 @@ namespace CapaDatos
                 SqlParameter ParIdCliente = new SqlParameter();
                 ParIdCliente.ParameterName = "@idcliente";
                 ParIdCliente.SqlDbType = SqlDbType.Int;
-                ParIdCliente.Direction = ParameterDirection.Output;
+                ParIdCliente.Value = Vehiculo.IdCliente;
                 SqlCmd.Parameters.Add(ParIdCliente);
 
                 //ejecutar comando
@@ -325,7 +325,7 @@ namespace CapaDatos
                 SqlParameter ParTextoBuscar = new SqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
                 ParTextoBuscar.SqlDbType = SqlDbType.Int;
-                ParTextoBuscar.Value = Vehiculo.TextoBuscar;
+                ParTextoBuscar.Value = Vehiculo.IdCliente;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
                 SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);

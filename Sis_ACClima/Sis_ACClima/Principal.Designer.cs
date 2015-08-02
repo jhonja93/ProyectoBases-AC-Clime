@@ -36,12 +36,13 @@
             this.btn_repuestos = new System.Windows.Forms.Button();
             this.btn_factura = new System.Windows.Forms.Button();
             this.btn_cliente = new System.Windows.Forms.Button();
+            this.lblconexion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            resources.ApplyResources(this.button1, "button1");
             this.button1.BackColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.button1, "button1");
             this.button1.Image = global::CapaPresentacion.Properties.Resources.icono_llena_formulario;
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = false;
@@ -101,11 +102,18 @@
             this.btn_cliente.UseVisualStyleBackColor = false;
             this.btn_cliente.Click += new System.EventHandler(this.btn_cliente_Click);
             // 
+            // lblconexion
+            // 
+            resources.ApplyResources(this.lblconexion, "lblconexion");
+            this.lblconexion.Name = "lblconexion";
+            this.lblconexion.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Principal
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Tan;
+            resources.ApplyResources(this, "$this");
+            this.Controls.Add(this.lblconexion);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_reportes);
             this.Controls.Add(this.btn_empleado);
@@ -117,6 +125,7 @@
             this.Name = "Principal";
             this.Load += new System.EventHandler(this.Principal_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -129,5 +138,6 @@
         private System.Windows.Forms.Button btn_empleado;
         private System.Windows.Forms.Button btn_reportes;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblconexion;
     }
 }

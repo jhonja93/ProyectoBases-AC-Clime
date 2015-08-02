@@ -15,30 +15,28 @@ namespace CapaPresentacion
 {
     public partial class Vehiculos_cliente : Form
     {
-        string codigoCliente;
+        int codigoCliente=0;
         public Vehiculos_cliente()
         {
             InitializeComponent();
 
         }
 
-        public void mostrarVehiculosCliente() {
-            this.dataListado.DataSource = NVehiculo.BuscarCedula(codigoCliente);
-            this.dataListado.Columns[0].Visible = false;
-        }
+      
 
         public Vehiculos_cliente(Hashtable datos)
         {
             InitializeComponent();
             this.txtProp.Text = Convert.ToString(datos["propietario"]);
             this.txtNumDoc.Text = Convert.ToString(datos["numDoc"]);
-            this.codigoCliente = Convert.ToString(datos["id"]);
+            this.codigoCliente = Convert.ToInt32(datos["id"]);
+            this.mostrarVehiculosCliente();
         }
 
         private void btn_añadir_vehiculo_Click(object sender, EventArgs e)
         {
             Hashtable datos = new Hashtable();
-            //datos.Add("id", txt_ced.Text);
+            datos.Add("id", this.codigoCliente);
        
             AgregarVehiculo ad_vehiculo = new AgregarVehiculo(datos);
             ad_vehiculo.ShowDialog();
@@ -51,7 +49,7 @@ namespace CapaPresentacion
 
         private void busqueda_Vehiculo()
         {
-            //this.dataListado.DataSource = NVehiculo.BuscarCedula(this.txt_ced.Text);
+           // this.dataListado.DataSource = NVehiculo.BuscarCedula(this.codigoCliente);
             this.OcultarColumnas();
         }
         private void OcultarColumnas()
@@ -69,9 +67,21 @@ namespace CapaPresentacion
             }
         }
 
+        public void mostrarVehiculosCliente()
+        {
+            //this.dataListado.DataSource = NVehiculo.Mostrar();
+            this.dataListado.DataSource = NVehiculo.BuscarCedula(this.codigoCliente);
+            this.dataListado.Columns[0].Visible = false;
+        }
+
         private void Vehiculos_cliente_Load(object sender, EventArgs e)
         {
             this.mostrarVehiculosCliente();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
        
        

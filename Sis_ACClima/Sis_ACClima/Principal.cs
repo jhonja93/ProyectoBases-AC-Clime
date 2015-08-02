@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using CapaPresentacion;
+using CapaNegocio;
 
 namespace CapaPresentacion
 {
@@ -69,6 +70,11 @@ namespace CapaPresentacion
         }
 
         private void Principal_Load(object sender, EventArgs e)
+        {
+            this.lblconexion.Text = new Class1().estadoConexion()==""?"conectado":"desconectado";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

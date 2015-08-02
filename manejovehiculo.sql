@@ -26,7 +26,8 @@ create proc spbuscar_vehiculo_cedula
 @textobuscar int
 as
 select * from vehiculo
-where idCliente1 like @textobuscar + '%'
+where idCliente1 = @textobuscar
+go
 
 --procedimiento buscar marca y modelo vehiculo
 create proc spbuscar_vehiculo_marca_modelo
@@ -45,8 +46,8 @@ create proc spinsertar_vehiculo
 @modelo varchar(10),
 @idcliente int output
 as
-insert into vehiculo(placa_veh, num_chasis,marca_veh,modelo_veh)
-values(@placa_veh,@num_chasis,@marca,@modelo)
+insert into vehiculo(placa_veh, num_chasis,marca_veh,modelo_veh,idCliente1)
+values(@placa_veh,@num_chasis,@marca,@modelo,@idcliente)
 go
 
 -- procedimiento editar vehiculo

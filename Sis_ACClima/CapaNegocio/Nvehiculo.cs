@@ -15,12 +15,7 @@ namespace CapaNegocio
         //de la CapaDatos
         public static string Insertar(string placa, string nChasis, string marca, string modelo, int idCliente)
         {
-            DVehiculo Obj = new DVehiculo();
-            Obj.PlacaVeh = placa;
-            Obj.NChasis = nChasis;
-            Obj.Marca = marca;
-            Obj.Modelo = modelo;
-            Obj.IdCliente = idCliente;
+            DVehiculo Obj = new DVehiculo(placa,nChasis,marca,modelo,idCliente,"");
             return Obj.Insertar(Obj);
         }
         //Método Editar que llama al método Editar de la clase DVehiculo
@@ -66,10 +61,10 @@ namespace CapaNegocio
             return Obj.BuscarChasis(Obj);
         }
 
-        public static DataTable BuscarCedula(string textobuscar)
+        public static DataTable BuscarCedula(int idCliente)
         {
             DVehiculo Obj = new DVehiculo();
-            Obj.TextoBuscar = textobuscar;
+            Obj.IdCliente=idCliente;
             return Obj.BuscarCedula(Obj);
         }
     }

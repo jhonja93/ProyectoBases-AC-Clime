@@ -411,7 +411,7 @@ namespace CapaPresentacion
         private void button1_Click(object sender, EventArgs e)
         {
             Hashtable datos = new Hashtable();
-            datos.Add("id",txtCodigo);
+            datos.Add("id",txtCodigo.Text);
             datos.Add("propietario",txtNombre.Text +" "+ txtApellido.Text);
             datos.Add("numDoc",txtNumDoc.Text);
 

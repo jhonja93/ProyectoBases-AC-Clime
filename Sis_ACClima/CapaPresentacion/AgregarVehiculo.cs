@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaNegocio;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,39 +47,29 @@ namespace CapaPresentacion
             marca = txt_av_marca.Text;
             modelo = txt_av_modelo.Text;
             //cambios daniel
-             /*try
+             try
             {
                 string rpta = "";
-                if (this.txtPlaca.Text == string.Empty ||
+                /*if (this.txtPlaca.Text == string.Empty ||
                     this.txt_av_placa2.Text == string.Empty ||
                     this.txt_av_chasis.Text == string.Empty ||
-                    this.txtPlaca.Text.Length != 3||this.txt_av_placa2.Text.Length!=4|| this.txt_av_chasis.Text.Length!=17){
+                    this.txtPlaca.Text.Length != 7|| this.txt_av_chasis.Text.Length!=17){
                     //poner los avisos de error
                 }
                 else{
                     if (this.IsNuevo)
-                    {
-                        rpta = NCliente.Insertar(this.txtNombre.Text.Trim().ToUpper(), this.txtApellido.Text.Trim().ToUpper(),
-                            this.cbxTipoDoc.Text, this.txtNumDoc.Text, this.lblTipoCliente.Text, this.txtCorreo.Text.Trim(), this.txtTelefono.Text, this.txtDireccion.Text.ToUpper());
+                    {*/
+                        rpta = NVehiculo.Insertar(txtPlaca.Text,txt_av_chasis.Text,txt_av_marca.Text,txt_av_modelo.Text,IdCliente);
 
                         if (rpta.Equals("OK")) this.MensajeOk("Se Inserto de forma correcta el registro");
                         else this.MensajeError(rpta);
-                    }
-                    else
-                    {
-                        rpta = NCliente.Editar(Convert.ToInt32(this.txtCodigo.Text), this.txtNombre.Text.Trim().ToUpper(), this.txtApellido.Text.Trim().ToUpper(),
-                            this.cbxTipoDoc.Text, this.txtNumDoc.Text, this.lblTipoCliente.Text, this.txtCorreo.Text.Trim(), this.txtTelefono.Text, this.txtDireccion.Text.ToUpper());
-
-                        if (rpta.Equals("OK")) this.MensajeOk("Se Actualizo de forma correcta el registro");
-                        else this.MensajeError(rpta);
-                    }
+                   
 
                     this.IsNuevo = false;
                     this.IsEditar = false;
-                    this.Botones();
-                    this.Limpiar();
-                    this.Mostrar();
-                }*/
+                   
+                }
+            catch(Exception ex){}
             //////////////termino cambios daniel
                         
             // si todos los campos estan vacios se impide que se guarden los datos
