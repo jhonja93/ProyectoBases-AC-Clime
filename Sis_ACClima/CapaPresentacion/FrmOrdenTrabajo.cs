@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class Busqueda_vehiculo : Form
+    public partial class FrmOrdenTrabajo : Form
     {
-        public Busqueda_vehiculo()
+        public FrmOrdenTrabajo()
         {
             InitializeComponent();
-        }
-
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Busqueda_vehiculo_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

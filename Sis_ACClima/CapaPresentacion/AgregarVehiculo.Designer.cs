@@ -62,6 +62,7 @@
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(241, 22);
             this.txtPlaca.TabIndex = 1;
+            this.txtPlaca.TextChanged += new System.EventHandler(this.txtPlaca_TextChanged_1);
             this.txtPlaca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPlaca_KeyPress_1);
             this.txtPlaca.Leave += new System.EventHandler(this.txtPlaca_Leave);
             // 

@@ -52,3 +52,4 @@ C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACC
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Reportes.resources
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Repuesto.resources
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Vehiculos_cliente.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.FrmOrdenTrabajo.resources

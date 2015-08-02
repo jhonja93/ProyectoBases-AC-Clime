@@ -8,9 +8,9 @@ nombre_cli varchar(20) not null,
 apellido_cli varchar(20) not null,
 tipo_documento varchar(10) not null,
 numero_documento varchar(15) null,
-tipo_cli int not null,
+tipo_cli varchar(15) not null,
 correo_cli varchar(50) null,
-telefono_cli bigint null,
+telefono_cli varchar(15) null,
 direccion_cli varchar(50) null,
 constraint PK_Cliente primary key(id_cliente)
 )

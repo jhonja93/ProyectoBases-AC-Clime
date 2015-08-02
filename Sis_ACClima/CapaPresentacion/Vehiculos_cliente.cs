@@ -15,10 +15,24 @@ namespace CapaPresentacion
 {
     public partial class Vehiculos_cliente : Form
     {
+        string codigoCliente;
         public Vehiculos_cliente()
         {
             InitializeComponent();
 
+        }
+
+        public void mostrarVehiculosCliente() {
+            this.dataListado.DataSource = NVehiculo.BuscarCedula(codigoCliente);
+            this.dataListado.Columns[0].Visible = false;
+        }
+
+        public Vehiculos_cliente(Hashtable datos)
+        {
+            InitializeComponent();
+            this.txtProp.Text = Convert.ToString(datos["propietario"]);
+            this.txtNumDoc.Text = Convert.ToString(datos["numDoc"]);
+            this.codigoCliente = Convert.ToString(datos["id"]);
         }
 
         private void btn_añadir_vehiculo_Click(object sender, EventArgs e)
@@ -53,6 +67,11 @@ namespace CapaPresentacion
                 DataGridViewCheckBoxCell ChkEliminar = (DataGridViewCheckBoxCell)dataListado.Rows[e.RowIndex].Cells["Eliminar"];
                 ChkEliminar.Value = !Convert.ToBoolean(ChkEliminar.Value);
             }
+        }
+
+        private void Vehiculos_cliente_Load(object sender, EventArgs e)
+        {
+            this.mostrarVehiculosCliente();
         }
        
        

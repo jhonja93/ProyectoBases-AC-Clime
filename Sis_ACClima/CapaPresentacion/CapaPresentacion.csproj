@@ -90,6 +90,12 @@
     <Compile Include="FrmMantenimientoCliente.Designer.cs">
       <DependentUpon>FrmMantenimientoCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOrdenTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenTrabajo.Designer.cs">
+      <DependentUpon>FrmOrdenTrabajo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Listado_cliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMantenimientoCliente.resx">
       <DependentUpon>FrmMantenimientoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenTrabajo.resx">
+      <DependentUpon>FrmOrdenTrabajo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Listado_cliente.resx">
       <DependentUpon>Listado_cliente.cs</DependentUpon>

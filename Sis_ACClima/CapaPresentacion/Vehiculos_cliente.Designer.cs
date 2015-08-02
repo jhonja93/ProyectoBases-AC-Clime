@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtNumDoc = new System.Windows.Forms.TextBox();
+            this.txtProp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -36,8 +38,6 @@
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btn_añadir_vehiculo = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
@@ -45,8 +45,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtNumDoc);
+            this.groupBox1.Controls.Add(this.txtProp);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(19, 12);
@@ -57,6 +57,22 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del cliente";
+            // 
+            // txtNumDoc
+            // 
+            this.txtNumDoc.Location = new System.Drawing.Point(175, 61);
+            this.txtNumDoc.Name = "txtNumDoc";
+            this.txtNumDoc.ReadOnly = true;
+            this.txtNumDoc.Size = new System.Drawing.Size(307, 22);
+            this.txtNumDoc.TabIndex = 3;
+            // 
+            // txtProp
+            // 
+            this.txtProp.Location = new System.Drawing.Point(175, 25);
+            this.txtProp.Name = "txtProp";
+            this.txtProp.ReadOnly = true;
+            this.txtProp.Size = new System.Drawing.Size(307, 22);
+            this.txtProp.TabIndex = 2;
             // 
             // label2
             // 
@@ -135,22 +151,6 @@
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(175, 25);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(307, 22);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(175, 61);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(307, 22);
-            this.textBox2.TabIndex = 3;
-            // 
             // Vehiculos_cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -164,7 +164,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Vehiculos_cliente";
             this.Text = "Vehiculos";
-            //this.Load += new System.EventHandler(this.Vehiculos_cliente_Load);
+            this.Load += new System.EventHandler(this.Vehiculos_cliente_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -183,7 +183,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataListado;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNumDoc;
+        private System.Windows.Forms.TextBox txtProp;
     }
 }

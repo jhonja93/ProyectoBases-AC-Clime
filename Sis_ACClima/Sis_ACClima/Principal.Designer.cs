@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_reportes = new System.Windows.Forms.Button();
             this.btn_empleado = new System.Windows.Forms.Button();
             this.btn_vehiculo = new System.Windows.Forms.Button();
@@ -36,6 +37,14 @@
             this.btn_factura = new System.Windows.Forms.Button();
             this.btn_cliente = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Image = global::CapaPresentacion.Properties.Resources.icono_llena_formulario;
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // btn_reportes
             // 
@@ -97,6 +106,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Tan;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_reportes);
             this.Controls.Add(this.btn_empleado);
             this.Controls.Add(this.btn_vehiculo);
@@ -118,5 +128,6 @@
         private System.Windows.Forms.Button btn_vehiculo;
         private System.Windows.Forms.Button btn_empleado;
         private System.Windows.Forms.Button btn_reportes;
+        private System.Windows.Forms.Button button1;
     }
 }

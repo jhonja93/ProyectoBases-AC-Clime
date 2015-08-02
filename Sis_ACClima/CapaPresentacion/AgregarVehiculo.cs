@@ -253,5 +253,10 @@ namespace CapaPresentacion
                 //errorIcon.Dispose();
             }
         }
+
+        private void txtPlaca_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
