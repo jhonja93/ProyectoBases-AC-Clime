@@ -191,5 +191,10 @@ namespace CapaPresentacion
             //------------------------------------------------------------------//
 
         }
+
+        private void btn_emp_mod_cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

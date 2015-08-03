@@ -23,7 +23,7 @@ namespace CapaPresentacion
             InitializeComponent( );
              this.IsNuevo = true;
              this.IdCliente = Convert.ToInt32(datos["id"]);
-              this.lblName.Text  = Convert.ToString(datos["nombre"]) + " " + Convert.ToString(datos["apellido"]);
+              this.lblNombreCliente.Text  = Convert.ToString(datos["nombre"]) + " " + Convert.ToString(datos["apellido"]);
             
         }
        
@@ -96,7 +96,7 @@ namespace CapaPresentacion
 
         private void txtPlaca_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //pemitir que solo se ingresen letras
+            
             if (!char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
@@ -164,31 +164,10 @@ namespace CapaPresentacion
 
         private void txt_av_chasis_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //pemitir que solo se ingresen numeros
-            if (char.IsNumber(e.KeyChar))
+            if (!char.IsControl(e.KeyChar))
             {
-                //MessageBox.Show("Oe no ingreses numeros", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                e.Handled = false;
-            }
-
-            else if (char.IsControl(e.KeyChar))
-            {
-
-                e.Handled = false;
-
-            }
-            else if (char.IsSeparator(e.KeyChar))
-            {
-
-                e.Handled = false;
-            }
-
-            else
-            {
-
                 e.Handled = true;
             }
-
             //----------------------------------//-
         }
 

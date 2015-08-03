@@ -71,7 +71,16 @@ namespace CapaPresentacion
 
         private void Principal_Load(object sender, EventArgs e)
         {
-            this.lblconexion.Text = new Class1().estadoConexion()==""?"conectado":"desconectado";
+            if(new Class1().estadoConexion()==""){
+                this.lblconexion.Text = "conectado";
+                this.lblconexion.ForeColor = System.Drawing.Color.Green;
+            }
+            else {
+                this.lblconexion.Text = "desconectado";
+                this.lblconexion.ForeColor = System.Drawing.Color.Red;
+            }
+               
+            
         }
 
         private void label1_Click(object sender, EventArgs e)

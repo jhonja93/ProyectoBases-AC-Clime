@@ -64,6 +64,7 @@
             // 
             // txt_emp_reg_direccion
             // 
+            this.txt_emp_reg_direccion.Enabled = false;
             this.txt_emp_reg_direccion.Location = new System.Drawing.Point(105, 130);
             this.txt_emp_reg_direccion.MaxLength = 50;
             this.txt_emp_reg_direccion.Name = "txt_emp_reg_direccion";
@@ -82,6 +83,7 @@
             // 
             // txt_emp_reg_telefono
             // 
+            this.txt_emp_reg_telefono.Enabled = false;
             this.txt_emp_reg_telefono.Location = new System.Drawing.Point(106, 104);
             this.txt_emp_reg_telefono.MaxLength = 9;
             this.txt_emp_reg_telefono.Name = "txt_emp_reg_telefono";
@@ -100,6 +102,7 @@
             // 
             // txt_emp_reg_cedula
             // 
+            this.txt_emp_reg_cedula.Enabled = false;
             this.txt_emp_reg_cedula.Location = new System.Drawing.Point(106, 77);
             this.txt_emp_reg_cedula.MaxLength = 10;
             this.txt_emp_reg_cedula.Name = "txt_emp_reg_cedula";
@@ -138,6 +141,7 @@
             // 
             // txt_emp_reg_apellidos
             // 
+            this.txt_emp_reg_apellidos.Enabled = false;
             this.txt_emp_reg_apellidos.Location = new System.Drawing.Point(106, 51);
             this.txt_emp_reg_apellidos.MaxLength = 50;
             this.txt_emp_reg_apellidos.Name = "txt_emp_reg_apellidos";
@@ -146,6 +150,7 @@
             // 
             // txt_emp_reg_nombres
             // 
+            this.txt_emp_reg_nombres.Enabled = false;
             this.txt_emp_reg_nombres.Location = new System.Drawing.Point(107, 25);
             this.txt_emp_reg_nombres.MaxLength = 50;
             this.txt_emp_reg_nombres.Name = "txt_emp_reg_nombres";
@@ -159,7 +164,7 @@
             this.ClientSize = new System.Drawing.Size(416, 188);
             this.Controls.Add(this.groupBox1);
             this.Name = "Consultar_empleado";
-            this.Text = "Consultar_empleado";
+            this.Text = "Consultar empleado";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

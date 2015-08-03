@@ -52,6 +52,7 @@
             this.btn_emp_mod_cancelar.TabIndex = 9;
             this.btn_emp_mod_cancelar.Text = "Cancelar";
             this.btn_emp_mod_cancelar.UseVisualStyleBackColor = true;
+            this.btn_emp_mod_cancelar.Click += new System.EventHandler(this.btn_emp_mod_cancelar_Click);
             // 
             // btn_emp_mod_guardar
             // 
