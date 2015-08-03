@@ -26,5 +26,10 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void btnOrdenTrabajo_Click(object sender, EventArgs e)
+        {
+            new FrmOrdenTrabajo().ShowDialog();
+        }
     }
 }

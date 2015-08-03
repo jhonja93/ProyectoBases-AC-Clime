@@ -56,6 +56,7 @@
             // 
             // txt_rep_reg_pventa
             // 
+            this.txt_rep_reg_pventa.Enabled = false;
             this.txt_rep_reg_pventa.Location = new System.Drawing.Point(106, 77);
             this.txt_rep_reg_pventa.MaxLength = 10;
             this.txt_rep_reg_pventa.Name = "txt_rep_reg_pventa";
@@ -94,6 +95,7 @@
             // 
             // txt_rep_reg_marca
             // 
+            this.txt_rep_reg_marca.Enabled = false;
             this.txt_rep_reg_marca.Location = new System.Drawing.Point(106, 51);
             this.txt_rep_reg_marca.MaxLength = 50;
             this.txt_rep_reg_marca.Name = "txt_rep_reg_marca";
@@ -102,6 +104,7 @@
             // 
             // txt_rep_reg_descripcion
             // 
+            this.txt_rep_reg_descripcion.Enabled = false;
             this.txt_rep_reg_descripcion.Location = new System.Drawing.Point(107, 25);
             this.txt_rep_reg_descripcion.MaxLength = 50;
             this.txt_rep_reg_descripcion.Name = "txt_rep_reg_descripcion";

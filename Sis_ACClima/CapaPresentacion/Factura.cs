@@ -39,7 +39,7 @@ namespace CapaPresentacion
         {
             if (campo.Equals("costo"))
             {
-                return RegExp(@"^[0-9]+(\.[0-9]+)?$", textBox12.Text);
+                return RegExp(@"^[0-9]+(\.[0-9]+)?$", txtTotalHand.Text);
             }
             return false;
         }
@@ -145,19 +145,7 @@ namespace CapaPresentacion
         }
         private void textBox12_Leave(object sender, EventArgs e)
         {
-            if (!isValid("costo"))
-            {
-                MensajeError(" formato de costo de mano de obra incorrecto");
-                //errorIcon.Icon = Properties.Resources.error;
-                //errorIcon.SetError(txtCorreo, "Correo Invalido");
-            }
-            else
-            {
-                MensajeOk("ok");
-                //errorIcon.Icon = Properties.Resources.Ok;
-                //errorIcon.SetError(txtCorreo, "Ok");
-                //errorIcon.Dispose();
-            }
+            
         }
 
         private void textBox12_KeyPress(object sender, KeyPressEventArgs e)
@@ -222,6 +210,33 @@ namespace CapaPresentacion
             }
             else
                 e.Handled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.txtTotalRep.Text = Convert.ToString(Convert.ToInt32(this.textBox7.Text) * Convert.ToInt32(this.textBox8.Text));
+            this.txtSubtotal.Text =Convert.ToString( Convert.ToInt32(this.txtTotalRep.Text) + Convert.ToInt32(this.txtSubtotal.Text));
+            this.txtTotalRep.Text = "0";
+            this.textBox8.Text= "0";
+            this.textBox7.Text = "0";
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+            this.txtSubtotal.Text = Convert.ToString(Convert.ToInt32(this.txtTotalHand.Text) + Convert.ToInt32(this.txtSubtotal.Text));
+            this.txtTotalHand.Text = "0";
+            this.textBox11.Text = "";
+        }
+
+        private void txtTotalHand_TextChanged(object sender, EventArgs e)
+        {
+
         }
         
     }

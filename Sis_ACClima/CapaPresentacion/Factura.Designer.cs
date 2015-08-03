@@ -48,32 +48,31 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtTotalRep = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtTotalHand = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtSubtotal = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox7 = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -218,7 +217,7 @@
             this.groupBox2.Size = new System.Drawing.Size(681, 43);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "-";
+            this.groupBox2.Text = "Repuestos";
             // 
             // button1
             // 
@@ -228,6 +227,7 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label10
             // 
@@ -267,14 +267,6 @@
             this.label7.Text = "Cant";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(70, 208);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(47, 20);
-            this.textBox7.TabIndex = 13;
-            this.textBox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
-            // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
@@ -290,29 +282,30 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(49, 20);
             this.textBox8.TabIndex = 15;
+            this.textBox8.Text = "0";
             this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox8_KeyPress);
             this.textBox8.Leave += new System.EventHandler(this.textBox8_Leave);
             // 
-            // textBox9
+            // txtTotalRep
             // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(632, 208);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(49, 20);
-            this.textBox9.TabIndex = 16;
+            this.txtTotalRep.Enabled = false;
+            this.txtTotalRep.Location = new System.Drawing.Point(632, 208);
+            this.txtTotalRep.Name = "txtTotalRep";
+            this.txtTotalRep.Size = new System.Drawing.Size(49, 20);
+            this.txtTotalRep.TabIndex = 16;
+            this.txtTotalRep.Text = "0";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Location = new System.Drawing.Point(12, 234);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(681, 43);
             this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "-";
+            this.groupBox3.Text = "Mano de Obra";
             // 
             // button2
             // 
@@ -322,6 +315,7 @@
             this.button2.TabIndex = 17;
             this.button2.Text = "+";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label11
             // 
@@ -341,23 +335,6 @@
             this.label13.TabIndex = 14;
             this.label13.Text = "Descripcion";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(59, 16);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(29, 13);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "Cant";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(70, 283);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(47, 20);
-            this.textBox10.TabIndex = 19;
-            this.textBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox10_KeyPress);
-            // 
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(154, 283);
@@ -366,21 +343,23 @@
             this.textBox11.Size = new System.Drawing.Size(353, 89);
             this.textBox11.TabIndex = 20;
             // 
-            // textBox12
+            // txtTotalHand
             // 
-            this.textBox12.Location = new System.Drawing.Point(578, 283);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(57, 20);
-            this.textBox12.TabIndex = 21;
-            this.textBox12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox12_KeyPress);
-            this.textBox12.Leave += new System.EventHandler(this.textBox12_Leave);
+            this.txtTotalHand.Location = new System.Drawing.Point(578, 283);
+            this.txtTotalHand.Name = "txtTotalHand";
+            this.txtTotalHand.Size = new System.Drawing.Size(57, 20);
+            this.txtTotalHand.TabIndex = 21;
+            this.txtTotalHand.Text = "0";
+            this.txtTotalHand.TextChanged += new System.EventHandler(this.txtTotalHand_TextChanged);
+            this.txtTotalHand.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox12_KeyPress);
+            this.txtTotalHand.Leave += new System.EventHandler(this.textBox12_Leave);
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.textBox16);
             this.groupBox4.Controls.Add(this.textBox15);
             this.groupBox4.Controls.Add(this.textBox14);
-            this.groupBox4.Controls.Add(this.textBox13);
+            this.groupBox4.Controls.Add(this.txtSubtotal);
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.label16);
             this.groupBox4.Controls.Add(this.label15);
@@ -394,10 +373,12 @@
             // 
             // textBox16
             // 
+            this.textBox16.Enabled = false;
             this.textBox16.Location = new System.Drawing.Point(96, 94);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(82, 20);
             this.textBox16.TabIndex = 26;
+            this.textBox16.Text = "0";
             this.textBox16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox16_KeyPress);
             // 
             // textBox15
@@ -406,6 +387,7 @@
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(82, 20);
             this.textBox15.TabIndex = 25;
+            this.textBox15.Text = "0";
             this.textBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox15_KeyPress);
             // 
             // textBox14
@@ -415,16 +397,18 @@
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(82, 20);
             this.textBox14.TabIndex = 24;
+            this.textBox14.Text = "0";
             this.textBox14.TextChanged += new System.EventHandler(this.textBox14_TextChanged);
             this.textBox14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox14_KeyPress);
             // 
-            // textBox13
+            // txtSubtotal
             // 
-            this.textBox13.Location = new System.Drawing.Point(95, 13);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(82, 20);
-            this.textBox13.TabIndex = 23;
-            this.textBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox13_KeyPress);
+            this.txtSubtotal.Location = new System.Drawing.Point(95, 13);
+            this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.Size = new System.Drawing.Size(82, 20);
+            this.txtSubtotal.TabIndex = 23;
+            this.txtSubtotal.Text = "0";
+            this.txtSubtotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox13_KeyPress);
             // 
             // label17
             // 
@@ -471,21 +455,32 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(125, 20);
             this.dateTimePicker1.TabIndex = 23;
             // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(62, 207);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(55, 20);
+            this.textBox7.TabIndex = 24;
+            this.textBox7.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(713, 517);
+            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.txtTotalHand);
             this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtTotalRep);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox7);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Detalle);
             this.Controls.Add(this.btn_ad_cliente);
@@ -504,6 +499,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,28 +526,26 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtTotalRep;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtTotalHand;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.TextBox textBox15;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtSubtotal;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.NumericUpDown textBox7;
     }
 }

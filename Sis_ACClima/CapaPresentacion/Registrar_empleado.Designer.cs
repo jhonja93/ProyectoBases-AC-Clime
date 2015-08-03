@@ -178,8 +178,9 @@
             this.btn_emp_reg_cancelar.Name = "btn_emp_reg_cancelar";
             this.btn_emp_reg_cancelar.Size = new System.Drawing.Size(118, 32);
             this.btn_emp_reg_cancelar.TabIndex = 6;
-            this.btn_emp_reg_cancelar.Text = "Guardar";
+            this.btn_emp_reg_cancelar.Text = "Cancelar";
             this.btn_emp_reg_cancelar.UseVisualStyleBackColor = true;
+            this.btn_emp_reg_cancelar.Click += new System.EventHandler(this.btn_emp_reg_cancelar_Click);
             // 
             // Registrar_empleado
             // 

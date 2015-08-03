@@ -34,6 +34,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblFechaActual = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.lblNombreCliente = new System.Windows.Forms.Label();
@@ -41,7 +42,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lblMarcaModelo = new System.Windows.Forms.Label();
-            this.lblFechaActual = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.lblFechaActual2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,11 +50,13 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.txtTotalAPagar = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.txtAdelanto = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.txtRestante = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -108,6 +110,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Enabled = false;
             this.textBox1.Location = new System.Drawing.Point(74, 13);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(155, 20);
@@ -122,6 +125,15 @@
             this.groupBox2.Size = new System.Drawing.Size(334, 40);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
+            // 
+            // lblFechaActual
+            // 
+            this.lblFechaActual.AutoSize = true;
+            this.lblFechaActual.Location = new System.Drawing.Point(120, 13);
+            this.lblFechaActual.Name = "lblFechaActual";
+            this.lblFechaActual.Size = new System.Drawing.Size(66, 13);
+            this.lblFechaActual.TabIndex = 1;
+            this.lblFechaActual.Text = "fecha actual";
             // 
             // dateTimePicker1
             // 
@@ -156,7 +168,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.93703F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.06297F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 238F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 239F));
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblMarcaModelo, 2, 0);
@@ -190,20 +202,11 @@
             // 
             this.lblMarcaModelo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblMarcaModelo.AutoSize = true;
-            this.lblMarcaModelo.Location = new System.Drawing.Point(378, 8);
+            this.lblMarcaModelo.Location = new System.Drawing.Point(377, 8);
             this.lblMarcaModelo.Name = "lblMarcaModelo";
             this.lblMarcaModelo.Size = new System.Drawing.Size(81, 13);
             this.lblMarcaModelo.TabIndex = 2;
             this.lblMarcaModelo.Text = "marca y modelo";
-            // 
-            // lblFechaActual
-            // 
-            this.lblFechaActual.AutoSize = true;
-            this.lblFechaActual.Location = new System.Drawing.Point(120, 13);
-            this.lblFechaActual.Name = "lblFechaActual";
-            this.lblFechaActual.Size = new System.Drawing.Size(66, 13);
-            this.lblFechaActual.TabIndex = 1;
-            this.lblFechaActual.Text = "fecha actual";
             // 
             // tableLayoutPanel2
             // 
@@ -299,6 +302,15 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Total a Pagar";
             // 
+            // txtTotalAPagar
+            // 
+            this.txtTotalAPagar.Location = new System.Drawing.Point(7, 41);
+            this.txtTotalAPagar.Name = "txtTotalAPagar";
+            this.txtTotalAPagar.Size = new System.Drawing.Size(173, 20);
+            this.txtTotalAPagar.TabIndex = 0;
+            this.txtTotalAPagar.TextChanged += new System.EventHandler(this.txtTotalAPagar_TextChanged);
+            this.txtTotalAPagar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTotalAPagar_KeyPress);
+            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.txtAdelanto);
@@ -308,6 +320,15 @@
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Adelanto";
+            // 
+            // txtAdelanto
+            // 
+            this.txtAdelanto.Location = new System.Drawing.Point(10, 41);
+            this.txtAdelanto.Name = "txtAdelanto";
+            this.txtAdelanto.Size = new System.Drawing.Size(173, 20);
+            this.txtAdelanto.TabIndex = 0;
+            this.txtAdelanto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAdelanto_KeyPress);
+            this.txtAdelanto.Leave += new System.EventHandler(this.txtAdelanto_Leave);
             // 
             // groupBox7
             // 
@@ -319,33 +340,41 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Restante";
             // 
-            // txtTotalAPagar
-            // 
-            this.txtTotalAPagar.Location = new System.Drawing.Point(7, 41);
-            this.txtTotalAPagar.Name = "txtTotalAPagar";
-            this.txtTotalAPagar.Size = new System.Drawing.Size(173, 20);
-            this.txtTotalAPagar.TabIndex = 0;
-            // 
-            // txtAdelanto
-            // 
-            this.txtAdelanto.Location = new System.Drawing.Point(10, 41);
-            this.txtAdelanto.Name = "txtAdelanto";
-            this.txtAdelanto.Size = new System.Drawing.Size(173, 20);
-            this.txtAdelanto.TabIndex = 0;
-            // 
             // txtRestante
             // 
+            this.txtRestante.Enabled = false;
             this.txtRestante.Location = new System.Drawing.Point(15, 41);
             this.txtRestante.Name = "txtRestante";
             this.txtRestante.Size = new System.Drawing.Size(173, 20);
             this.txtRestante.TabIndex = 0;
             this.txtRestante.TextChanged += new System.EventHandler(this.txtRestante_TextChanged);
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(108, 432);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 9;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(222, 432);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
+            this.btnCancelar.TabIndex = 10;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // FrmOrdenTrabajo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 467);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.tableLayoutPanel2);
@@ -353,7 +382,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmOrdenTrabajo";
             this.Text = "Orden de Trabajo";
             this.groupBox1.ResumeLayout(false);
@@ -408,5 +437,7 @@
         private System.Windows.Forms.TextBox txtAdelanto;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.TextBox txtRestante;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

@@ -77,30 +77,8 @@ namespace CapaPresentacion
 
         private void txt_emp_mod_direccion_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //pemitir que solo se ingresen letras
-            if (char.IsLetter(e.KeyChar))
-            {
-                e.Handled = false;
-            }
 
-            else if (char.IsControl(e.KeyChar))
-            {
-
-                e.Handled = false;
-
-            }
-            else if (char.IsSeparator(e.KeyChar))
-            {
-
-                e.Handled = false;
-            }
-
-            else
-            {
-
-                e.Handled = true;
-            }
-
+        
             //----------------------------------//-
         }
 
