@@ -115,5 +115,22 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void txt_rep_reg_pventa_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_rep_reg_pventa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+             if (char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
+               {
+                  e.Handled = false;
+               }
+               else
+                  e.Handled = true;
+            
+        }
     }
 }

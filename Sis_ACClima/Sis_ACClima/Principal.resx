@@ -130,13 +130,13 @@
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="btn_reportes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 237</value>
+    <value>540, 237</value>
   </data>
   <data name="btn_reportes.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="btn_reportes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 194</value>
+    <value>210, 194</value>
   </data>
   <data name="btn_reportes.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -146,6 +146,9 @@
   </data>
   <data name="btn_reportes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
+  </data>
+  <data name="btn_reportes.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
   </data>
   <data name="&gt;&gt;btn_reportes.Name" xml:space="preserve">
     <value>btn_reportes</value>
@@ -169,7 +172,7 @@
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="btn_empleado.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 237</value>
+    <value>312, 237</value>
   </data>
   <data name="btn_empleado.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -185,6 +188,9 @@
   </data>
   <data name="btn_empleado.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
+  </data>
+  <data name="btn_empleado.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
   </data>
   <data name="&gt;&gt;btn_empleado.Name" xml:space="preserve">
     <value>btn_empleado</value>
@@ -208,7 +214,7 @@
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="btn_vehiculo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>49, 237</value>
+    <value>77, 237</value>
   </data>
   <data name="btn_vehiculo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -225,6 +231,9 @@
   <data name="btn_vehiculo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
   </data>
+  <data name="btn_vehiculo.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
   <data name="&gt;&gt;btn_vehiculo.Name" xml:space="preserve">
     <value>btn_vehiculo</value>
   </data>
@@ -240,14 +249,11 @@
   <data name="btn_repuestos.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="btn_repuestos.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="btn_repuestos.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="btn_repuestos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>512, 35</value>
+    <value>540, 35</value>
   </data>
   <data name="btn_repuestos.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -263,6 +269,9 @@
   </data>
   <data name="btn_repuestos.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
+  </data>
+  <data name="btn_repuestos.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
   </data>
   <data name="&gt;&gt;btn_repuestos.Name" xml:space="preserve">
     <value>btn_repuestos</value>
@@ -286,7 +295,7 @@
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="btn_factura.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 35</value>
+    <value>312, 35</value>
   </data>
   <data name="btn_factura.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -302,6 +311,9 @@
   </data>
   <data name="btn_factura.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
+  </data>
+  <data name="btn_factura.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
   </data>
   <data name="&gt;&gt;btn_factura.Name" xml:space="preserve">
     <value>btn_factura</value>
@@ -325,7 +337,7 @@
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
   <data name="btn_cliente.Location" type="System.Drawing.Point, System.Drawing">
-    <value>45, 35</value>
+    <value>73, 35</value>
   </data>
   <data name="btn_cliente.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -341,6 +353,9 @@
   </data>
   <data name="btn_cliente.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>BottomCenter</value>
+  </data>
+  <data name="btn_cliente.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
   </data>
   <data name="&gt;&gt;btn_cliente.Name" xml:space="preserve">
     <value>btn_cliente</value>
@@ -364,7 +379,7 @@
     <value>12, 441</value>
   </data>
   <data name="lblconexion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 16</value>
+    <value>13, 20</value>
   </data>
   <data name="lblconexion.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -388,7 +403,7 @@
     <value>True</value>
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>749, 457</value>
+    <value>804, 457</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>

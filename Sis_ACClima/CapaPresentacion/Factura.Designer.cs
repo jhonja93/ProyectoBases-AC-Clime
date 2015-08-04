@@ -95,6 +95,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(118, 94);
+            this.textBox4.MaxLength = 13;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(209, 20);
             this.textBox4.TabIndex = 7;
@@ -103,6 +104,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(118, 70);
+            this.textBox3.MaxLength = 256;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(209, 20);
             this.textBox3.TabIndex = 6;
@@ -119,6 +121,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(118, 19);
+            this.textBox1.MaxLength = 40;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(209, 20);
             this.textBox1.TabIndex = 4;
@@ -181,6 +184,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(470, 12);
+            this.textBox5.MaxLength = 20;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(125, 20);
             this.textBox5.TabIndex = 8;
@@ -269,6 +273,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(154, 207);
             this.comboBox1.Name = "comboBox1";
@@ -337,10 +342,10 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(154, 283);
+            this.textBox11.Location = new System.Drawing.Point(62, 283);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(353, 89);
+            this.textBox11.Size = new System.Drawing.Size(445, 89);
             this.textBox11.TabIndex = 20;
             // 
             // txtTotalHand
@@ -488,7 +493,9 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Factura";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Factura";
             this.Load += new System.EventHandler(this.Factura_Load);
             this.groupBox1.ResumeLayout(false);

@@ -45,7 +45,7 @@ namespace CapaPresentacion
         private void OcultarColumnas()
         {
             this.dataListado.Columns[0].Visible = false;
-            //this.dataListado.Columns[1].Visible = false;
+            this.dataListado.Columns[1].Visible = false;
         }
 
         //Metodo Mostrar
@@ -149,6 +149,23 @@ namespace CapaPresentacion
         }
 
         private void dataListado_DoubleClick(object sender, EventArgs e)
+        {
+            Hashtable datos = new Hashtable();
+
+            datos.Add("id", Convert.ToString(this.dataListado.CurrentRow.Cells["id_cliente"].Value));
+            datos.Add("nombre", Convert.ToString(this.dataListado.CurrentRow.Cells["nombre_cli"].Value));
+            datos.Add("apellido", Convert.ToString(this.dataListado.CurrentRow.Cells["apellido_cli"].Value));
+            datos.Add("tipoDocumento", Convert.ToString(this.dataListado.CurrentRow.Cells["tipo_documento"].Value));
+            datos.Add("numeroDocumento", Convert.ToString(this.dataListado.CurrentRow.Cells["numero_documento"].Value));
+            datos.Add("tipoCliente", Convert.ToString(this.dataListado.CurrentRow.Cells["tipo_cli"].Value));
+            datos.Add("correo", Convert.ToString(this.dataListado.CurrentRow.Cells["correo_cli"].Value));
+            datos.Add("telefono", Convert.ToString(this.dataListado.CurrentRow.Cells["telefono_cli"].Value));
+            datos.Add("direccion", Convert.ToString(this.dataListado.CurrentRow.Cells["direccion_cli"].Value));
+
+            new FrmMantenimientoCliente(datos).ShowDialog();
+        }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
         {
             Hashtable datos = new Hashtable();
 

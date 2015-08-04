@@ -30,9 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,17 +50,11 @@
     <Compile Include="AgregarVehiculo.Designer.cs">
       <DependentUpon>AgregarVehiculo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Busqueda_vehiculo.cs">
+    <Compile Include="FrmVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Busqueda_vehiculo.Designer.cs">
-      <DependentUpon>Busqueda_vehiculo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Consultar_empleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Consultar_empleado.Designer.cs">
-      <DependentUpon>Consultar_empleado.cs</DependentUpon>
+    <Compile Include="FrmVehiculo.Designer.cs">
+      <DependentUpon>FrmVehiculo.cs</DependentUpon>
     </Compile>
     <Compile Include="Consultar_repuesto.cs">
       <SubType>Form</SubType>
@@ -65,11 +62,11 @@
     <Compile Include="Consultar_repuesto.Designer.cs">
       <DependentUpon>Consultar_repuesto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empleado.cs">
+    <Compile Include="FrmEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Empleado.Designer.cs">
-      <DependentUpon>Empleado.cs</DependentUpon>
+    <Compile Include="FrmEmpleado.Designer.cs">
+      <DependentUpon>FrmEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Factura.cs">
       <SubType>Form</SubType>
@@ -119,11 +116,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Registrar_empleado.cs">
+    <Compile Include="FrmMantenimientoEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrar_empleado.Designer.cs">
-      <DependentUpon>Registrar_empleado.cs</DependentUpon>
+    <Compile Include="FrmMantenimientoEmpleado.Designer.cs">
+      <DependentUpon>FrmMantenimientoEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Registrar_repuesto.cs">
       <SubType>Form</SubType>
@@ -160,17 +157,14 @@
     <EmbeddedResource Include="AgregarVehiculo.resx">
       <DependentUpon>AgregarVehiculo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Busqueda_vehiculo.resx">
-      <DependentUpon>Busqueda_vehiculo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Consultar_empleado.resx">
-      <DependentUpon>Consultar_empleado.cs</DependentUpon>
+    <EmbeddedResource Include="FrmVehiculo.resx">
+      <DependentUpon>FrmVehiculo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultar_repuesto.resx">
       <DependentUpon>Consultar_repuesto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empleado.resx">
-      <DependentUpon>Empleado.cs</DependentUpon>
+    <EmbeddedResource Include="FrmEmpleado.resx">
+      <DependentUpon>FrmEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Factura.resx">
       <DependentUpon>Factura.cs</DependentUpon>
@@ -197,8 +191,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registrar_empleado.resx">
-      <DependentUpon>Registrar_empleado.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMantenimientoEmpleado.resx">
+      <DependentUpon>FrmMantenimientoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registrar_repuesto.resx">
       <DependentUpon>Registrar_repuesto.cs</DependentUpon>

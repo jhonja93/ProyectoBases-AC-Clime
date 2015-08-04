@@ -60,6 +60,7 @@
             // 
             this.txtNumDoc.Location = new System.Drawing.Point(131, 50);
             this.txtNumDoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumDoc.MaxLength = 13;
             this.txtNumDoc.Name = "txtNumDoc";
             this.txtNumDoc.ReadOnly = true;
             this.txtNumDoc.Size = new System.Drawing.Size(231, 20);
@@ -69,6 +70,7 @@
             // 
             this.txtProp.Location = new System.Drawing.Point(131, 20);
             this.txtProp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProp.MaxLength = 50;
             this.txtProp.Name = "txtProp";
             this.txtProp.ReadOnly = true;
             this.txtProp.Size = new System.Drawing.Size(231, 20);
@@ -157,6 +159,7 @@
             this.Controls.Add(this.btn_añadir_vehiculo);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Vehiculos_cliente";
             this.Text = "Vehiculos";
             this.Load += new System.EventHandler(this.Vehiculos_cliente_Load);

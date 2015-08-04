@@ -42,6 +42,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.lblName = new System.Windows.Forms.Label();
             this.lblNombreCliente = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,6 +97,7 @@
             // txt_av_marca
             // 
             this.txt_av_marca.Location = new System.Drawing.Point(119, 91);
+            this.txt_av_marca.MaxLength = 20;
             this.txt_av_marca.Name = "txt_av_marca";
             this.txt_av_marca.Size = new System.Drawing.Size(182, 20);
             this.txt_av_marca.TabIndex = 8;
@@ -112,6 +114,7 @@
             // txt_av_modelo
             // 
             this.txt_av_modelo.Location = new System.Drawing.Point(122, 121);
+            this.txt_av_modelo.MaxLength = 20;
             this.txt_av_modelo.Name = "txt_av_modelo";
             this.txt_av_modelo.Size = new System.Drawing.Size(179, 20);
             this.txt_av_modelo.TabIndex = 10;
@@ -133,6 +136,7 @@
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos de vehículo";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btn_av_guardar
             // 
@@ -182,17 +186,29 @@
             this.lblNombreCliente.TabIndex = 16;
             this.lblNombreCliente.Text = ".";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(237, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "label2";
+            // 
             // AgregarVehiculo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 243);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNombreCliente);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_av_guardar);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AgregarVehiculo";
             this.Text = "Agregar Vehiculo";
             this.Load += new System.EventHandler(this.Añadir_vehiculo_Load);
@@ -219,5 +235,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblNombreCliente;
+        private System.Windows.Forms.Label label2;
     }
 }

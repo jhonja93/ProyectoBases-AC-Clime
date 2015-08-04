@@ -42,7 +42,7 @@
             // 
             // btn_rep_mod_cancelar
             // 
-            this.btn_rep_mod_cancelar.Location = new System.Drawing.Point(144, 138);
+            this.btn_rep_mod_cancelar.Location = new System.Drawing.Point(140, 184);
             this.btn_rep_mod_cancelar.Name = "btn_rep_mod_cancelar";
             this.btn_rep_mod_cancelar.Size = new System.Drawing.Size(120, 33);
             this.btn_rep_mod_cancelar.TabIndex = 9;
@@ -52,7 +52,7 @@
             // 
             // btn_rep_mod_guardar
             // 
-            this.btn_rep_mod_guardar.Location = new System.Drawing.Point(16, 138);
+            this.btn_rep_mod_guardar.Location = new System.Drawing.Point(12, 184);
             this.btn_rep_mod_guardar.Name = "btn_rep_mod_guardar";
             this.btn_rep_mod_guardar.Size = new System.Drawing.Size(120, 33);
             this.btn_rep_mod_guardar.TabIndex = 8;
@@ -71,24 +71,24 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(394, 115);
+            this.groupBox1.Size = new System.Drawing.Size(356, 166);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del repuesto";
             // 
             // txt_rep_mod_pventa
             // 
-            this.txt_rep_mod_pventa.Location = new System.Drawing.Point(106, 77);
+            this.txt_rep_mod_pventa.Location = new System.Drawing.Point(106, 63);
             this.txt_rep_mod_pventa.MaxLength = 10;
             this.txt_rep_mod_pventa.Name = "txt_rep_mod_pventa";
-            this.txt_rep_mod_pventa.Size = new System.Drawing.Size(109, 20);
+            this.txt_rep_mod_pventa.Size = new System.Drawing.Size(234, 20);
             this.txt_rep_mod_pventa.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 82);
+            this.label3.Location = new System.Drawing.Point(14, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(91, 15);
             this.label3.TabIndex = 4;
@@ -98,7 +98,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 54);
+            this.label2.Location = new System.Drawing.Point(14, 39);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 15);
             this.label2.TabIndex = 3;
@@ -108,7 +108,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 28);
+            this.label1.Location = new System.Drawing.Point(12, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 15);
             this.label1.TabIndex = 2;
@@ -116,19 +116,21 @@
             // 
             // txt_rep_mod_marca
             // 
-            this.txt_rep_mod_marca.Location = new System.Drawing.Point(106, 51);
-            this.txt_rep_mod_marca.MaxLength = 50;
+            this.txt_rep_mod_marca.Location = new System.Drawing.Point(106, 37);
+            this.txt_rep_mod_marca.MaxLength = 20;
             this.txt_rep_mod_marca.Name = "txt_rep_mod_marca";
-            this.txt_rep_mod_marca.Size = new System.Drawing.Size(146, 20);
+            this.txt_rep_mod_marca.Size = new System.Drawing.Size(234, 20);
             this.txt_rep_mod_marca.TabIndex = 1;
             this.txt_rep_mod_marca.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_rep_mod_marca_KeyPress);
             // 
             // txt_rep_mod_descripcion
             // 
-            this.txt_rep_mod_descripcion.Location = new System.Drawing.Point(107, 25);
-            this.txt_rep_mod_descripcion.MaxLength = 50;
+            this.txt_rep_mod_descripcion.Location = new System.Drawing.Point(106, 98);
+            this.txt_rep_mod_descripcion.MaxLength = 256;
+            this.txt_rep_mod_descripcion.Multiline = true;
             this.txt_rep_mod_descripcion.Name = "txt_rep_mod_descripcion";
-            this.txt_rep_mod_descripcion.Size = new System.Drawing.Size(271, 20);
+            this.txt_rep_mod_descripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txt_rep_mod_descripcion.Size = new System.Drawing.Size(234, 53);
             this.txt_rep_mod_descripcion.TabIndex = 0;
             this.txt_rep_mod_descripcion.TextChanged += new System.EventHandler(this.txt_rep_mod_descripcion_TextChanged);
             this.txt_rep_mod_descripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_rep_mod_descripcion_KeyPress);
@@ -137,7 +139,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 184);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(377, 224);
             this.Controls.Add(this.btn_rep_mod_cancelar);
             this.Controls.Add(this.btn_rep_mod_guardar);
             this.Controls.Add(this.groupBox1);

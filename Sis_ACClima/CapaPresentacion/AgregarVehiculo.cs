@@ -15,15 +15,13 @@ namespace CapaPresentacion
 {
     public partial class AgregarVehiculo : Form
     {
-        private bool IsNuevo = false;
-        private bool IsEditar = false;
         private int _IdCliente;
+
         public AgregarVehiculo(Hashtable datos)
         {
             InitializeComponent( );
-             this.IsNuevo = true;
-             this.IdCliente = Convert.ToInt32(datos["id"]);
-              this.lblNombreCliente.Text  = Convert.ToString(datos["nombre"]) + " " + Convert.ToString(datos["apellido"]);
+            this.IdCliente = Convert.ToInt32(datos["id"]);
+            this.lblNombreCliente.Text  = Convert.ToString(datos["nombre"]) + " " + Convert.ToString(datos["apellido"]);
             
         }
        
@@ -64,12 +62,8 @@ namespace CapaPresentacion
                         if (rpta.Equals("OK")) this.MensajeOk("Se Inserto de forma correcta el registro");
                         else this.MensajeError(rpta);
                    
-
-                    this.IsNuevo = false;
-                    this.IsEditar = false;
-                   
                 }
-            catch(Exception ex){}
+            catch {}
             //////////////termino cambios daniel
                         
             // si todos los campos estan vacios se impide que se guarden los datos
@@ -164,10 +158,12 @@ namespace CapaPresentacion
 
         private void txt_av_chasis_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar))
+            if (char.IsLetterOrDigit(e.KeyChar) || char.IsControl(e.KeyChar))
             {
-                e.Handled = true;
+                e.Handled = false;
             }
+            else
+                e.Handled = true;
             //----------------------------------//-
         }
 
@@ -225,6 +221,11 @@ namespace CapaPresentacion
         }
 
         private void txtPlaca_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

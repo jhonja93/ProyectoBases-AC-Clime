@@ -10,7 +10,8 @@ namespace CapaNegocio
 {
     public class Class1
     {
-        public string estadoConexion() {
+        public string estadoConexion()
+        {
             return new Conexion().ProbarConexion();
         }
     }

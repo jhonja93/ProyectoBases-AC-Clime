@@ -87,7 +87,30 @@ namespace CapaPresentacion
 
         private void txt_emp_reg_direccion_KeyPress(object sender, KeyPressEventArgs e)
         {
-           
+            //pemitir que solo se ingresen letras
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            else if (char.IsControl(e.KeyChar))
+            {
+
+                e.Handled = false;
+
+            }
+            else if (char.IsSeparator(e.KeyChar))
+            {
+
+                e.Handled = false;
+            }
+
+            else
+            {
+
+                e.Handled = true;
+            }
+
             //----------------------------------//-
         }
 
@@ -182,11 +205,6 @@ namespace CapaPresentacion
             }
             //------------------------------------------------------------------//
 
-        }
-
-        private void btn_emp_reg_cancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

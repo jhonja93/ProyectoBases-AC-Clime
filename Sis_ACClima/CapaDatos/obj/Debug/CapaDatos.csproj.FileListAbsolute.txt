@@ -7,3 +7,13 @@ C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACC
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaDatos\obj\Debug\CapaDatos.pdb
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\pcn\Downloads\ProyectoBases-AC-Clime\ProyectoBases-AC-Clime\Sis_ACClima\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\pcn\Downloads\ProyectoBases-AC-Clime\ProyectoBases-AC-Clime\Sis_ACClima\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\pcn\Downloads\ProyectoBases-AC-Clime\ProyectoBases-AC-Clime\Sis_ACClima\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\pcn\Downloads\ProyectoBases-AC-Clime\ProyectoBases-AC-Clime\Sis_ACClima\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\pcn\Downloads\ProyectoBases-AC-Clime\ProyectoBases-AC-Clime\Sis_ACClima\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache

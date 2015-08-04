@@ -39,7 +39,7 @@ namespace CapaPresentacion
 
         private void btn_empleado_Click(object sender, EventArgs e)
         {
-            Empleado empleado = new Empleado();
+            FrmEmpleado empleado = new FrmEmpleado();
             this.Hide();
             empleado.ShowDialog();
             this.Show();
@@ -47,7 +47,7 @@ namespace CapaPresentacion
 
         private void btn_vehiculo_Click(object sender, EventArgs e)
         {
-            Busqueda_vehiculo buscar_vehiculo = new Busqueda_vehiculo();
+            FrmVehiculo buscar_vehiculo = new FrmVehiculo();
             this.Hide();
             buscar_vehiculo.ShowDialog();
             this.Show();
@@ -71,12 +71,19 @@ namespace CapaPresentacion
 
         private void Principal_Load(object sender, EventArgs e)
         {
-            if(new Class1().estadoConexion()==""){
-                this.lblconexion.Text = "conectado";
+            Class1 conexion = new Class1();
+
+            if (conexion.estadoConexion() == "")
+            {
+                MessageBox.Show("Conectado correctamente", "Conexión con la Base de Datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.lblconexion.Text = "Conectado";
                 this.lblconexion.ForeColor = System.Drawing.Color.Green;
             }
-            else {
-                this.lblconexion.Text = "desconectado";
+            else
+            {
+                MessageBox.Show("No se pudo establecer conexión con la Base de Datos\n\n" + conexion.estadoConexion(), "Conexión con la Base de Datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                this.lblconexion.Text = "Desconectado";
                 this.lblconexion.ForeColor = System.Drawing.Color.Red;
             }
                

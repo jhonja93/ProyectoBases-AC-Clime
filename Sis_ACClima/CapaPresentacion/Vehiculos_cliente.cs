@@ -22,8 +22,6 @@ namespace CapaPresentacion
 
         }
 
-      
-
         public Vehiculos_cliente(Hashtable datos)
         {
             InitializeComponent();

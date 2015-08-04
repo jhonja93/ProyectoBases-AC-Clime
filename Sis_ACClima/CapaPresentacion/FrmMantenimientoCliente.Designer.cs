@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnVehiculosCliente = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnAgregarVehiculo = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTipoCliente = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.txtNumDoc = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -61,14 +61,14 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btnVehiculosCliente);
+            this.groupBox1.Controls.Add(this.btnCancelar);
+            this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.btnAgregarVehiculo);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtDireccion);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lblTipoCliente);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnCancelar);
-            this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.btnNuevo);
             this.groupBox1.Controls.Add(this.txtNumDoc);
             this.groupBox1.Controls.Add(this.txtTelefono);
@@ -86,7 +86,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(416, 399);
+            this.groupBox1.Size = new System.Drawing.Size(405, 399);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Clientes";
@@ -94,22 +94,46 @@
             // 
             // btnVehiculosCliente
             // 
-            this.btnVehiculosCliente.Location = new System.Drawing.Point(273, 32);
+            this.btnVehiculosCliente.Location = new System.Drawing.Point(283, 27);
             this.btnVehiculosCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVehiculosCliente.Name = "btnVehiculosCliente";
-            this.btnVehiculosCliente.Size = new System.Drawing.Size(124, 19);
+            this.btnVehiculosCliente.Size = new System.Drawing.Size(91, 28);
             this.btnVehiculosCliente.TabIndex = 23;
-            this.btnVehiculosCliente.Text = "ver lista de vehiculos";
+            this.btnVehiculosCliente.Text = "&Ver Vehiculos";
             this.btnVehiculosCliente.UseVisualStyleBackColor = true;
             this.btnVehiculosCliente.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(306, 326);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(81, 53);
+            this.btnCancelar.TabIndex = 16;
+            this.btnCancelar.Text = "&Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(112, 326);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(80, 53);
+            this.btnGuardar.TabIndex = 14;
+            this.btnGuardar.Text = "&Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnAgregarVehiculo
             // 
             this.btnAgregarVehiculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarVehiculo.Location = new System.Drawing.Point(310, 326);
+            this.btnAgregarVehiculo.Location = new System.Drawing.Point(212, 326);
             this.btnAgregarVehiculo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarVehiculo.Name = "btnAgregarVehiculo";
-            this.btnAgregarVehiculo.Size = new System.Drawing.Size(74, 53);
+            this.btnAgregarVehiculo.Size = new System.Drawing.Size(81, 53);
             this.btnAgregarVehiculo.TabIndex = 22;
             this.btnAgregarVehiculo.Text = "&Agregar Vehiculo";
             this.btnAgregarVehiculo.UseVisualStyleBackColor = true;
@@ -130,6 +154,7 @@
             // 
             this.txtDireccion.Location = new System.Drawing.Point(112, 257);
             this.txtDireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDireccion.MaxLength = 256;
             this.txtDireccion.Multiline = true;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -168,37 +193,13 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Tipo Cliente: ";
             // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(213, 326);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(74, 37);
-            this.btnCancelar.TabIndex = 16;
-            this.btnCancelar.Text = "&Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(112, 326);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(74, 37);
-            this.btnGuardar.TabIndex = 14;
-            this.btnGuardar.Text = "&Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(11, 326);
+            this.btnNuevo.Location = new System.Drawing.Point(20, 326);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(74, 35);
+            this.btnNuevo.Size = new System.Drawing.Size(80, 53);
             this.btnNuevo.TabIndex = 13;
             this.btnNuevo.Text = "&Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -208,6 +209,7 @@
             // 
             this.txtNumDoc.Location = new System.Drawing.Point(239, 150);
             this.txtNumDoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumDoc.MaxLength = 13;
             this.txtNumDoc.Name = "txtNumDoc";
             this.txtNumDoc.Size = new System.Drawing.Size(136, 20);
             this.txtNumDoc.TabIndex = 12;
@@ -219,6 +221,7 @@
             // 
             this.txtTelefono.Location = new System.Drawing.Point(239, 183);
             this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefono.MaxLength = 20;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(136, 20);
             this.txtTelefono.TabIndex = 11;
@@ -228,6 +231,7 @@
             // 
             this.txtCorreo.Location = new System.Drawing.Point(112, 218);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreo.MaxLength = 50;
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(263, 20);
             this.txtCorreo.TabIndex = 10;
@@ -246,6 +250,7 @@
             // 
             this.txtApellido.Location = new System.Drawing.Point(112, 112);
             this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.MaxLength = 20;
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(263, 20);
             this.txtApellido.TabIndex = 8;
@@ -256,6 +261,7 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(112, 76);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.MaxLength = 20;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(263, 20);
             this.txtNombre.TabIndex = 7;
@@ -265,6 +271,7 @@
             // 
             // cbxTipoDoc
             // 
+            this.cbxTipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxTipoDoc.FormattingEnabled = true;
             this.cbxTipoDoc.Items.AddRange(new object[] {
             "Cedula",
@@ -275,7 +282,6 @@
             this.cbxTipoDoc.Name = "cbxTipoDoc";
             this.cbxTipoDoc.Size = new System.Drawing.Size(73, 21);
             this.cbxTipoDoc.TabIndex = 5;
-            this.cbxTipoDoc.Text = "Cedula";
             this.cbxTipoDoc.SelectedIndexChanged += new System.EventHandler(this.cbxTipoDoc_SelectedIndexChanged);
             // 
             // lblTelefono
@@ -347,7 +353,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(436, 418);
+            this.ClientSize = new System.Drawing.Size(424, 418);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);

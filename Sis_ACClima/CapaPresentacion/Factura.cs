@@ -13,6 +13,7 @@ namespace CapaPresentacion
 {
     public partial class Factura : Form
     {
+        public int cont=0;
         public Factura()
         {
             InitializeComponent();
@@ -150,10 +151,14 @@ namespace CapaPresentacion
 
         private void textBox12_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar)||char.IsPunctuation(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsSeparator(e.KeyChar))
+
+            if ((char.IsNumber(e.KeyChar) || char.IsPunctuation(e.KeyChar)  || char.IsControl(e.KeyChar)) && (!e.KeyChar.Equals(".") || this.cont < 1))
             {
 
                 e.Handled = false;
+                if(e.KeyChar.Equals("."))
+                    this.cont=this.cont+1;
+
             }
             else
                 e.Handled = true;

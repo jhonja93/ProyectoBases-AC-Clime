@@ -16,5 +16,10 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void Consultar_repuesto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
