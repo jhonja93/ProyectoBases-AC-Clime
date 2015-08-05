@@ -148,20 +148,17 @@ namespace CapaPresentacion
         {
             
         }
+        private bool KeyEnteredIsValid(string key)
+        {
+            Regex regex;
+            regex = new Regex(@"^(\d+|(\d+))(\,\d{0,2})?$");
+            return regex.IsMatch(key);
+        }
 
         private void textBox12_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-            if ((char.IsNumber(e.KeyChar) || char.IsPunctuation(e.KeyChar)  || char.IsControl(e.KeyChar)) && (!e.KeyChar.Equals(".") || this.cont < 1))
-            {
-
-                e.Handled = false;
-                if(e.KeyChar.Equals("."))
-                    this.cont=this.cont+1;
-
-            }
-            else
-                e.Handled = true;
+            string str = this.txtTotalHand.Text + e.KeyChar;
+            e.Handled = !KeyEnteredIsValid(str) && !char.IsControl(e.KeyChar);
         }
 
         private void textBox13_KeyPress(object sender, KeyPressEventArgs e)
@@ -195,14 +192,9 @@ namespace CapaPresentacion
 
         private void textBox15_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-            if (char.IsNumber(e.KeyChar) || char.IsPunctuation(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsSeparator(e.KeyChar))
-            {
-
-                e.Handled = false;
-            }
-            else
-                e.Handled = true;
+            string str = this.textBox15.Text + e.KeyChar;
+            e.Handled = !KeyEnteredIsValid(str) && !char.IsControl(e.KeyChar);
+            
         }
 
         private void textBox16_KeyPress(object sender, KeyPressEventArgs e)
@@ -219,11 +211,15 @@ namespace CapaPresentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.txtTotalRep.Text = Convert.ToString(Convert.ToInt32(this.textBox7.Text) * Convert.ToInt32(this.textBox8.Text));
-            this.txtSubtotal.Text =Convert.ToString( Convert.ToInt32(this.txtTotalRep.Text) + Convert.ToInt32(this.txtSubtotal.Text));
-            this.txtTotalRep.Text = "0";
-            this.textBox8.Text= "0";
-            this.textBox7.Text = "0";
+            try
+            {
+                this.txtTotalRep.Text = Convert.ToString(Convert.ToDouble(this.textBox7.Text) * Convert.ToDouble(this.textBox8.Text));
+                this.txtSubtotal.Text = Convert.ToString(Convert.ToDouble(this.txtTotalRep.Text) + Convert.ToDouble(this.txtSubtotal.Text));
+                this.txtTotalRep.Text = "0";
+                this.textBox8.Text = "0";
+                this.textBox7.Text = "0";
+            }
+            catch (Exception ex) { }
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
@@ -233,15 +229,36 @@ namespace CapaPresentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
-            this.txtSubtotal.Text = Convert.ToString(Convert.ToInt32(this.txtTotalHand.Text) + Convert.ToInt32(this.txtSubtotal.Text));
-            this.txtTotalHand.Text = "0";
-            this.textBox11.Text = "";
+            try
+            {
+                this.txtSubtotal.Text = Convert.ToString(Convert.ToDouble(this.txtTotalHand.Text) + Convert.ToDouble(this.txtSubtotal.Text));
+                this.txtTotalHand.Text = "0";
+                this.textBox11.Text = "";
+            }
+            catch (Exception ex) { }
         }
 
         private void txtTotalHand_TextChanged(object sender, EventArgs e)
         {
+            
+        }
+       
 
+        private void txtTotalHand_KeyUp(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+
+        private void txtTotalHand_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+           
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            if (this.dateTimePicker1.Value.CompareTo(DateTime.Now)<0) {
+                this.dateTimePicker1.Value = DateTime.Now;
         }
         
     }

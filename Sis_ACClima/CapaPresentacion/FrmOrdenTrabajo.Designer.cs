@@ -144,6 +144,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 1;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // groupBox3
             // 
@@ -192,7 +193,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.93703F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75.06297F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 241F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 242F));
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblMarcaModelo, 2, 0);
@@ -218,7 +219,7 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(96, 3);
+            this.comboBox1.Location = new System.Drawing.Point(95, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(255, 21);
             this.comboBox1.TabIndex = 1;
@@ -227,7 +228,7 @@
             // 
             this.lblMarcaModelo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.lblMarcaModelo.AutoSize = true;
-            this.lblMarcaModelo.Location = new System.Drawing.Point(375, 8);
+            this.lblMarcaModelo.Location = new System.Drawing.Point(374, 8);
             this.lblMarcaModelo.Name = "lblMarcaModelo";
             this.lblMarcaModelo.Size = new System.Drawing.Size(81, 13);
             this.lblMarcaModelo.TabIndex = 2;
@@ -412,9 +413,10 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmOrdenTrabajo";
             this.Text = "Orden de Trabajo";
+            this.Load += new System.EventHandler(this.FrmOrdenTrabajo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

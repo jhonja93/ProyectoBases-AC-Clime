@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -56,34 +57,44 @@ namespace CapaPresentacion
 
         private void txtTotalAPagar_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar) || char.IsPunctuation(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsSeparator(e.KeyChar))
-            {
-
-                e.Handled = false;
-            }
-            else
-                e.Handled = true;
+            string str = this.txtTotalAPagar.Text + e.KeyChar;
+            e.Handled = !KeyEnteredIsValid(str) && !char.IsControl(e.KeyChar);
         }
 
         private void txtAdelanto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar) || char.IsPunctuation(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsSeparator(e.KeyChar))
-            {
-
-                e.Handled = false;
-            }
-            else
-                e.Handled = true;
+            string str = this.txtAdelanto.Text + e.KeyChar;
+            e.Handled = !KeyEnteredIsValid(str) && !char.IsControl(e.KeyChar);
         }
 
         private void txtAdelanto_Leave(object sender, EventArgs e)
         {
-            if(Convert.ToInt32(this.txtTotalAPagar.Text)>=Convert.ToInt32(this.txtAdelanto.Text))
-            { 
-                this.txtRestante.Text = Convert.ToString(Convert.ToInt32(this.txtTotalAPagar.Text) - Convert.ToInt32(this.txtAdelanto.Text));
+            try
+            {
+                if(Convert.ToDouble(this.txtTotalAPagar.Text)>=Convert.ToDouble(this.txtAdelanto.Text))
+             
+                    this.txtRestante.Text = Convert.ToString(Convert.ToDouble(this.txtTotalAPagar.Text) - Convert.ToDouble(this.txtAdelanto.Text));
             }
+            catch(Exception ex){}
             
 
+        }
+        private bool KeyEnteredIsValid(string key)
+        {
+            Regex regex;
+            regex = new Regex(@"^(\d+|(\d+))(\,\d{0,2})?$");
+            return regex.IsMatch(key);
+        }
+        private void FrmOrdenTrabajo_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            if (this.dateTimePicker1.Value.CompareTo(DateTime.Now)<0) {
+                this.dateTimePicker1.Value = DateTime.Now;
+            }
         }
     }
 }

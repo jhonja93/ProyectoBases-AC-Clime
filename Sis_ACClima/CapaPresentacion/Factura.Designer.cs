@@ -194,9 +194,9 @@
             // 
             this.btn_ad_cliente.Location = new System.Drawing.Point(366, 101);
             this.btn_ad_cliente.Name = "btn_ad_cliente";
-            this.btn_ad_cliente.Size = new System.Drawing.Size(51, 28);
+            this.btn_ad_cliente.Size = new System.Drawing.Size(94, 28);
             this.btn_ad_cliente.TabIndex = 10;
-            this.btn_ad_cliente.Text = "....";
+            this.btn_ad_cliente.Text = "buscar cliente...";
             this.btn_ad_cliente.UseVisualStyleBackColor = true;
             this.btn_ad_cliente.Click += new System.EventHandler(this.btn_ad_cliente_Click);
             // 
@@ -285,6 +285,7 @@
             this.textBox8.Enabled = false;
             this.textBox8.Location = new System.Drawing.Point(514, 208);
             this.textBox8.Name = "textBox8";
+            this.textBox8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox8.Size = new System.Drawing.Size(49, 20);
             this.textBox8.TabIndex = 15;
             this.textBox8.Text = "0";
@@ -296,6 +297,7 @@
             this.txtTotalRep.Enabled = false;
             this.txtTotalRep.Location = new System.Drawing.Point(632, 208);
             this.txtTotalRep.Name = "txtTotalRep";
+            this.txtTotalRep.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtTotalRep.Size = new System.Drawing.Size(49, 20);
             this.txtTotalRep.TabIndex = 16;
             this.txtTotalRep.Text = "0";
@@ -352,12 +354,15 @@
             // 
             this.txtTotalHand.Location = new System.Drawing.Point(578, 283);
             this.txtTotalHand.Name = "txtTotalHand";
+            this.txtTotalHand.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtTotalHand.Size = new System.Drawing.Size(57, 20);
             this.txtTotalHand.TabIndex = 21;
-            this.txtTotalHand.Text = "0";
+            this.txtTotalHand.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtTotalHand.TextChanged += new System.EventHandler(this.txtTotalHand_TextChanged);
             this.txtTotalHand.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox12_KeyPress);
+            this.txtTotalHand.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtTotalHand_KeyUp);
             this.txtTotalHand.Leave += new System.EventHandler(this.textBox12_Leave);
+            this.txtTotalHand.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtTotalHand_PreviewKeyDown);
             // 
             // groupBox4
             // 
@@ -381,6 +386,7 @@
             this.textBox16.Enabled = false;
             this.textBox16.Location = new System.Drawing.Point(96, 94);
             this.textBox16.Name = "textBox16";
+            this.textBox16.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox16.Size = new System.Drawing.Size(82, 20);
             this.textBox16.TabIndex = 26;
             this.textBox16.Text = "0";
@@ -390,9 +396,11 @@
             // 
             this.textBox15.Location = new System.Drawing.Point(94, 67);
             this.textBox15.Name = "textBox15";
+            this.textBox15.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox15.Size = new System.Drawing.Size(82, 20);
             this.textBox15.TabIndex = 25;
             this.textBox15.Text = "0";
+            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox15_KeyPress);
             // 
             // textBox14
@@ -400,6 +408,7 @@
             this.textBox14.Enabled = false;
             this.textBox14.Location = new System.Drawing.Point(95, 41);
             this.textBox14.Name = "textBox14";
+            this.textBox14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.textBox14.Size = new System.Drawing.Size(82, 20);
             this.textBox14.TabIndex = 24;
             this.textBox14.Text = "0";
@@ -408,8 +417,10 @@
             // 
             // txtSubtotal
             // 
+            this.txtSubtotal.Enabled = false;
             this.txtSubtotal.Location = new System.Drawing.Point(95, 13);
             this.txtSubtotal.Name = "txtSubtotal";
+            this.txtSubtotal.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtSubtotal.Size = new System.Drawing.Size(82, 20);
             this.txtSubtotal.TabIndex = 23;
             this.txtSubtotal.Text = "0";
@@ -459,11 +470,13 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(125, 20);
             this.dateTimePicker1.TabIndex = 23;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(62, 207);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(55, 20);
             this.textBox7.TabIndex = 24;
             this.textBox7.Value = new decimal(new int[] {

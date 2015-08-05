@@ -11,19 +11,6 @@ C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaPresentacion.dll
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaNegocio.dll
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaDatos.dll
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaNegocio.pdb
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaDatos.pdb
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.FrmCliente.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantenimientoCliente.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.dll
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Busqueda_vehiculo.resources
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Consultar_empleado.resources
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Consultar_repuesto.resources
@@ -38,17 +25,6 @@ C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Repuesto.resources
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Vehiculos_cliente.resources
 C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.AgregarVehiculo.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.AgregarVehiculo.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Consultar_repuesto.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Factura.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Listado_cliente.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Modificar_empleado.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Modificar_repuesto.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Registrar_repuesto.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Reportes.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Repuesto.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Vehiculos_cliente.resources
-C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.FrmOrdenTrabajo.resources
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaPresentacion\bin\Debug\CapaPresentacion.dll
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaPresentacion\bin\Debug\CapaNegocio.dll
@@ -103,6 +79,30 @@ C:\Users\pcn\Downloads\ProyectoBases-AC-Clime\ProyectoBases-AC-Clime\Sis_ACClima
 C:\Users\pcn\Downloads\ProyectoBases-AC-Clime\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 C:\Users\pcn\Downloads\ProyectoBases-AC-Clime\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 C:\Users\pcn\Downloads\ProyectoBases-AC-Clime\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.AgregarVehiculo.resources
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.FrmVehiculo.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Consultar_repuesto.resources
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.FrmEmpleado.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Factura.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.FrmCliente.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantenimientoCliente.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.FrmOrdenTrabajo.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Listado_cliente.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Modificar_empleado.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Modificar_repuesto.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.FrmMantenimientoEmpleado.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Registrar_repuesto.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Reportes.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Repuesto.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.Vehiculos_cliente.resources
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
