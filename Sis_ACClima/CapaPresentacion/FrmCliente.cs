@@ -182,5 +182,54 @@ namespace CapaPresentacion
             new FrmMantenimientoCliente(datos).ShowDialog();
         }
 
+        private void txtBuscar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (this.cbBuscar.Text == "Numero de Documento")
+            {
+                if (char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+
+                }
+                else
+                    e.Handled = true;
+            }
+            if (this.cbBuscar.Text == "Apellido")
+            {
+                if (char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+
+                }
+                else
+                    e.Handled = true;
+            }
+            if (this.cbBuscar.Text == "Nombre")
+            {
+                if (char.IsLetter(e.KeyChar) || char.IsControl(e.KeyChar))
+                {
+                    e.Handled = false;
+
+                }
+                else
+                    e.Handled = true;
+            }
+
+        }
+
+        private void cbBuscar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbBuscar.Text == "Apellido" || cbBuscar.Text == "Nombre")
+            {
+                this.txtBuscar.MaxLength = 20;
+                this.txtBuscar.Text = "";
+            }
+            if (cbBuscar.Text == "Numero de Documento")
+            {
+                this.txtBuscar.Text = "";
+                this.txtBuscar.MaxLength = 10;
+            }
+        }
+
     }
 }

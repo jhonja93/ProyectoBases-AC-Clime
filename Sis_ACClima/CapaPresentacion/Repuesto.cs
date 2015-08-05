@@ -20,6 +20,7 @@ namespace CapaPresentacion
         private void btn_rep_nuevo_Click(object sender, EventArgs e)
         {
             Registrar_repuesto reg_repuesto = new Registrar_repuesto();
+            reg_repuesto.Text = "Registrar Repuesto";
             reg_repuesto.ShowDialog();
         }
 
@@ -33,6 +34,13 @@ namespace CapaPresentacion
         {
             Consultar_repuesto consultar_repuesto = new Consultar_repuesto();
             consultar_repuesto.ShowDialog();
+        }
+
+        private void btnNewServicio_Click(object sender, EventArgs e)
+        {
+            Registrar_repuesto reg_repuesto = new Registrar_repuesto();
+            reg_repuesto.Text = "Registrar Servicio";
+            reg_repuesto.ShowDialog();
         }
     }
 }

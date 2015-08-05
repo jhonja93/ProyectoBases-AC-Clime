@@ -54,7 +54,6 @@
             this.groupBox1.Size = new System.Drawing.Size(363, 145);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos del repuesto";
             // 
             // txt_rep_reg_pventa
             // 
@@ -147,7 +146,7 @@
             this.Controls.Add(this.btn_rep_reg_guardar);
             this.Controls.Add(this.groupBox1);
             this.Name = "Registrar_repuesto";
-            this.Text = "Registrar_repuesto";
+            this.Text = "repuesto";
             this.Load += new System.EventHandler(this.Registrar_repuesto_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

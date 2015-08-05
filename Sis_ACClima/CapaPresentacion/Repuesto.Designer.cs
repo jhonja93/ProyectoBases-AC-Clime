@@ -37,6 +37,7 @@
             this.btn_rep_modificar = new System.Windows.Forms.Button();
             this.btn_rep_eliminar = new System.Windows.Forms.Button();
             this.btn_rep_consultar = new System.Windows.Forms.Button();
+            this.btnNewServicio = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).BeginInit();
             this.SuspendLayout();
@@ -60,7 +61,7 @@
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
             this.dataListado.Location = new System.Drawing.Point(5, 18);
-            this.dataListado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataListado.Margin = new System.Windows.Forms.Padding(2);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
@@ -99,7 +100,7 @@
             this.btn_rep_nuevo.Name = "btn_rep_nuevo";
             this.btn_rep_nuevo.Size = new System.Drawing.Size(99, 36);
             this.btn_rep_nuevo.TabIndex = 8;
-            this.btn_rep_nuevo.Text = "+ Añadir nuevo";
+            this.btn_rep_nuevo.Text = "+ Añadir nuevo Repuesto";
             this.btn_rep_nuevo.UseVisualStyleBackColor = true;
             this.btn_rep_nuevo.Click += new System.EventHandler(this.btn_rep_nuevo_Click);
             // 
@@ -135,6 +136,16 @@
             this.btn_rep_consultar.UseVisualStyleBackColor = true;
             this.btn_rep_consultar.Click += new System.EventHandler(this.btn_rep_consultar_Click);
             // 
+            // btnNewServicio
+            // 
+            this.btnNewServicio.Location = new System.Drawing.Point(140, 14);
+            this.btnNewServicio.Name = "btnNewServicio";
+            this.btnNewServicio.Size = new System.Drawing.Size(99, 36);
+            this.btnNewServicio.TabIndex = 8;
+            this.btnNewServicio.Text = "+ Añadir nuevo Servicio";
+            this.btnNewServicio.UseVisualStyleBackColor = true;
+            this.btnNewServicio.Click += new System.EventHandler(this.btnNewServicio_Click);
+            // 
             // Repuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,6 +155,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txt_cli_buscar);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnNewServicio);
             this.Controls.Add(this.btn_rep_nuevo);
             this.Controls.Add(this.btn_rep_modificar);
             this.Controls.Add(this.btn_rep_eliminar);
@@ -151,7 +163,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Repuesto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Repuesto";
+            this.Text = "Repuestos y Servicio";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataListado)).EndInit();
             this.ResumeLayout(false);
@@ -170,5 +182,6 @@
         private System.Windows.Forms.Button btn_rep_consultar;
         private System.Windows.Forms.DataGridView dataListado;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
+        private System.Windows.Forms.Button btnNewServicio;
     }
 }
