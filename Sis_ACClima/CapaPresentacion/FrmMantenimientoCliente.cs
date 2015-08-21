@@ -25,6 +25,7 @@ namespace CapaPresentacion
         {
             InitializeComponent();
             this.MaximizeBox = false;
+            this.btnVehiculosCliente.Enabled = false;
 
             this.IsNuevo = true;
             this.ttMensaje2.SetToolTip(this.txtNombre, "Ingrese el nombre del cliente");
@@ -383,7 +384,7 @@ namespace CapaPresentacion
         private void btnAgregarVehiculo_Click(object sender, EventArgs e)
         {
             Hashtable datos = new Hashtable();
-            datos.Add("id", txtNumDoc.Text);
+            datos.Add("id", this.txtCodigo.Text);
             datos.Add("nombre",txtNombre.Text);
             datos.Add("apellido",txtApellido.Text);
 

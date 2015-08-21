@@ -13,7 +13,7 @@ namespace CapaPresentacion
 {
     public partial class Factura : Form
     {
-        public int cont=0;
+        public int cont = 0;
         public Factura()
         {
             InitializeComponent();
@@ -55,7 +55,6 @@ namespace CapaPresentacion
 
         private void Factura_Load(object sender, EventArgs e)
         {
-
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -67,7 +66,7 @@ namespace CapaPresentacion
             }
             else
                 e.Handled = true;
-            
+
         }
 
         private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
@@ -94,7 +93,7 @@ namespace CapaPresentacion
 
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar) || char.IsControl(e.KeyChar) || char.IsSeparator(e.KeyChar))
+            if (!char.IsSeparator(e.KeyChar))
             {
 
                 e.Handled = false;
@@ -105,14 +104,14 @@ namespace CapaPresentacion
 
         private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
+
         }
-     
+
 
         private void textBox8_Leave(object sender, EventArgs e)
         {
-            
-         }
+
+        }
 
         private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -146,7 +145,7 @@ namespace CapaPresentacion
         }
         private void textBox12_Leave(object sender, EventArgs e)
         {
-            
+
         }
         private bool KeyEnteredIsValid(string key)
         {
@@ -194,7 +193,7 @@ namespace CapaPresentacion
         {
             string str = this.textBox15.Text + e.KeyChar;
             e.Handled = !KeyEnteredIsValid(str) && !char.IsControl(e.KeyChar);
-            
+
         }
 
         private void textBox16_KeyPress(object sender, KeyPressEventArgs e)
@@ -213,18 +212,14 @@ namespace CapaPresentacion
         {
             try
             {
-                this.txtTotalRep.Text = Convert.ToString(Convert.ToDouble(this.textBox7.Text) * Convert.ToDouble(this.textBox8.Text));
-                this.txtSubtotal.Text = Convert.ToString(Convert.ToDouble(this.txtTotalRep.Text) + Convert.ToDouble(this.txtSubtotal.Text));
-                this.txtTotalRep.Text = "0";
-                this.textBox8.Text = "0";
-                this.textBox7.Text = "0";
+
             }
-            catch (Exception ex) { }
+            catch { }
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -233,33 +228,40 @@ namespace CapaPresentacion
             {
                 this.txtSubtotal.Text = Convert.ToString(Convert.ToDouble(this.txtTotalHand.Text) + Convert.ToDouble(this.txtSubtotal.Text));
                 this.txtTotalHand.Text = "0";
-                this.textBox11.Text = "";
             }
-            catch (Exception ex) { }
+            catch { }
         }
 
         private void txtTotalHand_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
-       
+
 
         private void txtTotalHand_KeyUp(object sender, KeyEventArgs e)
         {
-            
+
         }
 
 
         private void txtTotalHand_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
         {
-           
+
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            if (this.dateTimePicker1.Value.CompareTo(DateTime.Now)<0) {
+            if (this.dateTimePicker1.Value.CompareTo(DateTime.Now) < 0)
+            {
                 this.dateTimePicker1.Value = DateTime.Now;
+            }
+
         }
-        
+
+        private void dataListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
     }
 }
