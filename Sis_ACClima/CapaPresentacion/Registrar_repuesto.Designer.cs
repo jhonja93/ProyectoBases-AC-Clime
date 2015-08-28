@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class Registrar_repuesto
+    partial class Registrar_Repuesto
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txt_rep_reg_pventa = new System.Windows.Forms.TextBox();
+            this.txtPrecioVenta = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,12 +38,14 @@
             this.txt_rep_reg_descripcion = new System.Windows.Forms.TextBox();
             this.btn_rep_reg_guardar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.errorIcon = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.txt_rep_reg_pventa);
+            this.groupBox1.Controls.Add(this.txtPrecioVenta);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -50,23 +53,23 @@
             this.groupBox1.Controls.Add(this.txt_rep_reg_descripcion);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(484, 178);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(505, 178);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
-            // txt_rep_reg_pventa
+            // txtPrecioVenta
             // 
-            this.txt_rep_reg_pventa.Location = new System.Drawing.Point(141, 73);
-            this.txt_rep_reg_pventa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_rep_reg_pventa.MaxLength = 10;
-            this.txt_rep_reg_pventa.Name = "txt_rep_reg_pventa";
-            this.txt_rep_reg_pventa.Size = new System.Drawing.Size(327, 23);
-            this.txt_rep_reg_pventa.TabIndex = 5;
-            this.txt_rep_reg_pventa.TextChanged += new System.EventHandler(this.txt_rep_reg_pventa_TextChanged);
-            this.txt_rep_reg_pventa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_rep_reg_pventa_KeyPress);
+            this.txtPrecioVenta.Location = new System.Drawing.Point(141, 73);
+            this.txtPrecioVenta.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecioVenta.MaxLength = 10;
+            this.txtPrecioVenta.Name = "txtPrecioVenta";
+            this.txtPrecioVenta.Size = new System.Drawing.Size(327, 23);
+            this.txtPrecioVenta.TabIndex = 5;
+            this.txtPrecioVenta.TextChanged += new System.EventHandler(this.txt_rep_reg_pventa_TextChanged);
+            this.txtPrecioVenta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_rep_reg_pventa_KeyPress);
             // 
             // label3
             // 
@@ -104,7 +107,7 @@
             // txt_rep_reg_marca
             // 
             this.txt_rep_reg_marca.Location = new System.Drawing.Point(141, 42);
-            this.txt_rep_reg_marca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_rep_reg_marca.Margin = new System.Windows.Forms.Padding(4);
             this.txt_rep_reg_marca.MaxLength = 20;
             this.txt_rep_reg_marca.Name = "txt_rep_reg_marca";
             this.txt_rep_reg_marca.Size = new System.Drawing.Size(327, 23);
@@ -114,7 +117,7 @@
             // txt_rep_reg_descripcion
             // 
             this.txt_rep_reg_descripcion.Location = new System.Drawing.Point(141, 103);
-            this.txt_rep_reg_descripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_rep_reg_descripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txt_rep_reg_descripcion.MaxLength = 256;
             this.txt_rep_reg_descripcion.Multiline = true;
             this.txt_rep_reg_descripcion.Name = "txt_rep_reg_descripcion";
@@ -127,7 +130,7 @@
             // btn_rep_reg_guardar
             // 
             this.btn_rep_reg_guardar.Location = new System.Drawing.Point(13, 212);
-            this.btn_rep_reg_guardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_rep_reg_guardar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_rep_reg_guardar.Name = "btn_rep_reg_guardar";
             this.btn_rep_reg_guardar.Size = new System.Drawing.Size(160, 41);
             this.btn_rep_reg_guardar.TabIndex = 5;
@@ -138,7 +141,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(184, 212);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 41);
             this.button1.TabIndex = 6;
@@ -146,21 +149,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Registrar_repuesto
+            // errorIcon
+            // 
+            this.errorIcon.ContainerControl = this;
+            // 
+            // Registrar_Repuesto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(512, 266);
+            this.ClientSize = new System.Drawing.Size(534, 266);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_rep_reg_guardar);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Registrar_repuesto";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Registrar_Repuesto";
             this.Text = "Repuesto";
             this.Load += new System.EventHandler(this.Registrar_repuesto_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -168,7 +176,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txt_rep_reg_pventa;
+        private System.Windows.Forms.TextBox txtPrecioVenta;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -176,5 +184,6 @@
         private System.Windows.Forms.TextBox txt_rep_reg_descripcion;
         private System.Windows.Forms.Button btn_rep_reg_guardar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ErrorProvider errorIcon;
     }
 }

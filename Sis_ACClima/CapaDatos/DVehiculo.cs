@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 
 namespace CapaDatos
@@ -16,7 +16,7 @@ namespace CapaDatos
         private string _NChasis;
         private string _Marca;
         private string _Modelo;
-        private int _IdCliente;
+        private Int32 _IdCliente;
         private string _TextoBuscar;
 
         public string PlacaVeh
@@ -39,7 +39,7 @@ namespace CapaDatos
             get { return _Modelo; }
             set { _Modelo = value; }
         }
-        public int IdCliente
+        public Int32 IdCliente
         {
             get { return _IdCliente; }
             set { _IdCliente = value; }
@@ -52,7 +52,7 @@ namespace CapaDatos
 
         public DVehiculo() { }
 
-        public DVehiculo(string placaVeh, string nChasis, string marca, string modelo, int idCliente, string textoBuscar) {
+        public DVehiculo(string placaVeh, string nChasis, string marca, string modelo, Int32 idCliente, string textoBuscar) {
             this.PlacaVeh = placaVeh;
             this.NChasis = nChasis;
             this.Modelo = modelo;
@@ -65,50 +65,50 @@ namespace CapaDatos
         public string Insertar(DVehiculo Vehiculo)
         {
             string rpta = "";
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
                 //codigo
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //Establecer el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spinsertar_vehiculo";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParPlacaVeh = new SqlParameter();
+                MySqlParameter ParPlacaVeh = new MySqlParameter();
                 ParPlacaVeh.ParameterName = "@placa_veh";
-                ParPlacaVeh.SqlDbType = SqlDbType.VarChar;
+                ParPlacaVeh.MySqlDbType = MySqlDbType.VarChar;
                 ParPlacaVeh.Size = 7;
                 ParPlacaVeh.Value = Vehiculo.PlacaVeh;
                 SqlCmd.Parameters.Add(ParPlacaVeh);
 
-                SqlParameter ParNChasis = new SqlParameter();
+                MySqlParameter ParNChasis = new MySqlParameter();
                 ParNChasis.ParameterName = "@num_chasis";
-                ParNChasis.SqlDbType = SqlDbType.VarChar;
+                ParNChasis.MySqlDbType = MySqlDbType.VarChar;
                 ParNChasis.Size = 17;
                 ParNChasis.Value = Vehiculo.NChasis;
                 SqlCmd.Parameters.Add(ParNChasis);
 
-                SqlParameter ParMarca = new SqlParameter();
+                MySqlParameter ParMarca = new MySqlParameter();
                 ParMarca.ParameterName = "@marca";
-                ParMarca.SqlDbType = SqlDbType.VarChar;
+                ParMarca.MySqlDbType = MySqlDbType.VarChar;
                 ParMarca.Size = 10;
                 ParMarca.Value = Vehiculo.Marca;
                 SqlCmd.Parameters.Add(ParMarca);
 
-                SqlParameter ParModelo = new SqlParameter();
+                MySqlParameter ParModelo = new MySqlParameter();
                 ParModelo.ParameterName = "@modelo";
-                ParModelo.SqlDbType = SqlDbType.VarChar;
+                ParModelo.MySqlDbType = MySqlDbType.VarChar;
                 ParModelo.Size = 10;
                 ParModelo.Value = Vehiculo.Modelo;
                 SqlCmd.Parameters.Add(ParModelo);
 
-                SqlParameter ParIdCliente = new SqlParameter();
+                MySqlParameter ParIdCliente = new MySqlParameter();
                 ParIdCliente.ParameterName = "@idcliente";
-                ParIdCliente.SqlDbType = SqlDbType.Int;
+                ParIdCliente.MySqlDbType = MySqlDbType.Int32;
                 ParIdCliente.Value = Vehiculo.IdCliente;
                 SqlCmd.Parameters.Add(ParIdCliente);
 
@@ -133,50 +133,50 @@ namespace CapaDatos
         public string Editar(DVehiculo Vehiculo)
         {
             string rpta = "";
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
                 //codigo
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //Establecer el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "speditar_vehiculo";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParPlacaVeh = new SqlParameter();
+                MySqlParameter ParPlacaVeh = new MySqlParameter();
                 ParPlacaVeh.ParameterName = "@placa_veh";
-                ParPlacaVeh.SqlDbType = SqlDbType.VarChar;
+                ParPlacaVeh.MySqlDbType = MySqlDbType.VarChar;
                 ParPlacaVeh.Size = 7;
                 ParPlacaVeh.Value = Vehiculo.PlacaVeh;
                 SqlCmd.Parameters.Add(ParPlacaVeh);
 
-                SqlParameter ParNChasis = new SqlParameter();
+                MySqlParameter ParNChasis = new MySqlParameter();
                 ParNChasis.ParameterName = "@num_chasis";
-                ParNChasis.SqlDbType = SqlDbType.VarChar;
+                ParNChasis.MySqlDbType = MySqlDbType.VarChar;
                 ParNChasis.Size = 17;
                 ParNChasis.Value = Vehiculo.NChasis;
                 SqlCmd.Parameters.Add(ParNChasis);
 
-                SqlParameter ParMarca = new SqlParameter();
+                MySqlParameter ParMarca = new MySqlParameter();
                 ParMarca.ParameterName = "@marca";
-                ParMarca.SqlDbType = SqlDbType.VarChar;
+                ParMarca.MySqlDbType = MySqlDbType.VarChar;
                 ParMarca.Size = 10;
                 ParMarca.Value = Vehiculo.Marca;
                 SqlCmd.Parameters.Add(ParMarca);
 
-                SqlParameter ParModelo = new SqlParameter();
+                MySqlParameter ParModelo = new MySqlParameter();
                 ParModelo.ParameterName = "@modelo";
-                ParModelo.SqlDbType = SqlDbType.VarChar;
+                ParModelo.MySqlDbType = MySqlDbType.VarChar;
                 ParModelo.Size = 10;
                 ParModelo.Value = Vehiculo.Modelo;
                 SqlCmd.Parameters.Add(ParModelo);
 
-                SqlParameter ParIdCliente = new SqlParameter();
+                MySqlParameter ParIdCliente = new MySqlParameter();
                 ParIdCliente.ParameterName = "@idcliente";
-                ParIdCliente.SqlDbType = SqlDbType.Int;
+                ParIdCliente.MySqlDbType = MySqlDbType.Int32;
                 ParIdCliente.Value = Vehiculo.IdCliente;
                 SqlCmd.Parameters.Add(ParIdCliente);
 
@@ -202,22 +202,22 @@ namespace CapaDatos
         public string Eliminar(DVehiculo Vehiculo)
         {
             string rpta = "";
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
                 //codigo
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //Establecer el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "speliminar_vehiculo";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParPlacaVeh = new SqlParameter();
+                MySqlParameter ParPlacaVeh = new MySqlParameter();
                 ParPlacaVeh.ParameterName = "@placa_veh";
-                ParPlacaVeh.SqlDbType = SqlDbType.VarChar;
+                ParPlacaVeh.MySqlDbType = MySqlDbType.VarChar;
                 ParPlacaVeh.Size = 7;
                 ParPlacaVeh.Value = Vehiculo.PlacaVeh;
                 SqlCmd.Parameters.Add(ParPlacaVeh);
@@ -240,16 +240,16 @@ namespace CapaDatos
         public DataTable Mostrar()
         {
             DataTable DtResultado = new DataTable("vehiculo");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spmostrar_vehiculo";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }
@@ -261,23 +261,23 @@ namespace CapaDatos
         public DataTable BuscarPlaca(DVehiculo Vehiculo)
         {
             DataTable DtResultado = new DataTable("vehiculo");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spbuscar_vehiculo_placa";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
+                MySqlParameter ParTextoBuscar = new MySqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.MySqlDbType = MySqlDbType.VarChar;
                 ParTextoBuscar.Size = 50;
                 ParTextoBuscar.Value = Vehiculo.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }
@@ -287,23 +287,23 @@ namespace CapaDatos
         public DataTable BuscarChasis(DVehiculo Vehiculo)
         {
             DataTable DtResultado = new DataTable("vehiculo");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spbuscar_vehiculo_chasis";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
+                MySqlParameter ParTextoBuscar = new MySqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.MySqlDbType = MySqlDbType.VarChar;
                 ParTextoBuscar.Size = 50;
                 ParTextoBuscar.Value = Vehiculo.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }
@@ -313,22 +313,22 @@ namespace CapaDatos
         public DataTable BuscarCedula(DVehiculo Vehiculo)
         {
             DataTable DtResultado = new DataTable("vehiculo");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spbuscar_vehiculo_cedula";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
+                MySqlParameter ParTextoBuscar = new MySqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.Int;
+                ParTextoBuscar.MySqlDbType = MySqlDbType.Int32;
                 ParTextoBuscar.Value = Vehiculo.IdCliente;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }

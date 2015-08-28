@@ -17,7 +17,7 @@ namespace CapaDatos
         private float _Subtotal;
         private float _Total;
         private string _IdOrdenTrabajo;
-        private int _EsCotizacion;
+        private Int32 _EsCotizacion;
         private String _TextoBuscar;
 
         public String TextoBuscar
@@ -27,7 +27,7 @@ namespace CapaDatos
         }
 
 
-        public int EsCotizacion
+        public Int32 EsCotizacion
         {
             get { return _EsCotizacion; }
             set { _EsCotizacion = value; }

@@ -220,12 +220,18 @@ namespace CapaPresentacion
             }
         }
 
-        private void txtPlaca_TextChanged_1(object sender, EventArgs e)
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPlaca_TextChanged_1(object sender, EventArgs e)
         {
 
         }

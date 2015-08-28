@@ -122,11 +122,17 @@
     <Compile Include="FrmMantenimientoEmpleado.Designer.cs">
       <DependentUpon>FrmMantenimientoEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registrar_repuesto.cs">
+    <Compile Include="Registrar_Repuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrar_repuesto.Designer.cs">
-      <DependentUpon>Registrar_repuesto.cs</DependentUpon>
+    <Compile Include="Registrar_Repuesto.Designer.cs">
+      <DependentUpon>Registrar_Repuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registrar_Servicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrar_Servicio.Designer.cs">
+      <DependentUpon>Registrar_Servicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Reportes.cs">
       <SubType>Form</SubType>
@@ -134,11 +140,11 @@
     <Compile Include="Reportes.Designer.cs">
       <DependentUpon>Reportes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Repuesto.cs">
+    <Compile Include="FrmRepuesto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Repuesto.Designer.cs">
-      <DependentUpon>Repuesto.cs</DependentUpon>
+    <Compile Include="FrmRepuesto.Designer.cs">
+      <DependentUpon>FrmRepuesto.cs</DependentUpon>
     </Compile>
     <Compile Include="Vehiculos_cliente.cs">
       <SubType>Form</SubType>
@@ -194,14 +200,17 @@
     <EmbeddedResource Include="FrmMantenimientoEmpleado.resx">
       <DependentUpon>FrmMantenimientoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registrar_repuesto.resx">
-      <DependentUpon>Registrar_repuesto.cs</DependentUpon>
+    <EmbeddedResource Include="Registrar_Repuesto.resx">
+      <DependentUpon>Registrar_Repuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrar_Servicio.resx">
+      <DependentUpon>Registrar_Servicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes.resx">
       <DependentUpon>Reportes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Repuesto.resx">
-      <DependentUpon>Repuesto.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRepuesto.resx">
+      <DependentUpon>FrmRepuesto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vehiculos_cliente.resx">
       <DependentUpon>Vehiculos_cliente.cs</DependentUpon>

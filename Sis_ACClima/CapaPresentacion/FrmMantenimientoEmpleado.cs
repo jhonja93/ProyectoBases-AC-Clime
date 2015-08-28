@@ -168,7 +168,7 @@ namespace CapaPresentacion
             MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void btn_emp_reg_guardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click(object sender, EventArgs e)
         {
             string nombres, apellidos, cedula, telefono, direccion;
             nombres = txt_emp_reg_nombres.Text.Trim(); //Trim sirve para quitar espacios iniciales;

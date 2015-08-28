@@ -31,7 +31,7 @@ namespace CapaPresentacion
 
         private void btn_repuestos_Click(object sender, EventArgs e)
         {
-            Repuesto repuesto = new Repuesto();
+            FrmRepuesto repuesto = new FrmRepuesto();
             this.Hide();
             repuesto.ShowDialog();
             this.Show();

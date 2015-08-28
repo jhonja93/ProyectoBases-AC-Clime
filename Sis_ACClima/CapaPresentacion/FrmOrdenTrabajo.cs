@@ -50,11 +50,6 @@ namespace CapaPresentacion
             
         }
 
-        private void txtTotalAPagar_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void txtTotalAPagar_KeyPress(object sender, KeyPressEventArgs e)
         {
             string str = this.txtTotalAPagar.Text + e.KeyChar;
@@ -75,7 +70,7 @@ namespace CapaPresentacion
              
                     this.txtRestante.Text = Convert.ToString(Convert.ToDouble(this.txtTotalAPagar.Text) - Convert.ToDouble(this.txtAdelanto.Text));
             }
-            catch(Exception ex){}
+            catch {}
             
 
         }
@@ -95,6 +90,16 @@ namespace CapaPresentacion
             if (this.dateTimePicker1.Value.CompareTo(DateTime.Now)<0) {
                 this.dateTimePicker1.Value = DateTime.Now;
             }
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace CapaDatos
 {
@@ -71,50 +71,50 @@ namespace CapaDatos
 
             string rpta = "";
 
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
                 //abrir conexino
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //definir el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spinsertar_empleado";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParCedulaEmpl = new SqlParameter();
+                MySqlParameter ParCedulaEmpl = new MySqlParameter();
                 ParCedulaEmpl.ParameterName = "@cedula_empl";
-                ParCedulaEmpl.SqlDbType = SqlDbType.VarChar;
+                ParCedulaEmpl.MySqlDbType = MySqlDbType.VarChar;
                 ParCedulaEmpl.Size = 10;
                 ParCedulaEmpl.Value = Empleado.CedulaEmpl;
                 SqlCmd.Parameters.Add(ParCedulaEmpl);
 
-                SqlParameter ParNombre = new SqlParameter();
+                MySqlParameter ParNombre = new MySqlParameter();
                 ParNombre.ParameterName = "@nombre_empl";
-                ParNombre.SqlDbType = SqlDbType.VarChar;
+                ParNombre.MySqlDbType = MySqlDbType.VarChar;
                 ParNombre.Size = 20;
                 ParNombre.Value = Empleado.Nombre;
                 SqlCmd.Parameters.Add(ParNombre);
 
-                SqlParameter ParApellido = new SqlParameter();
+                MySqlParameter ParApellido = new MySqlParameter();
                 ParApellido.ParameterName = "@apellido_empl";
-                ParApellido.SqlDbType = SqlDbType.VarChar;
+                ParApellido.MySqlDbType = MySqlDbType.VarChar;
                 ParApellido.Size = 20;
                 ParApellido.Value = Empleado.Apellido;
                 SqlCmd.Parameters.Add(ParApellido);
 
-                SqlParameter ParDireccion = new SqlParameter();
+                MySqlParameter ParDireccion = new MySqlParameter();
                 ParDireccion.ParameterName = "@direccion_empl";
-                ParDireccion.SqlDbType = SqlDbType.VarChar;
+                ParDireccion.MySqlDbType = MySqlDbType.VarChar;
                 ParDireccion.Size = 50;
                 ParDireccion.Value = Empleado.Direccion;
                 SqlCmd.Parameters.Add(ParDireccion);
 
-                SqlParameter ParTelefono = new SqlParameter();
+                MySqlParameter ParTelefono = new MySqlParameter();
                 ParTelefono.ParameterName = "@telefono_empl";
-                ParTelefono.SqlDbType = SqlDbType.VarChar;
+                ParTelefono.MySqlDbType = MySqlDbType.VarChar;
                 ParTelefono.Size = 10;
                 ParTelefono.Value = Empleado.Telefono;
                 SqlCmd.Parameters.Add(ParTelefono);
@@ -137,48 +137,48 @@ namespace CapaDatos
         {
             string rpta = "";
 
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //establecer el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "speditar_empleado";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParCedulaEmpl = new SqlParameter();
+                MySqlParameter ParCedulaEmpl = new MySqlParameter();
                 ParCedulaEmpl.ParameterName = "@cedula_empl";
-                ParCedulaEmpl.SqlDbType = SqlDbType.Int;
+                ParCedulaEmpl.MySqlDbType = MySqlDbType.Int32;
                 ParCedulaEmpl.Value = Empleado.CedulaEmpl;
                 SqlCmd.Parameters.Add(ParCedulaEmpl);
 
-                SqlParameter ParNombre = new SqlParameter();
+                MySqlParameter ParNombre = new MySqlParameter();
                 ParNombre.ParameterName = "@nombre_empl";
-                ParNombre.SqlDbType = SqlDbType.VarChar;
+                ParNombre.MySqlDbType = MySqlDbType.VarChar;
                 ParNombre.Size = 20;
                 ParNombre.Value = Empleado.Nombre;
                 SqlCmd.Parameters.Add(ParNombre);
 
-                SqlParameter ParApellido = new SqlParameter();
+                MySqlParameter ParApellido = new MySqlParameter();
                 ParApellido.ParameterName = "@apellido_empl";
-                ParApellido.SqlDbType = SqlDbType.VarChar;
+                ParApellido.MySqlDbType = MySqlDbType.VarChar;
                 ParApellido.Size = 20;
                 ParApellido.Value = Empleado.Apellido;
                 SqlCmd.Parameters.Add(ParApellido);
 
-                SqlParameter ParDireccion = new SqlParameter();
+                MySqlParameter ParDireccion = new MySqlParameter();
                 ParDireccion.ParameterName = "@direccion_empl";
-                ParDireccion.SqlDbType = SqlDbType.VarChar;
+                ParDireccion.MySqlDbType = MySqlDbType.VarChar;
                 ParDireccion.Size = 50;
                 ParDireccion.Value = Empleado.Direccion;
                 SqlCmd.Parameters.Add(ParDireccion);
 
-                SqlParameter ParTelefono = new SqlParameter();
+                MySqlParameter ParTelefono = new MySqlParameter();
                 ParTelefono.ParameterName = "@telefono_empl";
-                ParTelefono.SqlDbType = SqlDbType.VarChar;
+                ParTelefono.MySqlDbType = MySqlDbType.VarChar;
                 ParTelefono.Size = 10;
                 ParTelefono.Value = Empleado.Telefono;
                 SqlCmd.Parameters.Add(ParTelefono);
@@ -201,21 +201,21 @@ namespace CapaDatos
         {
             string rpta = "";
 
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //establecer el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "speditar_empleado";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParCedulaEmpl = new SqlParameter();
+                MySqlParameter ParCedulaEmpl = new MySqlParameter();
                 ParCedulaEmpl.ParameterName = "@cedula_empl";
-                ParCedulaEmpl.SqlDbType = SqlDbType.Int;
+                ParCedulaEmpl.MySqlDbType = MySqlDbType.Int32;
                 ParCedulaEmpl.Value = Empleado.CedulaEmpl;
                 SqlCmd.Parameters.Add(ParCedulaEmpl);
 
@@ -237,16 +237,16 @@ namespace CapaDatos
         {
             DataTable DtResultado = new DataTable("empleado");
 
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spmostrar_empleado";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }
@@ -259,23 +259,23 @@ namespace CapaDatos
         public DataTable BuscarNombre(DEmpleado Empleado)
         {
             DataTable DtResultado = new DataTable("empleado");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spbuscar_empleado_nombre";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
+                MySqlParameter ParTextoBuscar = new MySqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.MySqlDbType = MySqlDbType.VarChar;
                 ParTextoBuscar.Size = 50;
                 ParTextoBuscar.Value = Empleado.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }
@@ -287,23 +287,23 @@ namespace CapaDatos
         public DataTable BuscarApellido(DEmpleado Empleado)
         {
             DataTable DtResultado = new DataTable("empleado");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spbuscar_empleado_apellido";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
+                MySqlParameter ParTextoBuscar = new MySqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.MySqlDbType = MySqlDbType.VarChar;
                 ParTextoBuscar.Size = 50;
                 ParTextoBuscar.Value = Empleado.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }
@@ -315,23 +315,23 @@ namespace CapaDatos
         public DataTable BuscarCedula(DEmpleado Empleado)
         {
             DataTable DtResultado = new DataTable("empleado");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spbuscar_empleado_cedula";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
+                MySqlParameter ParTextoBuscar = new MySqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.MySqlDbType = MySqlDbType.VarChar;
                 ParTextoBuscar.Size = 50;
                 ParTextoBuscar.Value = Empleado.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }

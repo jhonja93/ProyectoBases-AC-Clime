@@ -18,3 +18,8 @@ C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaDatos\obj\Debug\Cap
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaDatos\obj\Debug\CapaDatos.pdb
 C:\Users\pcn\Dropbox\ESPOL\6to semestre\BD I\proy\ProyectoBases-AC-Clime\Sis_ACClima\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaDatos\obj\Debug\CapaDatos.pdb

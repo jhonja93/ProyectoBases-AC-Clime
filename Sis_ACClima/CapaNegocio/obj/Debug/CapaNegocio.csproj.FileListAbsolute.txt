@@ -26,3 +26,10 @@ C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaNegocio\bin\Debug\C
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaNegocio\obj\Debug\CapaNegocio.dll
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\CapaNegocio\obj\Debug\CapaNegocio.pdb

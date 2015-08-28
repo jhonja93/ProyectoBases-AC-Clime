@@ -5,20 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 
 namespace CapaDatos
 {
     public class DRepuesto
     {
-        private int _Idrepuesto;
+        private Int32 _Idrepuesto;
         private string _Nombre;
         private string _Marca;
         private string _Descripcion;
         private float _PrecioVenta;
-        private int _StockInicial;
-        private int _StockActual;
+        private Int32 _StockInicial;
+        private Int32 _StockActual;
 
         private string _TextoBuscar;
 
@@ -28,12 +28,12 @@ namespace CapaDatos
             set { _TextoBuscar = value; }
         }
 
-        public int StockActual
+        public Int32 StockActual
         {
             get { return _StockActual; }
             set { _StockActual = value; }
         }
-        public int StockInicial
+        public Int32 StockInicial
         {
             get { return _StockInicial; }
             set { _StockInicial = value; }
@@ -45,7 +45,7 @@ namespace CapaDatos
             set { _PrecioVenta = value; }
         }
 
-        public int Idrepuesto
+        public Int32 Idrepuesto
         {
             get { return _Idrepuesto; }
             set { _Idrepuesto = value; }
@@ -74,7 +74,7 @@ namespace CapaDatos
         }
 
         //constructor con parametros
-        public DRepuesto(int idRepuesto, string nombre, string marca, string descripcion, float precio_venta, int stock_inicial, int stock_actual, string textoBuscar) {
+        public DRepuesto(Int32 idRepuesto, string nombre, string marca, string descripcion, float precio_venta, Int32 stock_inicial, Int32 stock_actual, string textoBuscar) {
             this.Idrepuesto = idRepuesto;
             this.Nombre = nombre;
             this.Marca = marca;
@@ -88,61 +88,61 @@ namespace CapaDatos
         //metodo insertar repuesto
         public string Insertar(DRepuesto Repuesto) {
             string rpta = "";
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
                 //codigo
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //Establecer el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spinsertar_repuesto";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParIdRepuesto = new SqlParameter();
+                MySqlParameter ParIdRepuesto = new MySqlParameter();
                 ParIdRepuesto.ParameterName = "@idrepuesto";
-                ParIdRepuesto.SqlDbType = SqlDbType.Int;
+                ParIdRepuesto.MySqlDbType = MySqlDbType.Int32;
                 ParIdRepuesto.Direction = ParameterDirection.Output;//porque es un parametro de salida
                 SqlCmd.Parameters.Add(ParIdRepuesto);
 
-                SqlParameter Parnombre = new SqlParameter();
+                MySqlParameter Parnombre = new MySqlParameter();
                 Parnombre.ParameterName = "@nombre";
-                Parnombre.SqlDbType = SqlDbType.VarChar;
+                Parnombre.MySqlDbType = MySqlDbType.VarChar;
                 Parnombre.Size = 25;
                 Parnombre.Value = Repuesto.Nombre;
                 SqlCmd.Parameters.Add(Parnombre);
 
-                SqlParameter Parmarca = new SqlParameter();
+                MySqlParameter Parmarca = new MySqlParameter();
                 Parmarca.ParameterName = "@marca";
-                Parmarca.SqlDbType = SqlDbType.VarChar;
+                Parmarca.MySqlDbType = MySqlDbType.VarChar;
                 Parmarca.Size = 25;
                 Parmarca.Value = Repuesto.Marca;
                 SqlCmd.Parameters.Add(Parmarca);
 
-                SqlParameter ParDescripcion = new SqlParameter();
+                MySqlParameter ParDescripcion = new MySqlParameter();
                 ParDescripcion.ParameterName = "@descripcion";
-                ParDescripcion.SqlDbType = SqlDbType.VarChar;
+                ParDescripcion.MySqlDbType = MySqlDbType.VarChar;
                 ParDescripcion.Size = 256;
                 ParDescripcion.Value = Repuesto.Descripcion;
                 SqlCmd.Parameters.Add(ParDescripcion);
 
-                SqlParameter ParPrecioVenta = new SqlParameter();
+                MySqlParameter ParPrecioVenta = new MySqlParameter();
                 ParPrecioVenta.ParameterName = "@precio_venta";
-                ParPrecioVenta.SqlDbType = SqlDbType.Money;
+                ParPrecioVenta.MySqlDbType = MySqlDbType.Float;
                 ParPrecioVenta.Value = Repuesto.PrecioVenta;
                 SqlCmd.Parameters.Add(ParPrecioVenta);
 
-                SqlParameter ParStockInicial = new SqlParameter();
+                MySqlParameter ParStockInicial = new MySqlParameter();
                 ParStockInicial.ParameterName = "@stock_inicial";
-                ParStockInicial.SqlDbType = SqlDbType.Int;
+                ParStockInicial.MySqlDbType = MySqlDbType.Int32;
                 ParStockInicial.Value = Repuesto.StockInicial;
                 SqlCmd.Parameters.Add(ParStockInicial);
 
-                SqlParameter ParStockActual = new SqlParameter();
+                MySqlParameter ParStockActual = new MySqlParameter();
                 ParStockActual.ParameterName = "@stock_actual";
-                ParStockActual.SqlDbType = SqlDbType.Int;
+                ParStockActual.MySqlDbType = MySqlDbType.Int32;
                 ParStockActual.Value = Repuesto.StockActual;
                 SqlCmd.Parameters.Add(ParStockActual);
 
@@ -165,61 +165,61 @@ namespace CapaDatos
         //metodo editar repuesto
         public string Editar(DRepuesto Repuesto) {
             string rpta = "";
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
                 //codigo
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //Establecer el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "speditar_repuesto";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParIdRepuesto = new SqlParameter();
+                MySqlParameter ParIdRepuesto = new MySqlParameter();
                 ParIdRepuesto.ParameterName = "@idrepuesto";
-                ParIdRepuesto.SqlDbType = SqlDbType.Int;
+                ParIdRepuesto.MySqlDbType = MySqlDbType.Int32;
                 ParIdRepuesto.Value = Repuesto.Idrepuesto;
                 SqlCmd.Parameters.Add(ParIdRepuesto);
 
-                SqlParameter Parnombre = new SqlParameter();
+                MySqlParameter Parnombre = new MySqlParameter();
                 Parnombre.ParameterName = "@nombre";
-                Parnombre.SqlDbType = SqlDbType.VarChar;
+                Parnombre.MySqlDbType = MySqlDbType.VarChar;
                 Parnombre.Size = 20;
                 Parnombre.Value = Repuesto.Nombre;
                 SqlCmd.Parameters.Add(Parnombre);
 
-                SqlParameter Parmarca = new SqlParameter();
+                MySqlParameter Parmarca = new MySqlParameter();
                 Parmarca.ParameterName = "@marca";
-                Parmarca.SqlDbType = SqlDbType.VarChar;
+                Parmarca.MySqlDbType = MySqlDbType.VarChar;
                 Parmarca.Size = 20;
                 Parmarca.Value = Repuesto.Marca;
                 SqlCmd.Parameters.Add(Parmarca);
 
-                SqlParameter ParDescripcion = new SqlParameter();
+                MySqlParameter ParDescripcion = new MySqlParameter();
                 ParDescripcion.ParameterName = "@descripcion";
-                ParDescripcion.SqlDbType = SqlDbType.VarChar;
+                ParDescripcion.MySqlDbType = MySqlDbType.VarChar;
                 ParDescripcion.Size = 256;
                 ParDescripcion.Value = Repuesto.Descripcion;
                 SqlCmd.Parameters.Add(ParDescripcion);
 
-                SqlParameter ParPrecioVenta = new SqlParameter();
+                MySqlParameter ParPrecioVenta = new MySqlParameter();
                 ParPrecioVenta.ParameterName = "@precio_venta";
-                ParPrecioVenta.SqlDbType = SqlDbType.Money;
+                ParPrecioVenta.MySqlDbType = MySqlDbType.Float;
                 ParPrecioVenta.Value = Repuesto.PrecioVenta;
                 SqlCmd.Parameters.Add(ParPrecioVenta);
 
-                SqlParameter ParStockInicial = new SqlParameter();
+                MySqlParameter ParStockInicial = new MySqlParameter();
                 ParStockInicial.ParameterName = "@stock_inicial";
-                ParStockInicial.SqlDbType = SqlDbType.Int;
+                ParStockInicial.MySqlDbType = MySqlDbType.Int32;
                 ParStockInicial.Value = Repuesto.StockInicial;
                 SqlCmd.Parameters.Add(ParStockInicial);
 
-                SqlParameter ParStockActual = new SqlParameter();
+                MySqlParameter ParStockActual = new MySqlParameter();
                 ParStockActual.ParameterName = "@stock_actual";
-                ParStockActual.SqlDbType = SqlDbType.Int;
+                ParStockActual.MySqlDbType = MySqlDbType.Int32;
                 ParStockActual.Value = Repuesto.StockActual;
                 SqlCmd.Parameters.Add(ParStockActual);
 
@@ -242,22 +242,22 @@ namespace CapaDatos
         //metodo Eliminar
         public string Eliminar(DRepuesto Repuesto) {
             string rpta = "";
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
                 //codigo
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //Establecer el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "speliminar_repuesto";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParIdRepuesto = new SqlParameter();
+                MySqlParameter ParIdRepuesto = new MySqlParameter();
                 ParIdRepuesto.ParameterName = "@idrepuesto";
-                ParIdRepuesto.SqlDbType = SqlDbType.Int;
+                ParIdRepuesto.MySqlDbType = MySqlDbType.Int32;
                 ParIdRepuesto.Value = Repuesto.Idrepuesto;
                 SqlCmd.Parameters.Add(ParIdRepuesto);
 
@@ -279,16 +279,16 @@ namespace CapaDatos
         //metodo mostrar repuestos
         public DataTable Mostrar() {
             DataTable DtResultado = new DataTable("repuesto");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spmostrar_repuesto";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }
@@ -300,23 +300,23 @@ namespace CapaDatos
         public DataTable BuscarNombre(DRepuesto Repuesto) 
         {
             DataTable DtResultado = new DataTable("repuesto");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spbuscar_repuesto_nombre";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
+                MySqlParameter ParTextoBuscar = new MySqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.MySqlDbType = MySqlDbType.VarChar;
                 ParTextoBuscar.Size = 50;
                 ParTextoBuscar.Value = Repuesto.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }
@@ -327,23 +327,23 @@ namespace CapaDatos
         public DataTable BuscarMarca(DRepuesto Repuesto)
         {
             DataTable DtResultado = new DataTable("repuesto");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spbuscar_repuesto_marca";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
+                MySqlParameter ParTextoBuscar = new MySqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.MySqlDbType = MySqlDbType.VarChar;
                 ParTextoBuscar.Size = 50;
                 ParTextoBuscar.Value = Repuesto.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }

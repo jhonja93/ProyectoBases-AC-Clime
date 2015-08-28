@@ -15,7 +15,7 @@ namespace CapaNegocio
         //de la CapaDatos
         public static string Insertar(string placa, string nChasis, string marca, string modelo, int idCliente)
         {
-            DVehiculo Obj = new DVehiculo(placa,nChasis,marca,modelo,idCliente,"");
+            DVehiculo Obj = new DVehiculo(placa,nChasis,marca,modelo,idCliente," ");
             return Obj.Insertar(Obj);
         }
         //Método Editar que llama al método Editar de la clase DVehiculo

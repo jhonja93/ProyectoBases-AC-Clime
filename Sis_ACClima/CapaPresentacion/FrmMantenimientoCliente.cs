@@ -168,6 +168,7 @@ namespace CapaPresentacion
                 lblNombre.Text = "Nombre:";
                 lblApellido.Enabled = true;
                 txtApellido.Enabled = true;
+                txtNumDoc.MaxLength = 10;
             }
             else if (cbxTipoDoc.Text == "RUC")
             {
@@ -176,6 +177,7 @@ namespace CapaPresentacion
                 lblApellido.Enabled = false;
                 txtApellido.Text = String.Empty;
                 txtApellido.Enabled = false;
+                txtNumDoc.MaxLength = 13;
 
             }
             else if (cbxTipoDoc.Text == "Pasaporte")
@@ -311,16 +313,17 @@ namespace CapaPresentacion
 
         private void txtNumDoc_Leave(object sender, EventArgs e)
         {
-            if (txtNumDoc.Text.Length != 10)
+            if (txtNumDoc.Text == "" )
             {
-                errorIcon.Icon = Properties.Resources.error;
-                errorIcon.SetError(txtNumDoc, "Campo Incorrecto");
+                errorIcon.SetError(txtNumDoc, "Debe Ingresar un Numero de Documento");
+            }
+            else if (txtNumDoc.Text.Length < 10)
+            {
+                errorIcon.SetError(txtNumDoc, "Numero " + cbxTipoDoc.Text + " Incorrecto");
             }
             else
             {
-                //errorIcon.Icon = Properties.Resources.Ok;
-                //errorIcon.SetError(txtNumDoc, "Ok");
-                errorIcon.Dispose();
+                errorIcon.Clear();
                 this.Botones();
             }
         }
@@ -367,18 +370,19 @@ namespace CapaPresentacion
             {
                 //errorIcon.Icon = Properties.Resources.Ok;
                 //errorIcon.SetError(txtCorreo, "Ok");
-                errorIcon.Dispose();
+                errorIcon.Clear();
             }
         }
 
         private void txtNombre_Leave(object sender, EventArgs e)
         {
-            this.Botones();
+            if (txtNombre.Text == "") errorIcon.SetError(txtNombre, "Debe Ingresar un Nombre");
+            else errorIcon.Clear();
         }
 
         private void txtApellido_Leave(object sender, EventArgs e)
         {
-            this.Botones();
+            
         }
 
         private void btnAgregarVehiculo_Click(object sender, EventArgs e)
@@ -416,9 +420,12 @@ namespace CapaPresentacion
             datos.Add("propietario",txtNombre.Text +" "+ txtApellido.Text);
             datos.Add("numDoc",txtNumDoc.Text);
 
-
-
             new Vehiculos_cliente(datos).ShowDialog();
+        }
+
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

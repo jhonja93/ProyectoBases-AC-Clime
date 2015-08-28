@@ -74,3 +74,22 @@ C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\Sis_ACClima\bin\Debug\C
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\Sis_ACClima\obj\Debug\es-EC\Sis_ACClima.resources.dll
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\Sis_ACClima\obj\Debug\Sis_ACClima.exe
 C:\Users\Jhon\Desktop\ProyectoBases-AC-Clime\sis_acclima\Sis_ACClima\obj\Debug\Sis_ACClima.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\bin\Debug\Sis_ACClima.exe.config
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\bin\Debug\Sis_ACClima.exe
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\bin\Debug\Sis_ACClima.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\bin\Debug\es-EC\Sis_ACClima.resources.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\bin\Debug\CapaNegocio.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\bin\Debug\CapaPresentacion.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\bin\Debug\CapaDatos.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\bin\Debug\CapaNegocio.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\bin\Debug\CapaPresentacion.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\bin\Debug\CapaDatos.pdb
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\obj\Debug\Sis_ACClima.csprojResolveAssemblyReference.cache
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\obj\Debug\CapaPresentacion.Form1.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\obj\Debug\CapaPresentacion.Principal.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\obj\Debug\CapaPresentacion.Principal.es-EC.resources
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\obj\Debug\Sis_ACClima.csproj.GenerateResource.Cache
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\obj\Debug\es-EC\Sis_ACClima.resources.dll
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\obj\Debug\Sis_ACClima.exe
+C:\Users\Jhon\Documents\Proyectos\Bases de Datos\AC_Clima\sis_acclima\Sis_ACClima\obj\Debug\Sis_ACClima.pdb

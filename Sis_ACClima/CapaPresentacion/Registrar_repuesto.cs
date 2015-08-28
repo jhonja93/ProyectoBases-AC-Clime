@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace CapaPresentacion
 {
-    public partial class Registrar_repuesto : Form
+    public partial class Registrar_Repuesto : Form
     {
-        public Registrar_repuesto()
+        public Registrar_Repuesto()
         {
             InitializeComponent();
         }
@@ -22,7 +23,7 @@ namespace CapaPresentacion
             string descripcion, marca, pventa;
             descripcion = txt_rep_reg_descripcion.Text.Trim(); //Trim sirve para quitar espacios iniciales;
             marca = txt_rep_reg_marca.Text;
-            pventa = txt_rep_reg_pventa.Text;
+            pventa = txtPrecioVenta.Text;
             
 
             // si todos los campos estan vacios se impide que se guarden los datos
@@ -41,6 +42,14 @@ namespace CapaPresentacion
             }
             //------------------------------------------------------------------//
 
+        }
+
+        private bool RegExp(string re, string text)
+        {
+            Regex regex = new Regex(re);
+            if (regex.IsMatch(text))
+                return true;
+            return false;
         }
 
         private void txt_rep_reg_descripcion_KeyPress(object sender, KeyPressEventArgs e)
@@ -123,14 +132,15 @@ namespace CapaPresentacion
 
         private void txt_rep_reg_pventa_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
-             if (char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar))
-               {
-                  e.Handled = false;
-               }
-               else
-                  e.Handled = true;
-            
+            string str = this.txtPrecioVenta.Text + e.KeyChar;
+            e.Handled = !KeyEnteredIsValid(str) && !char.IsControl(e.KeyChar);
+        }
+
+        private bool KeyEnteredIsValid(string key)
+        {
+            Regex regex;
+            regex = new Regex(@"^(\d+|(\d+))(\.\d{0,2})?$");
+            return regex.IsMatch(key);
         }
     }
 }

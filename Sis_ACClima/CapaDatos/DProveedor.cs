@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace CapaDatos
 {
@@ -59,7 +59,7 @@ namespace CapaDatos
         public DProveedor(){}
 
         //constructor con parámetros
-        public DProveedor(int idProveedor, string nombreProv, string responsable, string telefonoProv, string direccionProv, string textoBuscar) {
+        public DProveedor(Int32 idProveedor, string nombreProv, string responsable, string telefonoProv, string direccionProv, string textoBuscar) {
 
             this.IdProveedor = idProveedor;
             this.NombreProveedor = nombreProv;
@@ -76,51 +76,51 @@ namespace CapaDatos
         {
             string rpta = "";
 
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
 
             try {
                 //abrir conexion
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //definir el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spinsertar_proveedor";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //parametros a enviarse con el comando, dependen del procedure creado en la base, se crea una nueva instancia
-                //de SqlParameter por cada parametro del procedure
-                SqlParameter ParIdProveedor = new SqlParameter();
+                //de MySqlParameter por cada parametro del procedure
+                MySqlParameter ParIdProveedor = new MySqlParameter();
                 ParIdProveedor.ParameterName = "@idproveedor";
-                ParIdProveedor.SqlDbType = SqlDbType.Int;
+                ParIdProveedor.MySqlDbType = MySqlDbType.Int32;
                 ParIdProveedor.Direction = ParameterDirection.Output;
                 SqlCmd.Parameters.Add(ParIdProveedor);
 
-                SqlParameter ParNombreProv = new SqlParameter();
+                MySqlParameter ParNombreProv = new MySqlParameter();
                 ParNombreProv.ParameterName = "@nombreprov";
-                ParNombreProv.SqlDbType = SqlDbType.VarChar;
+                ParNombreProv.MySqlDbType = MySqlDbType.VarChar;
                 ParNombreProv.Size = 15;
                 ParNombreProv.Value = Proveedor.NombreProveedor;
                 SqlCmd.Parameters.Add(ParNombreProv);
 
-                SqlParameter ParResponsable = new SqlParameter();
+                MySqlParameter ParResponsable = new MySqlParameter();
                 ParResponsable.ParameterName = "@responsable";
-                ParResponsable.SqlDbType = SqlDbType.VarChar;
+                ParResponsable.MySqlDbType = MySqlDbType.VarChar;
                 ParResponsable.Size = 15;
                 ParResponsable.Value = Proveedor.Responsable;
                 SqlCmd.Parameters.Add(ParResponsable);
 
-                SqlParameter ParTelefonoProv = new SqlParameter();
+                MySqlParameter ParTelefonoProv = new MySqlParameter();
                 ParTelefonoProv.ParameterName = "@telefonoprov";
-                ParTelefonoProv.SqlDbType = SqlDbType.VarChar;
+                ParTelefonoProv.MySqlDbType = MySqlDbType.VarChar;
                 ParTelefonoProv.Size = 12;
                 ParResponsable.Value = Proveedor.TelefonoProv;
                 SqlCmd.Parameters.Add(ParResponsable);
 
-                SqlParameter ParDireccionProv = new SqlParameter();
+                MySqlParameter ParDireccionProv = new MySqlParameter();
                 ParDireccionProv.ParameterName = "@direccionprov";
-                ParDireccionProv.SqlDbType = SqlDbType.VarChar;
+                ParDireccionProv.MySqlDbType = MySqlDbType.VarChar;
                 ParDireccionProv.Size = 50;
                 ParDireccionProv.Value = Proveedor.DireccionProv;
                 SqlCmd.Parameters.Add(ParDireccionProv);
@@ -143,47 +143,47 @@ namespace CapaDatos
         public string Editar(DProveedor Proveedor) {
             string rpta = "";
 
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try { 
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //establecer el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "speditar_proveedor";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //se establecen los parametros a enviarse en el comando
-                SqlParameter ParIdProveedor = new SqlParameter();
+                MySqlParameter ParIdProveedor = new MySqlParameter();
                 ParIdProveedor.ParameterName = "@idproveedor";
-                ParIdProveedor.SqlDbType = SqlDbType.Int;
+                ParIdProveedor.MySqlDbType = MySqlDbType.Int32;
                 ParIdProveedor.Value = Proveedor.IdProveedor;
                 SqlCmd.Parameters.Add(ParIdProveedor);
 
-                SqlParameter ParNombreProv = new SqlParameter();
-                ParNombreProv.SqlDbType = SqlDbType.VarChar;
+                MySqlParameter ParNombreProv = new MySqlParameter();
+                ParNombreProv.MySqlDbType = MySqlDbType.VarChar;
                 ParNombreProv.Size = 15;
                 ParNombreProv.Value = Proveedor.NombreProveedor;
                 SqlCmd.Parameters.Add(ParNombreProv);
 
-                SqlParameter ParResponsable = new SqlParameter();
+                MySqlParameter ParResponsable = new MySqlParameter();
                 ParResponsable.ParameterName = "@responsable";
-                ParResponsable.SqlDbType = SqlDbType.VarChar;
+                ParResponsable.MySqlDbType = MySqlDbType.VarChar;
                 ParResponsable.Size = 15;
                 ParResponsable.Value = Proveedor.Responsable;
                 SqlCmd.Parameters.Add(ParResponsable);
 
-                SqlParameter ParTelefonoProv = new SqlParameter();
+                MySqlParameter ParTelefonoProv = new MySqlParameter();
                 ParTelefonoProv.ParameterName = "@telefonoprov";
-                ParTelefonoProv.SqlDbType = SqlDbType.VarChar;
+                ParTelefonoProv.MySqlDbType = MySqlDbType.VarChar;
                 ParTelefonoProv.Size = 12;
                 ParResponsable.Value = Proveedor.TelefonoProv;
                 SqlCmd.Parameters.Add(ParResponsable);
 
-                SqlParameter ParDireccionProv = new SqlParameter();
+                MySqlParameter ParDireccionProv = new MySqlParameter();
                 ParDireccionProv.ParameterName = "@direccionprov";
-                ParDireccionProv.SqlDbType = SqlDbType.VarChar;
+                ParDireccionProv.MySqlDbType = MySqlDbType.VarChar;
                 ParDireccionProv.Size = 50;
                 ParDireccionProv.Value = Proveedor.DireccionProv;
                 SqlCmd.Parameters.Add(ParDireccionProv);
@@ -206,22 +206,22 @@ namespace CapaDatos
         public string Eliminar(DProveedor Proveedor) {
             string rpta = "";
 
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.ConnectionString = Conexion.conexion;
                 SqlCon.Open();
 
                 //establecer el comando
-                SqlCommand SqlCmd = new SqlCommand();
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "speliminar_proveedor";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //se establecen los parametros a enviarse en el comando
-                SqlParameter ParIdProveedor = new SqlParameter();
+                MySqlParameter ParIdProveedor = new MySqlParameter();
                 ParIdProveedor.ParameterName = "@idproveedor";
-                ParIdProveedor.SqlDbType = SqlDbType.Int;
+                ParIdProveedor.MySqlDbType = MySqlDbType.Int32;
                 ParIdProveedor.Value = Proveedor.IdProveedor;
                 SqlCmd.Parameters.Add(ParIdProveedor);
 
@@ -246,15 +246,15 @@ namespace CapaDatos
         {
             DataTable DtResultado = new DataTable("proveedor");
 
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spmostrar_proveedor";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }
@@ -266,23 +266,23 @@ namespace CapaDatos
         public DataTable BuscarNombre(DProveedor Proveedor)
         {
             DataTable DtResultado = new DataTable("proveedor");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spbuscar_proveedor";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
+                MySqlParameter ParTextoBuscar = new MySqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.MySqlDbType = MySqlDbType.VarChar;
                 ParTextoBuscar.Size = 50;
                 ParTextoBuscar.Value = Proveedor.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }
@@ -294,23 +294,23 @@ namespace CapaDatos
         public DataTable BuscarResponsable(DProveedor Proveedor)
         {
             DataTable DtResultado = new DataTable("proveedor");
-            SqlConnection SqlCon = new SqlConnection();
+            MySqlConnection SqlCon = new MySqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
+                SqlCon.ConnectionString = Conexion.conexion;
+                MySqlCommand SqlCmd = new MySqlCommand();
                 SqlCmd.Connection = SqlCon;
                 SqlCmd.CommandText = "spbuscar_proveedor_responsable";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter ParTextoBuscar = new SqlParameter();
+                MySqlParameter ParTextoBuscar = new MySqlParameter();
                 ParTextoBuscar.ParameterName = "@TextoBuscar";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.MySqlDbType = MySqlDbType.VarChar;
                 ParTextoBuscar.Size = 50;
                 ParTextoBuscar.Value = Proveedor.TextoBuscar;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                MySqlDataAdapter SqlDat = new MySqlDataAdapter(SqlCmd);
                 SqlDat.Fill(DtResultado);
             }
             catch { DtResultado = null; }

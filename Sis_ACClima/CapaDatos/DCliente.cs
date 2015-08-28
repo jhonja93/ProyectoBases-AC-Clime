@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 using System.Data;
 using System.Data.SqlClient;
+//using MySql.Data.MySqlClient;
 
 
 namespace CapaDatos
 {
     public class DCliente
     {
-        private int _Idcliente;
+        private Int32 _Idcliente;
         private string _nombreCliente;
         private string _apellidoCliente;
         private string _tipoDocumento;
@@ -90,7 +91,7 @@ namespace CapaDatos
         }
 
         //Constructor con Parametros
-        public DCliente(int idCliente, string nombre, string apellido, string tipoDoc, string numeroDoc, string tipoCli, string correo, string telefono, string direccion, string textoBuscar) 
+        public DCliente(Int32 idCliente, string nombre, string apellido, string tipoDoc, string numeroDoc, string tipoCli, string correo, string telefono, string direccion, string textoBuscar) 
         {
             this.Idcliente = idCliente;
             this.NombreCliente = nombre;
@@ -108,15 +109,15 @@ namespace CapaDatos
         public string Insertar(DCliente Cliente)
         {
             string respuesta = "";
-            SqlConnection SqlCon = new SqlConnection();
+            SqlConnection MySqlCon = new SqlConnection();
             try
             {
                 //Codigo
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCon.Open(); //Abrimos conexion con Sql
+                MySqlCon.ConnectionString = Conexion.conexion;
+                MySqlCon.Open(); //Abrimos conexion con Sql
                 //Establecer comando
                 SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
+                SqlCmd.Connection = MySqlCon;
                 SqlCmd.CommandText = "spinsertar_cliente";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
@@ -203,7 +204,7 @@ namespace CapaDatos
             }
             finally 
             {
-                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+                if (MySqlCon.State == ConnectionState.Open) MySqlCon.Close();
             }
             return respuesta;
         }
@@ -212,15 +213,15 @@ namespace CapaDatos
         public string Editar(DCliente Cliente)
         {
             string respuesta = "";
-            SqlConnection SqlCon = new SqlConnection();
+            SqlConnection MySqlCon = new SqlConnection();
             try
             {
                 //Codigo
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCon.Open(); //Abrimos conexion con Sql
+                MySqlCon.ConnectionString = Conexion.conexion;
+                MySqlCon.Open(); //Abrimos conexion con Sql
                 //Establecer comando
                 SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
+                SqlCmd.Connection = MySqlCon;
                 SqlCmd.CommandText = "speditar_cliente";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
@@ -307,7 +308,7 @@ namespace CapaDatos
             }
             finally
             {
-                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+                if (MySqlCon.State == ConnectionState.Open) MySqlCon.Close();
             }
             return respuesta;
         }
@@ -316,15 +317,15 @@ namespace CapaDatos
         public string Eliminar(DCliente Cliente)
         {
             string respuesta = "";
-            SqlConnection SqlCon = new SqlConnection();
+            SqlConnection MySqlCon = new SqlConnection();
             try
             {
                 //Codigo
-                SqlCon.ConnectionString = Conexion.Cn;
-                SqlCon.Open(); //Abrimos conexion con Sql
+                MySqlCon.ConnectionString = Conexion.conexion;
+                MySqlCon.Open(); //Abrimos conexion con Sql
                 //Establecer comando
                 SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
+                SqlCmd.Connection = MySqlCon;
                 SqlCmd.CommandText = "speliminar_cliente";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
@@ -347,7 +348,7 @@ namespace CapaDatos
             }
             finally
             {
-                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+                if (MySqlCon.State == ConnectionState.Open) MySqlCon.Close();
             }
             return respuesta;
         }
@@ -356,12 +357,12 @@ namespace CapaDatos
         public DataTable Mostrar() 
         {
             DataTable DtResultado = new DataTable("cliente");
-            SqlConnection SqlCon = new SqlConnection();
+            SqlConnection MySqlCon = new SqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
+                MySqlCon.ConnectionString = Conexion.conexion;
                 SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
+                SqlCmd.Connection = MySqlCon;
                 SqlCmd.CommandText = "spmostrar_cliente";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
@@ -379,12 +380,12 @@ namespace CapaDatos
         public DataTable BuscarNombre(DCliente Cliente) 
         {
             DataTable DtResultado = new DataTable("cliente");
-            SqlConnection SqlCon = new SqlConnection();
+            SqlConnection MySqlCon = new SqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
+                MySqlCon.ConnectionString = Conexion.conexion;
                 SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
+                SqlCmd.Connection = MySqlCon;
                 SqlCmd.CommandText = "spbuscar_cliente_nombre";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
@@ -409,12 +410,12 @@ namespace CapaDatos
         public DataTable BuscarApellido(DCliente Cliente)
         {
             DataTable DtResultado = new DataTable("cliente");
-            SqlConnection SqlCon = new SqlConnection();
+            SqlConnection MySqlCon = new SqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
+                MySqlCon.ConnectionString = Conexion.conexion;
                 SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
+                SqlCmd.Connection = MySqlCon;
                 SqlCmd.CommandText = "spbuscar_cliente_apellidos";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
@@ -439,12 +440,12 @@ namespace CapaDatos
         public DataTable BuscarNumeroDocumento(DCliente Cliente)
         {
             DataTable DtResultado = new DataTable("cliente");
-            SqlConnection SqlCon = new SqlConnection();
+            SqlConnection MySqlCon = new SqlConnection();
             try
             {
-                SqlCon.ConnectionString = Conexion.Cn;
+                MySqlCon.ConnectionString = Conexion.conexion;
                 SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
+                SqlCmd.Connection = MySqlCon;
                 SqlCmd.CommandText = "spbuscar_cliente";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
